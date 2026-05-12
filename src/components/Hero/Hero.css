@@ -1,0 +1,22 @@
+.hero-section{
+  background:#09111f;
+}
+
+.hero-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:60px;
+  border-radius:30px;
+  text-align:center;
+  backdrop-filter:blur(10px);
+}
+
+.hero-card h2{
+  font-size:55px;
+  margin-bottom:20px;
+}
+
+.hero-card p{
+  color:#bbb;
+  font-size:18px;
+}

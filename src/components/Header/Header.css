@@ -1,0 +1,168 @@
+.header{
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    padding: 140px 8% 80px;
+
+    background:
+    linear-gradient(
+    rgba(2,8,23,0.82),
+    rgba(2,8,23,0.92)
+    ),
+
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.header::before{
+    content: '';
+
+    position: absolute;
+    inset: 0;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(212,175,55,0.18),
+    transparent 30%);
+}
+
+.header-content{
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1100px;
+
+    text-align: center;
+}
+
+.header-content span{
+    color: #d4af37;
+
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.header-content h1{
+    color: #fff;
+
+    font-size: 92px;
+    line-height: 1.05;
+
+    margin: 25px 0;
+
+    font-weight: 800;
+}
+
+.header-content h1 span{
+    color: #d4af37;
+    font-size: inherit;
+}
+
+.header-content p{
+    max-width: 900px;
+
+    margin: auto;
+
+    color: #d7dfe7;
+
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+.header-buttons{
+    margin-top: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    flex-wrap: wrap;
+}
+
+.header-buttons button{
+    padding: 18px 42px;
+
+    border-radius: 50px;
+
+    border: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+.header-buttons button:first-child{
+    background:
+    linear-gradient(
+    135deg,
+    #d4af37,
+    #f5d76e
+    );
+
+    color: #08131f;
+}
+
+.header-buttons button:first-child:hover{
+    transform: translateY(-6px);
+
+    box-shadow:
+    0 12px 30px rgba(212,175,55,0.35);
+}
+
+.header-buttons button:last-child{
+    background: transparent;
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    color: #fff;
+}
+
+.header-buttons button:last-child:hover{
+    background: rgba(255,255,255,0.08);
+
+    transform: translateY(-6px);
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+    .header-content h1{
+        font-size: 68px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .header{
+        min-height: auto;
+        padding: 140px 6% 90px;
+    }
+
+    .header-content h1{
+        font-size: 46px;
+    }
+
+    .header-content p{
+        font-size: 17px;
+    }
+
+}
