@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* ===================================================
+   ULTRA PREMIUM GOOGLE FONTS
+   ISSE PURA WEBSITE LUXURY FEEL DEGA
+   CSS FILE KE SABSE TOP PAR ADD KARO
+=================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+
+/* ===================================================
+   GLOBAL RESET
+=================================================== */
 
 *{
   margin:0;
@@ -7,25 +18,250 @@
   scroll-behavior:smooth;
 }
 
+
+/* ===================================================
+   BODY
+   MAIN WEBSITE FONT
+=================================================== */
+
 body{
-  font-family:'Poppins',sans-serif;
-  background:#050816;
+
+  /* MODERN PREMIUM FONT */
+  font-family:'Manrope',sans-serif;
+
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+
+  text-rendering:optimizeLegibility;
+
+  /* PREMIUM DARK + DEPTH BACKGROUND */
+  background:
+  radial-gradient(circle at top left, rgba(88,183,255,0.12), transparent 35%),
+  radial-gradient(circle at bottom right, rgba(111,211,164,0.10), transparent 40%),
+  linear-gradient(180deg, #050816, #070b1f, #050816);
+
   color:white;
+
   overflow-x:hidden;
 }
 
+
+/* ===================================================
+   GLOBAL SECTION SPACING
+=================================================== */
+
 section{
   padding:100px 8%;
+
+  position: relative;
 }
+
+
+/* ===================================================
+   PREMIUM GLOW
+=================================================== */
+
+section::before{
+  content:'';
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  radial-gradient(circle at 20% 20%, rgba(255,255,255,0.04), transparent 40%),
+  radial-gradient(circle at 80% 70%, rgba(255,255,255,0.03), transparent 45%);
+
+  pointer-events:none;
+}
+
+
+/* ===================================================
+   CONTAINER
+=================================================== */
 
 .container{
   max-width:1400px;
+
   margin:auto;
 }
 
+
+/* ===================================================
+   PREMIUM GRADIENT TEXT
+=================================================== */
+
 .gradient-text{
-  background:linear-gradient(to right,#ffb347,#ffcc33,#ffffff);
+
+  /* LUXURY GOLD TEXT */
+  background:
+  linear-gradient(
+  90deg,
+  #ffb347,
+  #ffd86b,
+  #ffffff
+  );
+
   -webkit-background-clip:text;
   background-clip:text;
+
   -webkit-text-fill-color:transparent;
+
+  text-shadow:
+  0 10px 30px rgba(0,0,0,0.25);
+
+  /* PREMIUM FONT */
+  font-family:'Cinzel',serif;
+
+  font-weight:700;
+
+  letter-spacing:0.5px;
+}
+
+
+/* ===================================================
+   HEADINGS
+=================================================== */
+
+h1,h2,h3{
+
+  /* PREMIUM MODERN LUXURY FONT */
+  font-family:'Space Grotesk',sans-serif;
+
+  font-weight:700;
+
+  letter-spacing:-1px;
+
+  line-height:1.15;
+
+  text-shadow:
+  0 10px 30px rgba(0,0,0,0.25);
+}
+
+
+/* ===================================================
+   PARAGRAPH
+=================================================== */
+
+p{
+
+  /* CLEAN PREMIUM FONT */
+  font-family:'Manrope',sans-serif;
+
+  font-weight:400;
+
+  line-height:1.9;
+
+  letter-spacing:0.2px;
+
+  color:
+  rgba(255,255,255,0.85);
+}
+
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+button,
+.btn{
+
+  /* PREMIUM UI FONT */
+  font-family:'Outfit',sans-serif;
+
+  font-weight:600;
+
+  letter-spacing:0.4px;
+}
+
+
+/* ===================================================
+   NAVBAR LINKS
+=================================================== */
+
+nav a,
+.nav-links a{
+
+  font-family:'Outfit',sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:0.3px;
+}
+
+
+/* ===================================================
+   STATS / COUNTERS
+=================================================== */
+
+.counter,
+.stat-number{
+
+  font-family:'Outfit',sans-serif;
+
+  font-weight:800;
+
+  letter-spacing:-0.5px;
+}
+
+
+/* ===================================================
+   GLASSMORPHISM IMPROVEMENT
+=================================================== */
+
+.glass,
+.card,
+.hero-card,
+.service-card{
+
+  backdrop-filter:blur(18px);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+  0 25px 60px rgba(0,0,0,0.18),
+  inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+
+/* ===================================================
+   PREMIUM HOVER EFFECT
+=================================================== */
+
+.card:hover,
+.service-card:hover,
+.hero-card:hover{
+
+  transform:
+  translateY(-10px)
+  scale(1.02);
+
+  transition:0.45s ease;
+
+  box-shadow:
+  0 35px 80px rgba(0,0,0,0.28),
+  0 0 40px rgba(88,183,255,0.10);
+}
+
+
+/* ===================================================
+   MOBILE OPTIMIZATION
+=================================================== */
+
+@media(max-width:768px){
+
+  h1{
+    font-size:42px;
+  }
+
+  h2{
+    font-size:34px;
+  }
+
+  p{
+    font-size:16px;
+    line-height:1.8;
+  }
+
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
 .header{
     position: relative;
 
@@ -10,159 +12,347 @@
 
     overflow: hidden;
 
-    padding: 140px 8% 80px;
+    padding: 160px 8% 80px;
+    
+}
+.hero-slider{
 
-    background:
-    linear-gradient(
-    rgba(2,8,23,0.82),
-    rgba(2,8,23,0.92)
-    ),
+    position: absolute;
 
-    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop');
+    inset: 0;
+
+    z-index: 0;
+}
+.hero-slide{
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
 
     background-size: cover;
+
     background-position: center;
+
+    background-repeat: no-repeat;
+
+    opacity: 0;
+
+    transform: translateX(100%);
+
+    animation-duration: 18s;
+
+    animation-timing-function: ease-in-out;
+
+    animation-iteration-count: infinite;
 }
+.slide1{
+    background-image:
+    linear-gradient(
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.40)
+    ),
+    url('/images/team/Chairman.jpeg');
+
+    animation-name: slideAnimation;
+    animation-delay: 0s;
+     opacity: 1;
+
+    transform: translateX(0%);
+}
+
+.slide2{
+    background-image:
+    linear-gradient(
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.40)
+    ),
+    url('/images/social-bg.jpg');
+
+    animation-name: slideAnimation;
+    animation-delay: 6s;
+}
+
+.slide3{
+    background-image:
+    linear-gradient(
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.40)
+    ),
+    url('/images/socialbg.jpg');
+
+    animation-name: slideAnimation;
+    animation-delay: 12s;
+}
+@keyframes slideAnimation{
+
+0%{
+opacity: 0;
+transform: translateX(100%);
+}
+
+10%{
+opacity: 1;
+transform: translateX(0%);
+}
+
+35%{
+opacity: 1;
+transform: translateX(0%);
+}
+
+45%{
+opacity: 1;
+transform: translateX(-100%);
+}
+
+100%{
+opacity: 0;
+transform: translateX(-100%);
+}
+
+}
+/* PREMIUM COLOR GLOW */
 
 .header::before{
     content: '';
 
     position: absolute;
     inset: 0;
-
-    background:
-    radial-gradient(circle at top right,
-    rgba(212,175,55,0.18),
-    transparent 30%);
 }
+
+/* CONTENT */
 
 .header-content{
     position: relative;
     z-index: 2;
-
+margin-top: -89px;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1150px;
 
     text-align: center;
+
+    padding: 70px 60px;
+
+    /* border-radius: 40px; */
+
+    background: transparent;
+
+    /* backdrop-filter: blur(24px); */
+
+    /* border: 1px solid purple; */
+
+    /* box-shadow:
+    0 25px 70px rgba(0,0,0,0.16),
+    0 10px 35px rgba(255,255,255,0.18),
+    0 0 60px rgba(255,255,255,0.12); */
 }
+
+/* SMALL TEXT */
 
 .header-content span{
-    color: #d4af37;
+    color: purple;
+
+    font-family: 'Inter', sans-serif;
+
+    text-transform: uppercase;
 
     font-size: 16px;
-    letter-spacing: 4px;
-    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    font-weight: 700;
+
+    text-shadow:
+    0 4px 12px rgba(200,107,133,0.25);
 }
 
-.header-content h1{
-    color: #fff;
+/* TITLE */
 
-    font-size: 92px;
+.header-content h1{
+    color: purple;
+
+    font-family: 'Cinzel', serif;
+
+    font-weight: 600;
+
+    font-size: 50px;
+
     line-height: 1.05;
 
-    margin: 25px 0;
+    margin: 28px 0;
 
-    font-weight: 800;
+    letter-spacing: 1px;
+
+    text-shadow:
+    0 10px 30px rgba(0,0,0,0.12);
+
+    background: linear-gradient(
+    135deg,
+    purple,
+    purple,
+    purple
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header-content h1 span{
-    color: #d4af37;
+    color: purple;
+
+    font-family: 'Cinzel', serif;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
     font-size: inherit;
+
+    display: block;
+
+    margin-top: 0.5cm;
 }
 
+/* DESCRIPTION */
+
 .header-content p{
-    max-width: 900px;
+    max-width: 920px;
 
     margin: auto;
 
-    color: #d7dfe7;
+    color: purple;
+
+    font-family: 'Inter', sans-serif;
+
+    font-weight: 400;
+
+    letter-spacing: 0.3px;
 
     font-size: 20px;
+
     line-height: 1.9;
 }
 
+/* BUTTON AREA */
+
 .header-buttons{
-    margin-top: 45px;
+    margin-top: 50px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
-    gap: 22px;
+    gap: 24px;
 
     flex-wrap: wrap;
 }
 
-.header-buttons button{
-    padding: 18px 42px;
+/* COMMON BUTTON */
 
-    border-radius: 50px;
+.header-buttons button{
+    padding: 18px 44px;
+
+    border-radius: 60px;
 
     border: none;
 
+    font-family: 'Inter', sans-serif;
+
+    letter-spacing: 0.5px;
+
     font-size: 16px;
-    font-weight: 600;
+
+    font-weight: 700;
 
     cursor: pointer;
 
     transition: 0.4s ease;
 }
 
+/* EXPLORE MORE BUTTON */
+
 .header-buttons button:first-child{
-    background:
-    linear-gradient(
+    background: linear-gradient(
     135deg,
-    #d4af37,
-    #f5d76e
+    purple,
+    rgb(145, 33, 145),
+    rgb(94, 21, 94)
     );
 
-    color: #08131f;
+    color: white;
+
+    border: 2px solid purple;
+
+    position: relative;
+
+    overflow: hidden;
 }
 
 .header-buttons button:first-child:hover{
-    transform: translateY(-6px);
+    background: rgb(94, 21, 94);
 
-    box-shadow:
-    0 12px 30px rgba(212,175,55,0.35);
+    transform: translateY(-7px) scale(1.04);
 }
 
+/* JOIN COMMUNITY BUTTON */
+
 .header-buttons button:last-child{
-    background: transparent;
+    background: purple;
 
-    border: 1px solid rgba(255,255,255,0.35);
+    color: white;
 
-    color: #fff;
+    border: 2px solid purple;
+
+    position: relative;
+
+    overflow: hidden;
 }
 
 .header-buttons button:last-child:hover{
-    background: rgba(255,255,255,0.08);
+    background: rgb(94, 21, 94);
 
-    transform: translateY(-6px);
+    color: white;
+
+    transform: translateY(-7px) scale(1.03);
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 
 @media(max-width:992px){
 
-    .header-content h1{
-        font-size: 68px;
+    .header-content{
+        padding: 55px 35px;
     }
 
+    .header-content h1{
+        font-size: 70px;
+    }
 }
 
 @media(max-width:768px){
 
     .header{
         min-height: auto;
-        padding: 140px 6% 90px;
+
+        padding: 170px 6% 90px;
+    }
+
+    .header-content{
+        padding: 45px 25px;
+
+        border-radius: 28px;
     }
 
     .header-content h1{
-        font-size: 46px;
+        font-size: 48px;
     }
 
     .header-content p{
         font-size: 17px;
     }
-
 }

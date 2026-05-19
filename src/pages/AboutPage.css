@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+.about-page{
+
+    position: relative;
+
+    min-height: 100vh;
+
+    padding: 180px 8% 120px;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+    135deg,
+    #ffffff,
+    #f8f2ff,
+    #ffffff
+    );
+}
+
+.about-overlay{
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(128,0,128,0.10),
+    transparent 35%);
+}
+
+.about-container{
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-left img{
+
+    width: 100%;
+
+    height: 650px;
+
+    object-fit: cover;
+
+    border-radius: 40px;
+margin-bottom: 90px;
+    box-shadow:
+    0 30px 70px rgba(128,0,128,0.15);
+}
+
+.about-right span{
+
+    color: purple;
+
+    font-family: 'Inter', sans-serif;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.about-right h1{
+
+    margin: 24px 0;
+
+    font-size: 28px;
+
+    line-height: 1.1;
+
+    color: purple;
+
+    font-family: 'Cinzel', serif;
+}
+
+.about-right p{
+
+    color: #5f4b6b;
+
+    line-height: 1.9;
+
+    font-size: 17px;
+
+    margin-bottom: 24px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.about-details{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+
+    margin-top: 40px;
+}
+
+.detail-card{
+
+    padding: 35px;
+
+    border-radius: 28px;
+
+    background: white;
+
+    border: 1px solid rgba(128,0,128,0.10);
+
+    box-shadow:
+    0 20px 40px rgba(128,0,128,0.08);
+}
+
+.detail-card h3{
+
+    color: purple;
+
+    margin-bottom: 16px;
+
+    font-size: 24px;
+
+    font-family: 'Cinzel', serif;
+}
+
+.authority-section{
+
+    margin-top: 50px;
+}
+
+.authority-section h2{
+
+    color: purple;
+
+    margin-bottom: 20px;
+
+    font-size: 32px;
+
+    font-family: 'Cinzel', serif;
+}
+
+.authority-section ul{
+
+    list-style: none;
+
+    padding: 0;
+}
+
+.authority-section li{
+
+    margin-bottom: 16px;
+
+    color: #4f3b5d;
+
+    font-size: 17px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+@media(max-width:992px){
+
+    .about-container{
+
+        grid-template-columns: 1fr;
+    }
+
+    .about-right h1{
+
+        font-size: 42px;
+    }
+
+    .about-left img{
+
+        height: 500px;
+    }
+}

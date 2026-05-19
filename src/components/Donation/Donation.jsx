@@ -12,10 +12,7 @@ const Donation = () => {
           medical camps, social welfare, and humanitarian activities across the world.
         </p>
 
-        <div className="donation-buttons">
-          <button>Donate Now</button>
-          <button className="outline-btn">Become Volunteer</button>
-        </div>
+        
       </div>
     </section>
   );

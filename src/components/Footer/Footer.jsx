@@ -14,8 +14,8 @@ const Footer = () => {
         <div className="footer-box">
           <h2>Radha Spiritual Mission</h2>
           <p>
-            A premium spiritual organization website experience designed with
-            modern UI, smooth animations, and luxurious aesthetics.
+           Our mission is to inspire spiritual awakening, spread humanity,
+            and create a world rooted in peace, purpose, and conscious living.
           </p>
 
           <div className="social-icons">
@@ -47,7 +47,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>
-          © 2026 Spiritual Mission. All Rights Reserved. Designed With Premium React UI.
+          © 2026 Spiritual Mission. All Rights Reserved. Designed and developed by TechVision.
         </p>
       </div>
     </footer>

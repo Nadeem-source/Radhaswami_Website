@@ -6,9 +6,9 @@ const Gallery = () => {
       <h2>Divine Gallery</h2>
 
       <div className="gallery-grid">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200" />
-        <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?q=80&w=1200" />
-        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200" />
+        <img src="/images/photo-1488521787991-ed7bbaae773c.avif" alt="Gallery Image 1" />
+        <img src="/images/photo-1517048676732-d65bc937f952.avif" alt="Gallery Image 2" />
+        <img src="/images/photo-1509099836639-18ba1795216d.avif" alt="Gallery Image 3" />
       </div>
     </section>
   )

@@ -1,0 +1,587 @@
+/* src/components/Team/Team.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800&display=swap');
+
+/* =========================
+   TEAM SECTION
+========================= */
+
+.team-section{
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 170px 7% 120px;
+
+    background: white;
+}
+
+/* BLUR */
+
+.team-top-blur{
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    z-index: 1;
+}
+
+.left-blur{
+
+    width: 350px;
+    height: 350px;
+
+    background: rgba(128,0,128,0.10);
+
+    top: -120px;
+    left: -120px;
+}
+
+.right-blur{
+
+    width: 350px;
+    height: 350px;
+
+    background: rgba(128,0,128,0.08);
+
+    bottom: -100px;
+    right: -100px;
+}
+
+/* WRAPPER */
+
+.team-wrapper{
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1450px;
+
+    margin: auto;
+}
+
+/* HEADER */
+
+.team-header{
+
+    text-align: center;
+
+    margin-bottom: 90px;
+}
+
+.team-header span{
+
+    display: inline-block;
+
+    color: purple;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    font-family: 'Inter', sans-serif;
+
+    margin-bottom: 24px;
+}
+
+.team-header h1{
+
+    font-size: 68px;
+
+    color: purple;
+
+    font-family: 'Cinzel', serif;
+
+    font-weight: 700;
+
+    margin-bottom: 24px;
+
+    line-height: 1.1;
+}
+
+.team-header p{
+
+    max-width: 760px;
+
+    margin: auto;
+
+    color: #5b5b5b;
+
+    line-height: 1.9;
+
+    font-size: 18px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   FOUNDER CARD
+========================= */
+.founder-card{
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 430px 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    padding: 40px;
+
+    border-radius: 38px;
+
+    border: 2px solid transparent;
+
+    margin-bottom: 90px;
+margin-top:90px;
+    background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(
+    135deg,
+    gold,
+    deepskyblue,
+    purple,
+    gold
+    ) border-box;
+
+    background-size: 300% 300%;
+
+    animation: borderMove 6s ease infinite;
+
+    box-shadow:
+    0 0 25px rgba(255,215,0,0.25),
+    0 0 45px rgba(0,191,255,0.18),
+    0 15px 50px rgba(128,0,128,0.10);
+
+    transition: 0.45s ease;
+}
+.founder-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 0 35px rgba(255,215,0,0.40),
+    0 0 70px rgba(0,191,255,0.28),
+    0 25px 70px rgba(128,0,128,0.20);
+}
+.founder-card::before{
+
+    content: '';
+
+    position: absolute;
+
+    inset: -2px;
+
+    border-radius: 38px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255,215,0,0.4),
+    rgba(0,191,255,0.3),
+    rgba(128,0,128,0.3)
+    );
+
+    filter: blur(25px);
+
+    z-index: -1;
+}
+/* IMAGE */
+
+.founder-left img{
+
+    width: 100%;
+
+    height: 540px;
+
+    object-fit: contain;
+
+    border-radius: 28px;
+}
+
+/* RIGHT */
+
+.founder-badge{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    background: rgba(128,0,128,0.08);
+
+    color: purple;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    font-family: 'Inter', sans-serif;
+
+    margin-bottom: 28px;
+}
+
+.founder-right h2{
+
+    font-size: 58px;
+
+    line-height: 1.1;
+
+    color: purple;
+
+    margin-bottom: 18px;
+
+    font-family: 'Cinzel', serif;
+}
+
+.founder-right h4{
+
+    color: #7b3f7b;
+
+    font-size: 22px;
+
+    margin-bottom: 28px;
+
+    font-weight: 600;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.founder-right p{
+
+    color: #555;
+
+    line-height: 2;
+
+    margin-bottom: 22px;
+
+    font-size: 17px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.founder-right button{
+
+    margin-top: 12px;
+
+    padding: 16px 34px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: purple;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+.founder-right button:hover{
+
+    transform: translateY(-5px);
+
+    background: rgb(99, 23, 99);
+}
+
+/* =========================
+   FOUNDATION GRID
+========================= */
+
+.foundation-grid{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap: 35px;
+}
+
+/* CARD */
+
+.foundation-card{
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 34px;
+
+    border: 2px solid transparent;
+    transition: 0.45s ease;
+
+    box-shadow:
+0 0 25px rgba(255,215,0,0.25),
+0 0 45px rgba(0,191,255,0.18),
+0 15px 50px rgba(128,0,128,0.10);
+    background:
+linear-gradient(white, white) padding-box,
+linear-gradient(
+135deg,
+gold,
+deepskyblue,
+purple,
+gold
+) border-box;
+
+background-size: 300% 300%;
+
+animation: borderMove 6s ease infinite;
+}
+
+.foundation-card:hover{
+
+    transform:
+    translateY(-10px);
+box-shadow:
+0 0 35px rgba(255,215,0,0.40),
+0 0 70px rgba(0,191,255,0.28),
+0 25px 70px rgba(128,0,128,0.20);
+}
+
+/* IMAGE */
+
+.foundation-image{
+
+    position: relative;
+
+    height: 350px;
+
+    overflow: hidden;
+}
+
+.foundation-image img{
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: 0.5s ease;
+}
+
+.foundation-card:hover .foundation-image img{
+
+    transform: scale(1.05);
+}
+
+/* CONTENT */
+
+.foundation-content{
+
+    padding: 32px;
+}
+
+.top-row{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.top-row span{
+
+    color: purple;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.dot{
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: purple;
+}
+
+/* NAME */
+
+.foundation-content h3{
+
+    color: purple;
+
+    font-size: 30px;
+
+    line-height: 1.3;
+
+    margin-bottom: 16px;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ROLE */
+
+.foundation-content p{
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+/* BUTTON */
+
+.foundation-content button{
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: purple;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+.foundation-content button:hover{
+
+    background: rgb(97, 22, 97);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .founder-card{
+
+        grid-template-columns: 1fr;
+    }
+
+    .team-header h1{
+
+        font-size: 52px;
+    }
+
+    .founder-right h2{
+
+        font-size: 44px;
+    }
+}
+
+@media(max-width:768px){
+
+    .team-section{
+
+        padding: 140px 6% 90px;
+    }
+
+    .team-header h1{
+
+        font-size: 38px;
+    }
+
+    .founder-left img{
+
+        height: 420px;
+    }
+
+    .foundation-image{
+
+        height: 300px;
+    }
+
+    .foundation-content{
+
+        padding: 24px;
+    }
+
+    .founder-card{
+
+        padding: 24px;
+    }
+}
+@keyframes borderMove{
+
+0%{
+background-position: 0% 50%;
+}
+
+50%{
+background-position: 100% 50%;
+}
+
+100%{
+background-position: 0% 50%;
+}
+
+}
+.foundation-card::before{
+
+content: '';
+
+position: absolute;
+
+inset: -2px;
+
+border-radius: 34px;
+
+background:
+linear-gradient(
+135deg,
+rgba(255,215,0,0.4),
+rgba(0,191,255,0.3),
+rgba(128,0,128,0.3)
+);
+
+filter: blur(25px);
+
+z-index: -1;
+}

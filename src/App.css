@@ -1,184 +1,305 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+/* =========================================
+   GOOGLE FONTS IMPORT
+   CSS FILE KE SABSE TOP PAR ADD KARO
+========================================= */
 
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+
+/* =========================================
+   GLOBAL PREMIUM FONT SYSTEM
+========================================= */
+
+body{
+  font-family: 'Inter', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
 }
 
-.hero {
+
+/* =========================================
+   COUNTER PREMIUM LOOK
+========================================= */
+
+.counter{
+  font-family: 'Outfit', sans-serif;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  backdrop-filter: blur(16px);
+
+  background:
+  rgba(255,255,255,0.06);
+
+  box-shadow:
+  0 12px 30px rgba(0,0,0,0.10),
+  inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+
+/* PREMIUM HOVER */
+
+.counter:hover{
+  transform:
+  translateY(-3px)
+  scale(1.03);
+
+  box-shadow:
+  0 20px 45px rgba(0,0,0,0.16),
+  0 0 25px rgba(255,255,255,0.06);
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero{
   position: relative;
 
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
+  isolation: isolate;
 }
 
-#center {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
 
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
+/* PREMIUM GLOW */
+
+.hero::before{
+  content: '';
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  border-radius: 50%;
+
+  background:
+  rgba(88,183,255,0.12);
+
+  filter: blur(120px);
+
+  top: -180px;
+  left: -120px;
+
+  z-index: -1;
 }
 
-#next-steps {
-  display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
 
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
+/* BASE IMAGE */
 
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
+.hero .base{
+  filter:
+  drop-shadow(0 20px 45px rgba(0,0,0,0.28));
 
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
+  transition: 0.5s ease;
 }
 
-#docs {
-  border-right: 1px solid var(--border);
 
-  @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
+/* FRAMEWORK */
+
+.hero .framework{
+  filter:
+  drop-shadow(0 25px 50px rgba(0,0,0,0.35));
+
+  transition: 0.5s ease;
 }
 
-#next-steps ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 8px;
-  margin: 32px 0 0;
 
-  .logo {
-    height: 18px;
+/* VITE */
+
+.hero .vite{
+  filter:
+  drop-shadow(0 18px 35px rgba(0,0,0,0.30));
+
+  transition: 0.5s ease;
+}
+
+
+/* FLOATING EFFECT */
+
+.hero:hover .framework{
+  transform:
+    perspective(2000px)
+    rotateZ(300deg)
+    rotateX(44deg)
+    rotateY(39deg)
+    scale(1.45)
+    translateY(-6px);
+}
+
+
+/* =========================================
+   CENTER CONTENT
+========================================= */
+
+#center{
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* PREMIUM TITLE */
+
+#center h1{
+  font-family: 'Space Grotesk', sans-serif;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+
+  text-shadow:
+  0 10px 30px rgba(0,0,0,0.18);
+}
+
+
+/* PARAGRAPH */
+
+#center p{
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 400;
+
+  line-height: 1.9;
+
+  color: rgba(255,255,255,0.85);
+}
+
+
+/* =========================================
+   NEXT STEPS PREMIUM GLASS
+========================================= */
+
+#next-steps{
+  background:
+  rgba(255,255,255,0.03);
+
+  backdrop-filter: blur(16px);
+
+  border-top:
+  1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+  inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+
+/* BOX */
+
+#next-steps > div{
+  transition: 0.4s ease;
+}
+
+
+/* HOVER */
+
+#next-steps > div:hover{
+  background:
+  rgba(255,255,255,0.03);
+}
+
+
+/* ICON */
+
+#next-steps .icon{
+  transition: 0.4s ease;
+}
+
+#next-steps > div:hover .icon{
+  transform:
+  scale(1.08)
+  translateY(-2px);
+}
+
+
+/* =========================================
+   DOCS SECTION
+========================================= */
+
+#docs{
+  border-right:
+  1px solid rgba(255,255,255,0.08);
+}
+
+
+/* =========================================
+   SOCIAL / LINKS
+========================================= */
+
+#next-steps ul a{
+  font-family: 'Outfit', sans-serif;
+
+  font-weight: 600;
+
+  letter-spacing: 0.3px;
+
+  background:
+  rgba(255,255,255,0.05);
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.08),
+  inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+
+/* PREMIUM HOVER */
+
+#next-steps ul a:hover{
+  transform:
+  translateY(-4px)
+  scale(1.03);
+
+  background:
+  rgba(255,255,255,0.08);
+
+  box-shadow:
+  0 18px 40px rgba(0,0,0,0.15),
+  0 0 25px rgba(88,183,255,0.12);
+}
+
+
+/* =========================================
+   SPACER
+========================================= */
+
+#spacer{
+  border-top:
+  1px solid rgba(255,255,255,0.06);
+}
+
+
+/* =========================================
+   TICKS
+========================================= */
+
+.ticks::before,
+.ticks::after{
+  filter:
+  drop-shadow(0 0 8px rgba(255,255,255,0.12));
+}
+
+
+/* =========================================
+   MOBILE OPTIMIZATION
+========================================= */
+
+@media (max-width:1024px){
+
+  #center h1{
+    font-size: 42px;
   }
 
-  a {
-    color: var(--text-h);
+  #center p{
     font-size: 16px;
-    border-radius: 6px;
-    background: var(--social-bg);
-    display: flex;
-    padding: 6px 12px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: box-shadow 0.3s;
-
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
   }
 
-  @media (max-width: 1024px) {
-    margin-top: 20px;
-    flex-wrap: wrap;
+  #next-steps ul{
     justify-content: center;
 
-    li {
-      flex: 1 1 calc(50% - 8px);
-    }
-
-    a {
-      width: 100%;
-      justify-content: center;
-      box-sizing: border-box;
-    }
-  }
-}
-
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
-}
-
-.ticks {
-  position: relative;
-  width: 100%;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
+    flex-wrap: wrap;
   }
 
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
-  }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
-  }
 }

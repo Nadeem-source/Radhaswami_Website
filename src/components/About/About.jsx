@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="about-left">
         <img
-          src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=1200"
+          src="/images/photo-1529156069898-49953e39b3ac.avif"
           alt="about"
         />
       </div>
@@ -14,8 +14,8 @@ const About = () => {
         <h2>About Organization</h2>
 
         <p>
-          This section is inspired by the original website but redesigned with
-          luxury premium aesthetics and responsive layout.
+          A globally inspired spiritual organization dedicated to spreading peace, 
+          humanity, conscious living, and timeless divine wisdom.
         </p>
 
         <button>Read More</button>
