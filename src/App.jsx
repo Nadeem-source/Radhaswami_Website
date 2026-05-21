@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar'
 import Header from './components/Header/Header'
@@ -39,8 +39,8 @@ function App() {
         }
       />
 
-      {/* DONATION PAGE */}
-      <Route path="/donate" element={<DonationPage />} />
+      
+      <Route path="/donation" element={<DonationPage />} />
       <Route path="/team" element={<Team />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/services" element={<ServicesPage />} />

@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
 .contact-page{
-
+font-family: 'Inter', sans-serif;
     min-height: 100vh;
 
     padding: 180px 8% 100px;
@@ -23,14 +24,14 @@
     color: purple;
 
     font-weight: 700;
-
+font-family: 'Inter', sans-serif;
     letter-spacing: 4px;
 }
 
 .contact-left h1{
 
-    font-size: 58px;
-
+    font-size: 38px;
+font-family: 'Cinzel', serif;
     line-height: 1.1;
 
     color: purple;
@@ -43,7 +44,7 @@
     color: #5d5066;
 
     line-height: 2;
-
+font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
 
@@ -77,7 +78,7 @@
     border: 1px solid rgba(128,0,128,0.15);
 
     outline: none;
-
+font-family: 'Inter', sans-serif;
     font-size: 15px;
 }
 
@@ -92,7 +93,7 @@
     background: purple;
 
     color: white;
-
+font-family: 'Inter', sans-serif;
     font-size: 16px;
 
     font-weight: 700;
@@ -109,4 +110,30 @@
     .contact-left h1{
         font-size: 42px;
     }
+}
+.input-box{
+padding: 18px 22px 18px 55px;
+    position: relative;
+
+    width: 100%;
+}
+.input-icon{
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 20px;
+
+    transform: translateY(-50%);
+
+    color: purple;
+
+    font-size: 16px;
+
+    z-index: 2;
+}
+.textarea-icon{
+
+    top: 48px;
 }

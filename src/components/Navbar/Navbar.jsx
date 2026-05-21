@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import './Navbar.css'
 import { NavLink, useNavigate } from 'react-router-dom'
 
@@ -47,6 +47,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
+            
             Home
           </NavLink>
         </li>
@@ -58,6 +59,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
+            
             About
           </NavLink>
         </li>
@@ -69,6 +71,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
+            
             Services
           </NavLink>
         </li>
@@ -79,6 +82,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
+            
             Scheme
           </NavLink>
         </li>
@@ -90,6 +94,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
+            
             Gallery
           </NavLink>
         </li>
@@ -101,6 +106,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
+            
             Team
           </NavLink>
         </li>
@@ -112,6 +118,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
+            
             Contact
           </NavLink>
         </li>
@@ -124,8 +131,9 @@ useEffect(() => {
 
         <button
           className="donate-btn"
-          onClick={() => navigate('/donate')}
+          onClick={() => navigate('/donation')}
         >
+          
           Donate Now
         </button>
 

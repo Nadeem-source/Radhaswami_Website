@@ -1,5 +1,5 @@
 import './About.css'
-
+import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <section id="about" className="about">
@@ -18,7 +18,9 @@ const About = () => {
           humanity, conscious living, and timeless divine wisdom.
         </p>
 
-        <button>Read More</button>
+        <Link to="/about">
+  <button>Read More</button>
+</Link>
       </div>
     </section>
   )

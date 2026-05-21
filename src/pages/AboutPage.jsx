@@ -10,11 +10,11 @@ const AboutPage = () => {
 
       <section className="about-page">
 
-        <div className="about-overlay"></div>
+        <div className="about-page-overlay"></div>
 
-        <div className="about-container">
+        <div className="about-page-container">
 
-          <div className="about-left">
+          <div className="about-page-left">
 
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
@@ -27,7 +27,7 @@ const AboutPage = () => {
 
           </div>
 
-          <div className="about-right">
+          <div className="about-page-right">
 
             <span>ABOUT AFLISH GROUP</span>
 
@@ -67,7 +67,7 @@ const AboutPage = () => {
               support education initiatives, and create sustainable development
               projects across India.
             </p>
-            <div className="about-details">
+            <div className="about-page-details">
 
               <div className="detail-card">
                 <h3>Vision</h3>

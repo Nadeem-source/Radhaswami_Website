@@ -86,21 +86,23 @@ max-width: 600px;
     1px solid rgba(255, 255, 255, 0.45);
 
   box-shadow:
-    0 25px 60px rgba(0, 0, 0, 0.18),
-    0 10px 25px rgba(88, 183, 255, 0.12),
-    0 0 0 8px rgba(255, 255, 255, 0.18);
+0 35px 90px rgba(0,0,0,0.28),
+0 18px 45px rgba(255,215,0,0.22),
+0 12px 35px rgba(0,191,255,0.18),
+0 0 0 10px rgba(255,255,255,0.22);
 
   transition: 0.5s ease;
-  height: 300px !important;
+  height: 310px !important;
 }
 
 .about-left img:hover {
   transform: scale(1.03);
 
   box-shadow:
-    0 35px 80px rgba(0, 0, 0, 0.22),
-    0 15px 40px rgba(88, 183, 255, 0.18),
-    0 0 0 10px rgba(255, 255, 255, 0.24);
+0 45px 120px rgba(0,0,0,0.35),
+0 0 45px rgba(255,215,0,0.35),
+0 0 80px rgba(0,191,255,0.25),
+0 0 0 12px rgba(255,255,255,0.28);
 }
 
 /* RIGHT CONTENT */
@@ -113,36 +115,36 @@ max-width: 600px;
 
   border-radius: 35px;
 
-  background:
-    rgba(255, 255, 255, 0.22);
-
-  backdrop-filter: blur(12px);
+  backdrop-filter: none;
 
  border: 2px solid transparent;
 
 background:
-linear-gradient(rgba(255,255,255,0.92),
-rgba(255,255,255,0.92)) padding-box,
+linear-gradient(#ffffff,
+#ffffff) padding-box,
 
 linear-gradient(
 135deg,
-gold,
-#ffd700,
 purple,
-deepskyblue,
-gold
+#7b1fa2,
+#b517ff,
+purple
 ) border-box;
 
 background-size: 300% 300%;
 
-animation: aboutBorder 6s ease infinite;
+animation: aboutBorder 8s ease infinite;
 
 box-shadow:
-0 0 25px rgba(255,215,0,0.30),
-0 0 45px rgba(255,215,0,0.18),
-0 20px 60px rgba(128,0,128,0.10);
+0 0 40px rgba(255,215,0,0.38),
+0 0 80px rgba(255,215,0,0.22),
+0 30px 90px rgba(255,215,0,0.18);
     width:520px;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
+    transition: 
+transform 0.45s ease,
+box-shadow 0.45s ease;
+overflow:hidden;
 }
 
 /* SMALL TAG */
@@ -246,9 +248,9 @@ box-shadow:
 transform: translateY(-8px);
 
 box-shadow:
-0 0 35px rgba(255,215,0,0.45),
-0 0 70px rgba(255,215,0,0.28),
-0 25px 70px rgba(128,0,128,0.18);
+0 0 55px rgba(255,215,0,0.55),
+0 0 110px rgba(255,215,0,0.35),
+0 35px 100px rgba(255,215,0,0.22);
 
 transition: 0.4s ease;
 }
@@ -310,7 +312,7 @@ background-position: 0% 50%;
 }
 
 }
-.about-right::before{
+/* .about-right::before{
 
 content: '';
 
@@ -331,4 +333,4 @@ rgba(128,0,128,0.25)
 filter: blur(22px);
 
 z-index: -1;
-}
+} */

@@ -422,3 +422,21 @@
   }
 
 }
+.form-group label{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+.label-icon{
+
+    color: purple;
+
+    font-size: 14px;
+}
+.textarea-icon{
+
+    top: 24px;
+}

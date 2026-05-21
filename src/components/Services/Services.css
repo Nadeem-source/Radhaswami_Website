@@ -9,9 +9,9 @@
 
   background:
     linear-gradient(135deg,
+      rgb(250, 219, 250),
       purple,
-      purple,
-      purple);
+      rgb(250, 205, 250));
 
   box-shadow:
     inset 0 120px 200px rgba(255, 255, 255, 0.10),
@@ -31,8 +31,6 @@
 
   border-radius: 50%;
 
-  background:
-    rgba(255, 255, 255, 0.18);
 
   filter: blur(120px);
 
@@ -52,8 +50,7 @@
 
   border-radius: 50%;
 
-  background:
-    rgba(0, 0, 0, 0.10);
+ 
 
   filter: blur(110px);
 
@@ -104,68 +101,106 @@
 
 /* CARD */
 
-.service-card {
-  position: relative;
 
-  overflow: hidden;
+ .service-card {
+border: 2px solid rgba(0,102,255,0.65);
+position: relative;
 
-  background:
-    rgba(255, 255, 255, 0.22);
+overflow: hidden;
+  background: linear-gradient(135deg, #ffffff, #f3e8ff, #dff6ff);
 
-  border-radius: 35px;
 
-  padding: 45px;
+padding: 45px;
 
-  transition: 0.5s ease;
+border-radius: 35px;
 
-  border:
-    1px solid rgba(255, 255, 255, 0.45);
 
-  backdrop-filter: blur(24px);
 
-  box-shadow:
-    0 25px 60px rgba(0, 0, 0, 0.18),
-    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+transition: 0.5s ease;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,0.25),
+0 0 25px rgba(0,102,255,0.55),
+0 0 60px rgba(0,102,255,0.40),
+0 0 120px rgba(0,102,255,0.25);
+z-index: 1;
 }
+
 
 /* TOP GLOW */
+/* .service-card::before{
 
-.service-card::before {
-  content: '';
+content: '';
 
-  position: absolute;
+position: absolute;
 
-  width: 180px;
-  height: 180px;
+width: 220px;
+height: 220px;
 
-  border-radius: 50%;
+border-radius: 50%;
 
-  background:
-    rgba(255, 255, 255, 0.25);
+background: rgba(255,215,0,0.28);
 
-  top: -80px;
-  right: -80px;
+top: -80px;
+right: -80px;
 
-  filter: blur(30px);
-}
+filter: blur(45px);
 
+z-index: 0;
+
+} */
+/* .service-card::after{
+
+content: '';
+
+position: absolute;
+
+inset: 0;
+
+padding: 2px;
+
+border-radius: 35px;
+background: linear-gradient(
+135deg,
+#fff6b7,
+#ffd700,
+#ffb300,
+#fff6b7,
+#ffd700
+);
+background-size: 300% 300%;
+
+animation: serviceBorder 4s ease infinite;
+
+-webkit-mask:
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+
+-webkit-mask-composite: xor;
+
+mask-composite: exclude;
+
+pointer-events: none;
+z-index:2;
+} */
 /* HOVER */
 
 .service-card:hover {
   transform:
     translateY(-14px) scale(1.03);
 
-  box-shadow:
-    0 35px 80px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.60);
+ box-shadow:
+0 30px 80px rgba(0,0,0,0.35),
+0 0 40px rgba(0,102,255,0.75),
+0 0 90px rgba(0,102,255,0.55),
+0 0 170px rgba(0,102,255,0.35); 
 }
 
 /* CARD TITLE */
 
 .service-card h3 {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 
   margin-bottom: 22px;
   font-family: 'Cinzel', serif;
@@ -184,7 +219,7 @@
 
 .service-card p {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 
   color: purple;
 
@@ -193,12 +228,12 @@
   font-weight: 400;
   letter-spacing: 0.3px;
   font-size: 17px;
-  .service-card p {
+  /* .service-card p {
 
   color: #4b006e !important;
 
   opacity: 1;
-}
+} */
 }
 
 /* RESPONSIVE */
@@ -216,4 +251,19 @@
   .service-card {
     padding: 35px;
   }
+}
+@keyframes serviceBorder{
+
+0%{
+background-position: 0% 50%;
+}
+
+50%{
+background-position: 100% 50%;
+}
+
+100%{
+background-position: 0% 50%;
+}
+
 }

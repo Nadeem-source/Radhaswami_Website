@@ -3,14 +3,21 @@ import './DonationPage.css'
 
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
-
+import {
+  FaUser,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaRupeeSign,
+  FaCreditCard,
+  FaCommentDots
+} from 'react-icons/fa';
 const DonationPage = () => {
   return (
     <>
       <Navbar />
 
       <section className="donation-page">
-       
+
 
         {/* PREMIUM GLOW */}
         <div className="donation-glow glow-one"></div>
@@ -36,17 +43,17 @@ const DonationPage = () => {
               Your contribution helps children, families, and communities receive
               education, healthcare, shelter, and opportunities for a brighter future.
               Your generosity empowers underprivileged lives with education, medical care,
-               nutritious meals, and the dignity of a better tomorrow.Every donation creates real 
-               impact by supporting families, children, and communities with hope, opportunity,
-                and essential resources.Together, we can transform lives through compassionate support,
-                 quality education, healthcare access, and sustainable community development.
-                 Your support helps build safer futures by providing shelter, learning opportunities,
-                  emotional care, and life-changing assistance.Each contribution becomes a powerful step toward empowering vulnerable
-                   communities with stability, confidence, and brighter possibilities.
-                   Through your kindness, countless children and families receive the 
-                   support they need to grow, learn, heal, and succeed.Your donation fuels meaningful change by bringing education,
-                    protection, healthcare, and hope to those who need it most.
-                     
+              nutritious meals, and the dignity of a better tomorrow.Every donation creates real
+              impact by supporting families, children, and communities with hope, opportunity,
+              and essential resources.Together, we can transform lives through compassionate support,
+              quality education, healthcare access, and sustainable community development.
+              Your support helps build safer futures by providing shelter, learning opportunities,
+              emotional care, and life-changing assistance.Each contribution becomes a powerful step toward empowering vulnerable
+              communities with stability, confidence, and brighter possibilities.
+              Through your kindness, countless children and families receive the
+              support they need to grow, learn, heal, and succeed.Your donation fuels meaningful change by bringing education,
+              protection, healthcare, and hope to those who need it most.
+
             </p>
 
             <div className="donation-stats">
@@ -82,7 +89,10 @@ const DonationPage = () => {
               {/* NAME */}
 
               <div className="form-group">
-                <label>Full Name</label>
+                <label>
+                  <FaUser className="label-icon" />
+                  Full Name
+                </label>
 
                 <input
                   type="text"
@@ -93,7 +103,10 @@ const DonationPage = () => {
               {/* EMAIL */}
 
               <div className="form-group">
-                <label>Email Address</label>
+                <label>
+                  <FaEnvelope className="label-icon" />
+                  Email Address
+                </label>
 
                 <input
                   type="email"
@@ -104,7 +117,10 @@ const DonationPage = () => {
               {/* PHONE */}
 
               <div className="form-group">
-                <label>Phone Number</label>
+                <label>
+                  <FaPhoneAlt className="label-icon" />
+                  Phone Number
+                </label>
 
                 <input
                   type="tel"
@@ -115,7 +131,10 @@ const DonationPage = () => {
               {/* AMOUNT */}
 
               <div className="form-group">
-                <label>Donation Amount</label>
+                <label>
+                  <FaRupeeSign className="label-icon" />
+                  Donation Amount
+                </label>
 
                 <div className="amount-grid">
                   <button type="button">₹500</button>
@@ -133,7 +152,10 @@ const DonationPage = () => {
               {/* PAYMENT */}
 
               <div className="form-group">
-                <label>Payment Method</label>
+                <label>
+                  <FaCreditCard className="label-icon" />
+                  Payment Method
+                </label>
 
                 <select>
                   <option>UPI</option>
@@ -146,8 +168,10 @@ const DonationPage = () => {
               {/* MESSAGE */}
 
               <div className="form-group">
-                <label>Message</label>
-
+                <label>
+                  <FaCommentDots className="label-icon" />
+                  Message
+                </label>
                 <textarea
                   rows="4"
                   placeholder="Write your message..."

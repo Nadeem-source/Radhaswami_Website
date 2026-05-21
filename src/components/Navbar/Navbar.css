@@ -127,7 +127,7 @@
 
     color: purple;
 
-    margin-left: 14px;
+    margin-left: 4px;
 
     font-family: 'Cinzel', serif;
 
@@ -200,7 +200,6 @@
 }
 
 .nav-links li a{
-
     position: relative;
 
     color: purple;
