@@ -15,7 +15,7 @@ const images = [
 const GalleryPage = () => {
   return (
     <>
-      <Navbar />
+     <Navbar scrollValue={60} />
 
       <section className="gallery-page">
 
@@ -24,8 +24,8 @@ const GalleryPage = () => {
           <span>SOCIAL EMPOWERMENT</span>
 
           <h1>
-            AFLISH Community
-            Gallery
+            AFLISH COMMUNITY GALLERY
+            
           </h1>
 
           <p>

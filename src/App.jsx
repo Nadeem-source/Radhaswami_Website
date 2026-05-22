@@ -1,5 +1,6 @@
-import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import PageLoader from './components/PageLoader/PageLoader'
 import Navbar from './components/Navbar/Navbar'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
@@ -15,10 +16,29 @@ import AboutPage from './pages/AboutPage'
 import ServicesPage from './pages/ServicesPage'
 import GalleryPage from './pages/GalleryPage'
 import ContactPage from './pages/ContactPage'
+import SchemesPage from './pages/SchemesPage'
 
 
 function App() {
+  const [loading, setLoading] = useState(false)
+
+const location = useLocation()
+useEffect(() => {
+
+  setLoading(true)
+
+  const timer = setTimeout(() => {
+
+    setLoading(false)
+
+  }, 1200)
+
+  return () => clearTimeout(timer)
+
+}, [location.pathname])
+ 
   return (
+   <>{loading && <PageLoader />}
     <Routes>
 
       {/* HOME PAGE */}
@@ -46,8 +66,9 @@ function App() {
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/contact" element={<ContactPage />} />
-      
+      <Route path="/schemes" element={<SchemesPage />} />
     </Routes>
+    </>
   )
 }
 export default App

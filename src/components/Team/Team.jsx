@@ -73,7 +73,7 @@ const teamData = [
 const Team = () => {
     return (
         <>
-            <Navbar />
+            <Navbar scrollValue={60} />
 
             <section className="team-section">
 

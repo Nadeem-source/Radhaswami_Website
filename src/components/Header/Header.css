@@ -22,7 +22,7 @@
     inset: 0;
 
     z-index: 0;
-    background-image: url('/images/team/Chairman.jpeg');
+    background-image: url('/images/sliderImage1.png');
 
 background-size: cover;
 
@@ -59,7 +59,7 @@ background-position: center;
     rgba(255,255,255,0.35),
     rgba(255,255,255,0.40)
     ),
-    url('/images/team/Chairman.jpeg');
+    url('/images/sliderImage1.png');
 
     animation-name: slideAnimation;
     animation-delay: 3s;
@@ -74,7 +74,7 @@ background-position: center;
     rgba(255,255,255,0.35),
     rgba(255,255,255,0.40)
     ),
-    url('/images/social-bg.jpg');
+    url('/images/sliderImage3.png');
 
     animation-name: slideAnimation;
     animation-delay: 6s;
@@ -86,7 +86,7 @@ background-position: center;
     rgba(255,255,255,0.35),
     rgba(255,255,255,0.40)
     ),
-    url('/images/socialbg.jpg');
+    url('/images/team/Chairman.jpeg');
 
     animation-name: slideAnimation;
     animation-delay: 12s;

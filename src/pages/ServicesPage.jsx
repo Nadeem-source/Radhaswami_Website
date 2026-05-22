@@ -6,7 +6,7 @@ import Footer from '../components/Footer/Footer'
 const ServicesPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar scrollValue={60} />
 
       <section className="services-page">
 

@@ -28,9 +28,17 @@ const Footer = () => {
               <img src="/images/LOGO.jpeg" alt="logo" />
             </div>
 
-            <h2 className="footer-logo-name">
-              AFLISH GROUP
-            </h2>
+            <div className="footer-logo-text">
+
+  <h2 className="footer-logo-name">
+    AFLISH GROUP
+  </h2>
+
+  <span className="footer-typing-text">
+    Empowering Humanity
+  </span>
+
+</div>
 
           </div>
           <p>  Our mission is to inspire spiritual awakening, spread humanity,

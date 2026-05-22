@@ -126,7 +126,7 @@ gap:16px;
   align-items: center;
 
   gap: 20px;
-margin-top:-20px;
+margin-top:-15px;
   margin-bottom: 22px;
 }
 /* HEADINGS */
@@ -157,8 +157,8 @@ letter-spacing: 1px;
 
 .footer-logo img{
 
-  width: 85px;
-  height: 85px;
+  width: 72px;
+  height: 72px;
 
   border-radius: 50%;
 
@@ -174,10 +174,50 @@ letter-spacing: 1px;
   animation: footerLogoRotate 12s linear infinite;
 }
 .footer-logo-name{
-/* margin-bottom: 0 !important; */
+margin-bottom: 6px !important;
   animation: footerLogoDepth 4s ease-in-out infinite;
 
   transform-style: preserve-3d;
+}
+.footer-logo-text{
+
+  display: flex;
+
+  flex-direction: column;
+
+  line-height: 1.1;
+  
+}
+
+.footer-typing-text{
+
+  position: relative;
+
+  display: inline-block;
+
+  /* width: fit-content; */
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  font-family: 'Inter', sans-serif;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border-right: 2px solid white;
+
+  animation:
+  footerTyping 7s steps(22) infinite,
+  footerBlink 0.7s infinite;
+
+  margin-left:50px;
 }
 .footer-box h3{
   color: #ffffff;
@@ -469,7 +509,7 @@ font-weight: 500;
 
   font-size: 15px;
 
-  vertical-align:auto;
+  vertical-align:middle;
 }
 .footer-contact-icon{
 
@@ -488,4 +528,29 @@ font-weight: 500;
   font-size: 14px;
 
   vertical-align: middle;
+}
+@keyframes footerTyping{
+
+  0%{
+    width: 0;
+  }
+
+  40%{
+    width: 22ch;
+  }
+
+  70%{
+    width: 22ch;
+  }
+
+  100%{
+    width: 0;
+  }
+}
+
+@keyframes footerBlink{
+
+  50%{
+    border-color: transparent;
+  }
 }

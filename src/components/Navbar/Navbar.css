@@ -88,7 +88,40 @@
 
     box-shadow: none !important;
 }
+.logo-text{
 
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.1;
+}
+.typing-text{
+
+    position: relative;
+
+ display: inline-block;   
+animation-fill-mode: forwards;
+    color: purple;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    font-family: 'Inter', sans-serif;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    border-right: 2px solid purple;
+margin-left:53px;
+    animation:
+    typing 7s steps(22) infinite,
+    blink 0.7s infinite;
+}
 .logo img{
 
     display: inline-block;
@@ -148,6 +181,7 @@
     box-shadow: none !important;
 
     filter: none !important;
+    margin-bottom:4px;
 }
 
 /* LOGO ANIMATION */
@@ -237,6 +271,8 @@
 
     box-shadow:
     0 12px 30px rgba(128,0,128,0.20);
+     /* padding: 20px 9px;  */
+     /* border-radius:50%; */
 }
 
 /* NAV HOVER EFFECT */
@@ -246,6 +282,8 @@
     background: purple;
 
     color: white;
+     /* padding: 20px 9px; */
+        /* border-radius:50%; */
 }
 
 /* REMOVE OLD UNDERLINE */
@@ -405,5 +443,30 @@
 
     to{
         transform: rotate(360deg);
+    }
+}
+@keyframes typing{
+
+    0%{
+        width: 0;
+    }
+
+    40%{
+    width: 22ch;
+}
+
+70%{
+    width: 22ch;
+}
+
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+
+    50%{
+        border-color: transparent;
     }
 }

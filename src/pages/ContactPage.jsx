@@ -12,7 +12,7 @@ import {
 const ContactPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar scrollValue={70} />
 
       <section className="contact-page">
 

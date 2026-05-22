@@ -2,26 +2,26 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css'
 import { NavLink, useNavigate } from 'react-router-dom'
 
-const Navbar = () => {
-const [scrolled, setScrolled] = useState(false)
+const Navbar = ({ scrollValue = 650 }) => {
+  const [scrolled, setScrolled] = useState(false)
 
-useEffect(() => {
+  useEffect(() => {
 
-  const handleScroll = () => {
+    const handleScroll = () => {
 
-    if (window.scrollY > 650) {
-      setScrolled(true)
-    } else {
-      setScrolled(false)
+      if (window.scrollY > scrollValue) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+
     }
 
-  }
+    window.addEventListener('scroll', handleScroll)
 
-  window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
 
-  return () => window.removeEventListener('scroll', handleScroll)
-
-}, [])
+  }, [scrollValue])
 
   const navigate = useNavigate()
 
@@ -33,7 +33,15 @@ useEffect(() => {
 
       <div className="logo">
         <img src="/images/LOGO.jpeg" alt="" />
-        <h2>AFLISH GROUP</h2>
+        <div className="logo-text">
+
+          <h2>AFLISH GROUP</h2>
+
+          <span className="typing-text">
+            Empowering Humanity
+          </span>
+
+        </div>
       </div>
 
       {/* NAV LINKS */}
@@ -47,7 +55,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
-            
+
             Home
           </NavLink>
         </li>
@@ -59,7 +67,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
-            
+
             About
           </NavLink>
         </li>
@@ -71,18 +79,18 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
-            
+
             Services
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/scheme"
+            to="/schemes"
             className={({ isActive }) =>
               isActive ? "active" : ""
             }
           >
-            
+
             Scheme
           </NavLink>
         </li>
@@ -94,7 +102,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
-            
+
             Gallery
           </NavLink>
         </li>
@@ -106,7 +114,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
-            
+
             Team
           </NavLink>
         </li>
@@ -118,7 +126,7 @@ useEffect(() => {
               isActive ? "active" : ""
             }
           >
-            
+
             Contact
           </NavLink>
         </li>
@@ -133,7 +141,7 @@ useEffect(() => {
           className="donate-btn"
           onClick={() => navigate('/donation')}
         >
-          
+
           Donate Now
         </button>
 
