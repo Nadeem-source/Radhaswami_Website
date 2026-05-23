@@ -23,8 +23,8 @@ const ContactPage = () => {
             <span>CONTACT AFLISH</span>
 
             <h1>
-              Let’s Build Something
-              Meaningful Together
+              LET’S BUILD SOMETHING
+              MEANINGFUL TOGETHER
             </h1>
 
             <p>

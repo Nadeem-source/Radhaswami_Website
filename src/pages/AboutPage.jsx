@@ -17,11 +17,11 @@ const AboutPage = () => {
           <div className="about-page-left">
 
             <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+              src="/images/GalleryPageImage4.png"
               alt="about"
             />
             <img
-              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952"
+              src="/images/GalleryPageImage2.png"
               alt="about"
             />
 
@@ -32,10 +32,10 @@ const AboutPage = () => {
             <span>ABOUT AFLISH GROUP</span>
 
             <h1>
-              Building Financial Hope &
-              Social Empowerment Across India And
-             Empowering Communities Through
-              Innovation & Social Impact
+              BUILDING FINANCIAL HOPE &
+              SOCIAL EMPOWERMENT ACROSS INDIA AND
+             EMPOWERING COMMUNITIES THROUGH
+              INNOVATION & SOCIAL IMPACT
             </h1>
 
             <p>

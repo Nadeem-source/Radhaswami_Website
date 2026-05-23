@@ -10,7 +10,7 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
         className="hero-card"
       >
-        <h2 className="gradient-text">Welcome To Divine Peace</h2>
+        <h2 className="gradient-text">WELCOME TO DIVINE PEACE</h2>
 
         <p>
           Experience spiritual wisdom with elegant modern digital experience.

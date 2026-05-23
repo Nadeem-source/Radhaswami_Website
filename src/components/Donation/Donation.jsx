@@ -6,7 +6,7 @@ const Donation = () => {
     <section className="donation-section">
       <div className="donation-content">
         <span>SUPPORT HUMANITY</span>
-        <h2>Help Us Build a Better Future</h2>
+        <h2>HELP US BUILD A BETTER FUTURE</h2>
         <p>
           Your contribution helps us continue spiritual guidance, education,
           medical camps, social welfare, and humanitarian activities across the world.

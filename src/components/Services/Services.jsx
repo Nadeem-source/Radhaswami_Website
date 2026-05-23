@@ -4,35 +4,35 @@ const Services = () => {
 
   const data = [
     {
-      title: 'Spiritual Guidance',
+      title: 'SPIRITUAL GUIDANCE',
       description:
         'Transforming lives through timeless spiritual wisdom, inner clarity, and purposeful living.',
     },
 
     {
-      title: 'Meditation Programs',
+      title: 'MEDITATION PROGRAMS',
       description:
         'Experience deep peace, mental balance, and elevated consciousness through guided meditation practices.',
     },
 
     {
-      title: 'Community Welfare',
+      title: 'COMMUNITY WELFARE',
       description:
         'Creating meaningful social impact through compassion-driven initiatives, support, and human service.',
     },
 
     {
-      title: 'Global Humanity',
+      title: 'GLOBAL HUMANITY',
       description:
         'Uniting people across the world with the values of peace, humanity, harmony, and spiritual growth.',
     },
     {
-  title: 'Youth Empowerment',
+  title: 'YOUTH EMPOWERMENT',
   description:
     'Empowering young minds with leadership, education, confidence, and opportunities for a brighter future.',
 },
 {
-  title: 'Women Support Programs',
+  title: 'WOMEN SUPPORT PROGRAMS',
   description:
     'Supporting women through awareness, skill development, social equality, and self-growth initiatives.',
 },
@@ -41,7 +41,7 @@ const Services = () => {
   return (
     <section id="services" className="services">
 
-      <h2>Our Services</h2>
+      <h2>OUR SERVICES</h2>
 
       <div className="service-grid">
 

@@ -78,7 +78,7 @@
 
     align-items: center;
 
-    gap: 16px;
+    gap: 14px;
 
     margin-left: -6px;
 
@@ -95,6 +95,7 @@
     flex-direction: column;
 
     line-height: 1.1;
+    
 }
 .typing-text{
 
@@ -117,7 +118,7 @@ animation-fill-mode: forwards;
     white-space: nowrap;
 
     border-right: 2px solid purple;
-margin-left:53px;
+margin-left:25px;
     animation:
     typing 7s steps(22) infinite,
     blink 0.7s infinite;
@@ -164,7 +165,7 @@ margin-left:53px;
 
     font-family: 'Cinzel', serif;
 
-    font-size: 32px;
+    font-size: 24px;
 
     font-weight: 800;
 

@@ -8,7 +8,7 @@ const schemesData = [
 
   {
     id: 1,
-    title: 'Education Support --> Scheme',
+    title: 'EDUCATION SUPPORT --> SCHEME',
     amount: '₹500 / Month',
     description:
       'Support underprivileged children with quality education, books, uniforms, and digital learning resources for a brighter future.',
@@ -16,7 +16,7 @@ const schemesData = [
 
   {
     id: 2,
-    title: 'Food & Nutrition Program',
+    title: 'FOOD & NUTRITION PROGRAM',
     amount: '₹1000 / Month',
     description:
       'Help families and children receive nutritious meals, clean drinking water, and essential daily food supplies.',
@@ -24,7 +24,7 @@ const schemesData = [
 
   {
     id: 3,
-    title: 'Women Empowerment Scheme',
+    title: 'WOMEN EMPOWERMENT SCHEME',
     amount: '₹1500 / Month',
     description:
       'Empowering women through skill development, self-employment opportunities, awareness programs, and financial support.',
@@ -32,7 +32,7 @@ const schemesData = [
 
   {
     id: 4,
-    title: 'Healthcare Assistance',
+    title: 'HEALTHCARE ASSISTANCE',
     amount: '₹2000 / Month',
     description:
       'Provide medical care, medicines, health checkups, emergency support, and wellness programs for needy communities.So please Donate to this scheme.',
@@ -40,7 +40,7 @@ const schemesData = [
 
   {
     id: 5,
-    title: 'Child Welfare Mission',
+    title: 'CHILD WELFARE MISSION',
     amount: '₹2500 / Month',
     description:
       'Protect and support vulnerable children with education, shelter, emotional care, and life-improving opportunities.So please Donate to this scheme.',
@@ -48,7 +48,7 @@ const schemesData = [
 
   {
     id: 6,
-    title: 'Senior Citizen Care',
+    title: 'SENIOR CITIZEN CARE',
     amount: '₹3000 / Month',
     description:
       'Help elderly people with healthcare support, food, emotional care, shelter assistance, and social welfare services.',

@@ -86,7 +86,7 @@ background-position: center;
     rgba(255,255,255,0.35),
     rgba(255,255,255,0.40)
     ),
-    url('/images/team/Chairman.jpeg');
+    url('/images/social-bg.jpg');
 
     animation-name: slideAnimation;
     animation-delay: 12s;

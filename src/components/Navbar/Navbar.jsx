@@ -106,6 +106,17 @@ const Navbar = ({ scrollValue = 650 }) => {
             Gallery
           </NavLink>
         </li>
+        <li>
+  <NavLink
+    to="/partners"
+    className={({ isActive }) =>
+      isActive ? "active" : ""
+    }
+  >
+
+    Partners
+  </NavLink>
+</li>
 
         <li>
           <NavLink
@@ -118,6 +129,7 @@ const Navbar = ({ scrollValue = 650 }) => {
             Team
           </NavLink>
         </li>
+        
 
         <li>
           <NavLink

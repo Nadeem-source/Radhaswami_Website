@@ -11,7 +11,7 @@ const About = () => {
       </div>
 
       <div className="about-right">
-        <h2>About Organization</h2>
+        <h2>ABOUT ORGANIZATION</h2>
 
         <p>
           A globally inspired spiritual organization dedicated to spreading peace, 

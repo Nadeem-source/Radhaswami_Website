@@ -37,7 +37,7 @@ const Stats = () => {
       <div className="stats-container">
         <div className="stats-heading">
           <span>GLOBAL IMPACT</span>
-          <h2>Serving Humanity With Devotion</h2>
+          <h2>SERVING HUMANITY WITH DEVOTION</h2>
           <p>
             Creating spiritual awareness and social harmony through dedication,
             charity, meditation, and global outreach programs.

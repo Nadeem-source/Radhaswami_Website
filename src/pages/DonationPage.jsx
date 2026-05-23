@@ -34,9 +34,9 @@ const DonationPage = () => {
             </span>
 
             <h1>
-              Make A Better
+              MAKE A BETTER
               <br />
-              Future Together
+              FUTURE TOGETHER
             </h1>
 
             <p>

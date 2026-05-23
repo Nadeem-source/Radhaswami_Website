@@ -17,7 +17,7 @@ import ServicesPage from './pages/ServicesPage'
 import GalleryPage from './pages/GalleryPage'
 import ContactPage from './pages/ContactPage'
 import SchemesPage from './pages/SchemesPage'
-
+import Partners from './pages/Partners'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -67,6 +67,7 @@ useEffect(() => {
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/schemes" element={<SchemesPage />} />
+      <Route path="/partners" element={<Partners />} />
     </Routes>
     </>
   )

@@ -25,7 +25,7 @@ const Header = () => {
         className="header-content"
       >
         <h1>
-          Spirituality For <span>Humanity</span>
+          SPIRITUALITY FOR <span>HUMANITY</span>
         </h1>
 
         <p>

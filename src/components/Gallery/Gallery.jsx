@@ -3,7 +3,7 @@ import './Gallery.css'
 const Gallery = () => {
   return (
     <section id="gallery" className="gallery">
-      <h2>Divine Gallery</h2>
+      <h2>DIVINE GALLERY</h2>
 
       <div className="gallery-grid">
         <img src="/images/photo-1488521787991-ed7bbaae773c.avif" alt="Gallery Image 1" />

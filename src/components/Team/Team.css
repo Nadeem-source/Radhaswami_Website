@@ -95,7 +95,7 @@
 
 .team-header h1{
 
-    font-size: 68px;
+    font-size: 48px;
 
     color: purple;
 
@@ -384,7 +384,7 @@ box-shadow:
 
     padding: 34px;
 
-    border-radius: 26px;
+    border-radius: 50px;
 
     background: white;
 
@@ -403,7 +403,7 @@ inset 0 -3px 8px rgba(255,255,255,0.9),
 
     object-fit: contain;
 
-    border-radius: 18px;
+    border-radius: 50%;
 
     border: 1px solid rgba(0,0,0,0.12);
 
