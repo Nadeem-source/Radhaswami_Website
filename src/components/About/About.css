@@ -92,7 +92,7 @@ max-width: 600px;
 0 0 0 10px rgba(255,255,255,0.22);
 
   transition: 0.5s ease;
-  height: 310px !important;
+  height: 350px;
 }
 
 .about-left img:hover {
@@ -111,7 +111,7 @@ max-width: 600px;
   position: relative;
   z-index: 2;
 
-  padding: 20px;
+  padding: 50px;
 
   border-radius: 35px;
 
@@ -135,16 +135,17 @@ background-size: 300% 300%;
 
 animation: aboutBorder 8s ease infinite;
 
-box-shadow:
+/* box-shadow:
 0 0 40px rgba(255,215,0,0.38),
 0 0 80px rgba(255,215,0,0.22),
-0 30px 90px rgba(255,215,0,0.18);
+0 30px 90px rgba(255,215,0,0.18); */
     width:520px;
     /* margin-bottom: 90px; */
     transition: 
 transform 0.45s ease,
 box-shadow 0.45s ease;
 overflow:hidden;
+height:430px;
 }
 
 /* SMALL TAG */
@@ -173,22 +174,22 @@ overflow:hidden;
   font-family: 'Cinzel', serif;
 
   letter-spacing: 1px;
-  font-size: 38px;
+  font-size: 48px;
 
   margin-bottom: 28px;
 
   line-height: 1.1;
 
-  font-weight: 500;
+  font-weight: 600;
 
-  color: purple;
+  /* color: blue; */
 
   text-shadow:
     0 4px 18px rgba(0, 0, 0, 0.08);
   background:
     linear-gradient(90deg,
       purple,
-      purple,
+      rgb(64, 8, 219),
       purple);
 
   -webkit-background-clip: text;
@@ -202,7 +203,7 @@ overflow:hidden;
   font-family: 'Manrope', sans-serif;
 
   font-weight: 500;
-  color: purple;
+  color: black;
 
   line-height: 2;
 
@@ -218,13 +219,15 @@ overflow:hidden;
 
   border: none;
 
-  border-radius: 60px;
+  border-radius: 20px;
 
-  background:
-    linear-gradient(135deg,
-      purple,
-      purple,
-      purple);
+ background:
+linear-gradient(
+135deg,
+#a519cf,
+#9f0acc,
+#a611e0
+);
 
   color: #fff;
   font-family: 'Inter', sans-serif;
@@ -247,10 +250,10 @@ overflow:hidden;
 
 transform: translateY(-8px);
 
-box-shadow:
+/* box-shadow:
 0 0 55px rgba(255,215,0,0.55),
 0 0 110px rgba(255,215,0,0.35),
-0 35px 100px rgba(255,215,0,0.22);
+0 35px 100px rgba(255,215,0,0.22); */
 
 transition: 0.4s ease;
 }

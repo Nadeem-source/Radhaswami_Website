@@ -1,21 +1,16 @@
 import './Hero.css'
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
     <section className="hero-section">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        className="hero-card"
-      >
-        <h2 className="gradient-text">WELCOME TO DIVINE PEACE</h2>
+      <div className="hero-card">
+        <h2 className="gradient-text">HUMANITY FOR BETTER WORLD</h2>
 
         <p>
-          Experience spiritual wisdom with elegant modern digital experience.
+          Helping Humanity Through Spiritual Wisdom, Service & Community Empowerment.
         </p>
-      </motion.div>
+      </div>
     </section>
   )
 }

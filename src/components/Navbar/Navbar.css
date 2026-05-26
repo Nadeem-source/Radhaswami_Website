@@ -15,13 +15,18 @@
 
     align-items: center;
 
-    justify-content: space-between;
+    justify-content: space-around;
 
     padding: 18px 5%;
 
     z-index: 999;
 
-    background: transparent;
+    background: rgba(107, 106, 106, 0.267);
+    
+
+backdrop-filter: blur(0px);
+
+-webkit-backdrop-filter: blur(0px);
 
     border-bottom: 1px solid rgba(128,0,128,0.10);
 
@@ -30,17 +35,18 @@
     box-shadow:
     0 8px 30px rgba(128,0,128,0.05);
     transition: 0.4s ease;
+    
 }
 .active-navbar{
 
-    background: rgba(255,255,255,0.96);
+   background: rgb(10, 10, 10);
 
-    backdrop-filter: blur(18px);
+    backdrop-filter: blur(0px);
 
-    -webkit-backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(0px);
 
-    box-shadow:
-    0 8px 30px rgba(128,0,128,0.08);
+    /* box-shadow:
+    0 8px 30px rgba(128,0,128,0.08); */
 }
 
 /* NAVBAR HR LINE */
@@ -103,7 +109,7 @@
 
  display: inline-block;   
 animation-fill-mode: forwards;
-    color: purple;
+    color: white;
 
     font-size: 11px;
 
@@ -117,11 +123,11 @@ animation-fill-mode: forwards;
 
     white-space: nowrap;
 
-    border-right: 2px solid purple;
-margin-left:25px;
-    animation:
+    /* border-right: 2px solid purple; */
+margin-left:30px;
+    /* animation:
     typing 7s steps(22) infinite,
-    blink 0.7s infinite;
+    blink 0.7s infinite; */
 }
 .logo img{
 
@@ -147,13 +153,13 @@ margin-left:25px;
     box-shadow:
     0 10px 30px rgba(128,0,128,0.10);
 
-    animation: logoRotate 12s linear infinite;
+    /* animation: logoRotate 12s linear infinite; */
 }
 
-.logo img:hover{
+/* .logo img:hover{
 
     transform: scale(1.06) rotate(3deg);
-}
+} */
 
 /* LOGO NAME */
 
@@ -161,11 +167,12 @@ margin-left:25px;
 
     color: purple;
 
-    margin-left: 4px;
+    margin-left: 10px;
+    margin-right:50px;
 
     font-family: 'Cinzel', serif;
 
-    font-size: 24px;
+    font-size: 21px;
 
     font-weight: 800;
 
@@ -266,7 +273,7 @@ margin-left:25px;
 
 .nav-links li a.active{
 
-    background: purple;
+    /* background: rgb(245, 243, 245); */
 
     color: white;
 
@@ -280,7 +287,7 @@ margin-left:25px;
 
 .nav-links li a:hover{
 
-    background: purple;
+    background: rgba(226, 224, 224, 0.26);
 
     color: white;
      /* padding: 20px 9px; */

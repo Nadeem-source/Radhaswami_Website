@@ -4,16 +4,15 @@
 
   overflow: hidden;
 
-  padding: 120px 8%;
+  padding:95px 8%;
 
   background:
-  linear-gradient(
-  135deg,
-  purple,
-  purple,
-  purple
-  );
-
+linear-gradient(
+135deg,
+#5b0078,
+#3d0053,
+#22002f
+);
   box-shadow:
   inset 0 0 120px rgba(255,255,255,0.08),
   inset 0 -80px 120px rgba(0,0,0,0.10);
@@ -73,59 +72,64 @@
   margin: auto;
 
   background:
-  rgba(255,255,255,0.14);
+linear-gradient(
+180deg,
+rgba(0, 0, 0, 0.486),
+black
+);
 
   border:
   1px solid rgba(255,255,255,0.35);
 
-  padding: 80px 60px;
+  padding: 50px 30px;
 
   border-radius: 35px;
 
   text-align: center;
 
   backdrop-filter: blur(24px);
-
-  box-shadow:
-  0 25px 60px rgba(0,0,0,0.18),
-  0 10px 35px rgba(255,255,255,0.12),
-  inset 0 1px 1px rgba(255,255,255,0.35),
-  0 0 60px rgba(255,255,255,0.10);
-
+box-shadow:
+0 20px 60px rgba(0,0,0,0.45),
+inset 0 2px 3px rgba(255,255,255,0.18),
+inset 0 -8px 12px rgba(0,0,0,0.30);
   transition: 0.4s ease;
 }
 
 /* TOP LIGHT EFFECT */
 
 .hero-card::before{
-  content: '';
 
-  position: absolute;
+content: '';
 
-  top: 0;
-  left: 0;
+position: absolute;
 
-  width: 100%;
-  height: 100%;
+top: 0;
+left: 0;
 
-  border-radius: 35px;
+width: 100%;
+height: 100%;
 
-  background:
-  linear-gradient(
-  180deg,
-  rgba(255,255,255,0.18),
-  transparent
-  );
+border-radius: 35px;
 
-  pointer-events: none;
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,0.22) 0%,
+rgba(255,255,255,0.10) 12%,
+transparent 35%,
+transparent 65%,
+rgba(255,255,255,0.05) 100%
+);
+
+pointer-events: none;
 }
 
 /* HOVER */
 
 .hero-card:hover{
-  transform:
+  /* transform:
   translateY(-8px)
-  scale(1.01);
+  scale(1.01); */
 
   box-shadow:
   0 35px 80px rgba(0,0,0,0.22),
@@ -136,10 +140,10 @@
 
 .hero-card h2{
   font-family: 'Cinzel', serif;
-font-weight: 600;
+font-weight: 750;
 letter-spacing: 1px;
 text-transform: capitalize;
-  font-size: 42px;
+  font-size: 52px;
 
   margin-bottom: 24px;
 
@@ -151,8 +155,8 @@ text-transform: capitalize;
   linear-gradient(
   90deg,
   #ffffff,
-  #e8f6ff,
-  #d9f7ff
+#f4f4f4,
+#dcdcdc
   );
 
   -webkit-background-clip: text;

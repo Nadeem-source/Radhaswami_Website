@@ -5,76 +5,66 @@ import './Team.css'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 
-const founderData = [
-
+const teamData = [
     {
         id: 1,
-        name: 'MR. ISHHAQUE NAQVI',
-        role: 'CHAIRMAN',
-        image: '/images/team/Sir.jpg',
-    },
-
-    {
-        id: 2,
         name: 'MR. MOHD SHAHNAWAZ',
         role: 'C. E. O.',
         image: '/images/team/shanewaz.jpg',
     },
-]
-const teamData = [
 
     {
-        id: 1,
+        id: 2,
         name: 'MS. NUZHAT NAQVI',
         role: 'Director',
         image: '/images/team/NuzhatNaqvi.jpg',
     },
 
     {
-        id: 2,
+        id: 3,
         name: 'MR. MOHD KAIF',
         role: 'Director',
         image: '/images/team/Kaif.jpg',
     },
     {
-        id: 3,
+        id: 4,
         name: 'MR. MD DANISH',
         role: 'Delhi Incharge',
         image: '/images/team/Danish.jpg',
     },
     {
-        id: 4,
+        id: 5,
         name: 'MS. SNEHA',
         role: 'Office Management Officer',
         image: '/images/team/Sneha.jpg',
     },
     {
-        id: 5,
+        id: 6,
         name: 'MS. AQSA',
-        role: 'Office Assistant',
+        role: 'Office  ->  Assistant',
         image: '/images/team/AQSA.png',
     },
     {
-        id: 6,
+        id: 7,
         name: 'MR. MOHD AAMIR',
         role: 'Media In-Charge',
         image: '/images/team/aMIR.png',
     },
 
     {
-        id: 7,
+        id: 8,
         name: 'MR. MOHD GULZAR',
         role: 'District Co-Ordinator (Moradabad)',
         image: '/images/team/gulzar.jpg',
     },
     {
-        id: 8,
+        id: 9,
         name: 'MR. UMAIR AHMAD SHAMSI',
         role: 'District Co-Ordinator (Rampur)',
         image: '/images/team/Umair.png',
     },
     {
-        id: 9,
+        id: 10,
         name: 'MR. MOHD FAIZ KHAN',
         role: 'District Co-Ordinator (Bareilly)',
         image: '/images/team/faiz.jpg',
@@ -101,167 +91,64 @@ const Team = () => {
                     <div className="team-header">
 
                         <span>
-                            AFLISH FOUNDATION TEAM
+                            OUR LEADERSHIP TEAM
                         </span>
 
                         <h1>
-                            MEET OUR LEADERSHIP
+                            DEDICATED PEOPLE BEHIND OUR MISSION
                         </h1>
 
                         <p>
-                            Dedicated professionals building impactful initiatives,
-                            empowering communities, and creating meaningful social change.
+                           Our leadership team is committed to empowering communities, promoting humanity, and creating meaningful impact through service, compassion, and responsible leadership.
                         </p>
 
                     </div>
                     
                         {/* CHAIRMAN */}
-                        {/* <div className="founder-card">
+                        <div className="chairman-card">
 
                             <div className="founder-left">
 
                                 <img
-                                    src="/images/team/Chairman.jpeg"
+                                    src="/images/team/Sir.jpg"
                                     alt=""
                                 />
 
-                            </div> */}
+                            </div>
 
-                            {/* <div className="founder-right">
+                            <div className="founder-right">
 
                                 <div className="founder-badge">
                                     Chairman • AFLISH GROUP
                                 </div>
 
                                 <h2>
-                                    Mr. Ishhaque Naqvi
+                                    MR. ISHHAQUE NAQVI
                                 </h2>
 
                                 <h4>
                                     Visionary Entrepreneur & Technology Leader
-                                </h4> */}
+                                </h4>
 
-                                {/* <p>
+                                <p>
                                 Mr. Ishhaque Naqvi is the Chairman of Aflish Services
                                 Private Limited, recognized for leadership in
                                 entrepreneurship, technology, and strategic business growth.
-                            </p> */}
+                            </p>
 
-                                {/* <p>
+                                <p>
                                 With expertise in Economics, Business Administration,
                                 and Information Technology, he has successfully led
                                 impactful ventures across India.
-                            </p> */}
+                            </p>
 
-                                {/* <button>
+                                <button>
                                     View Profile
                                 </button>
 
-                            </div> */}
-
-                            {/* CHAIRMAN */}
-                            {/* <div className="founder-card">
-
-                                <div className="founder-left">
-
-                                    <img
-                                        src="/images/team/Chairman.jpeg"
-                                        alt=""
-                                    />
-
-                                </div>
-
-                                <div className="founder-right">
-
-                                    <div className="founder-badge">
-                                        Chairman • AFLISH GROUP
-                                    </div>
-
-                                    <h2>
-                                        Mr. Ishhaque Naqvi
-                                    </h2>
-
-                                    <h4>
-                                        Visionary Entrepreneur & Technology Leader
-                                    </h4>
- */}
-                                    {/* <p>
-                                    Mr. Ishhaque Naqvi is the Chairman of Aflish Services
-                                    Private Limited, recognized for leadership in
-                                    entrepreneurship, technology, and strategic business growth.
-                                </p> */}
-
-                                    {/* <p>
-                                    With expertise in Economics, Business Administration,
-                                    and Information Technology, he has successfully led
-                                    impactful ventures across India.
-                                </p> */}
-
-                                    {/* <button>
-                                        View Profile
-                                    </button>
-
-                                </div>
-
-
                             </div>
-
-
-                        </div> */}
-                                        {/* Founder GRID */}
-
-                    <div className="founder-grid">
-
-                        {founderData.map((member) => (
-
-                            <div
-                                className="founder-card"
-                                key={member.id}
-                            >
-
-                                <div className="founder-image">
-
-
-                                    <img
-                                        src={member.image}
-                                        alt={member.name}
-                                    />
-
-                                </div>
-
-                                <div className="founder-content">
-
-                                    <div className="top-founder-row">
-
-                                        <span>
-                                            {member.name}
-                                        </span>
-
-                                        <div className="founderDot"></div>
-
-                                    </div>
-
-                                    <h3>
-                                        {member.role}
-                                    </h3>
-
-                                    <p>
-                                        AFLISH GROUP OF COMPANIES
-                                    </p>
-
-                                    <button>
-                                        View Profile
-                                    </button>
-
-                                </div>
-
-                            </div>
-
-                        ))}
-
-                    </div>
-
-                
+                        </div>
+                    
                     {/* TEAM GRID */}
 
                     <div className="foundation-grid">
