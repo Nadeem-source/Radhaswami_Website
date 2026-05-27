@@ -6,65 +6,65 @@ import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 
 const teamData = [
-    {
-        id: 1,
-        name: 'MR. MOHD SHAHNAWAZ',
-        role: 'C. E. O.',
-        image: '/images/team/shanewaz.jpg',
-    },
+    // {
+    //     id: 1,
+    //     name: 'MR. MOHD SHAHNAWAZ',
+    //     role: 'C. E. O.',
+    //     image: '/images/team/shanewaz.jpg',
+    // },
 
     {
-        id: 2,
+        id: 1,
         name: 'MS. NUZHAT NAQVI',
         role: 'Director',
         image: '/images/team/NuzhatNaqvi.jpg',
     },
 
     {
-        id: 3,
+        id: 2,
         name: 'MR. MOHD KAIF',
         role: 'Director',
         image: '/images/team/Kaif.jpg',
     },
     {
-        id: 4,
+        id: 3,
         name: 'MR. MD DANISH',
         role: 'Delhi Incharge',
         image: '/images/team/Danish.jpg',
     },
     {
-        id: 5,
+        id: 4,
         name: 'MS. SNEHA',
         role: 'Office Management Officer',
         image: '/images/team/Sneha.jpg',
     },
     {
-        id: 6,
+        id: 5,
         name: 'MS. AQSA',
         role: 'Office  ->  Assistant',
         image: '/images/team/AQSA.png',
     },
     {
-        id: 7,
+        id: 6,
         name: 'MR. MOHD AAMIR',
         role: 'Media In-Charge',
         image: '/images/team/aMIR.png',
     },
 
     {
-        id: 8,
+        id: 7,
         name: 'MR. MOHD GULZAR',
         role: 'District Co-Ordinator (Moradabad)',
         image: '/images/team/gulzar.jpg',
     },
     {
-        id: 9,
+        id: 8,
         name: 'MR. UMAIR AHMAD SHAMSI',
         role: 'District Co-Ordinator (Rampur)',
         image: '/images/team/Umair.png',
     },
     {
-        id: 10,
+        id: 9,
         name: 'MR. MOHD FAIZ KHAN',
         role: 'District Co-Ordinator (Bareilly)',
         image: '/images/team/faiz.jpg',
@@ -104,6 +104,7 @@ const Team = () => {
 
                     </div>
                     
+                    <div className="top-leaders">
                         {/* CHAIRMAN */}
                         <div className="chairman-card">
 
@@ -139,7 +140,7 @@ const Team = () => {
                                 <p>
                                 With expertise in Economics, Business Administration,
                                 and Information Technology, he has successfully led
-                                impactful ventures across India.
+                                impactful ventures across India in social welfare sector.
                             </p>
 
                                 <button>
@@ -148,7 +149,52 @@ const Team = () => {
 
                             </div>
                         </div>
-                    
+                        {/* CEO */}
+<div className="chairman-card">
+
+    <div className="founder-left">
+
+        <img
+            src="/images/team/shanewaz.jpg"
+            alt=""
+        />
+
+    </div>
+
+    <div className="founder-right">
+
+        <div className="founder-badge">
+            CEO • AFLISH GROUP
+        </div>
+
+        <h2>
+            MR. MOHD SHAHNAWAZ
+        </h2>
+
+        <h4>
+            Chief Executive Officer & Strategic Leader
+        </h4>
+
+        <p>
+            Mr. Mohd Shahnawaz leads AFLISH GROUP with a strong vision
+            focused on innovation, management, and operational excellence.
+        </p>
+
+        <p>
+            He is committed to empowering communities and driving
+            impactful growth through leadership and dedication and supporting
+    social welfare initiatives, community development, and
+    charitable programs across different regions.
+        </p>
+
+        <button>
+            View Profile
+        </button>
+
+    </div>
+
+</div>
+                    </div>
                     {/* TEAM GRID */}
 
                     <div className="foundation-grid">

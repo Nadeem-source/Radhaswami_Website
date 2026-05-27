@@ -39,7 +39,8 @@ backdrop-filter: blur(0px);
 }
 .active-navbar{
 
-   background: rgb(10, 10, 10);
+    background: rgba(15, 15, 15, 0.952);
+    
 
     backdrop-filter: blur(0px);
 

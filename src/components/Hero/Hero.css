@@ -9,9 +9,10 @@
   background:
 linear-gradient(
 135deg,
-#5b0078,
-#3d0053,
-#22002f
+#3b014d 0%,
+#4d0066 35%,
+#2a0038 70%,
+#1a0024 100%
 );
   box-shadow:
   inset 0 0 120px rgba(255,255,255,0.08),
@@ -31,8 +32,8 @@ linear-gradient(
 
   border-radius: 50%;
 
-  background:
-  rgba(255,255,255,0.18);
+ background:
+rgba(162, 0, 255, 0.18);
 
   filter: blur(120px);
 
@@ -53,7 +54,7 @@ linear-gradient(
   border-radius: 50%;
 
   background:
-  rgba(255,255,255,0.12);
+rgba(255, 0, 255, 0.14);
 
   filter: blur(100px);
 
@@ -64,6 +65,7 @@ linear-gradient(
 /* CARD */
 
 .hero-card{
+  transform: translateY(0);
   position: relative;
   z-index: 2;
 
@@ -74,8 +76,9 @@ linear-gradient(
   background:
 linear-gradient(
 180deg,
-rgba(0, 0, 0, 0.486),
-black
+rgba(58, 14, 78, 0.95) 0%,
+rgba(32, 0, 44, 0.98) 45%,
+rgba(0, 0, 0, 1) 100%
 );
 
   border:
@@ -83,7 +86,7 @@ black
 
   padding: 50px 30px;
 
-  border-radius: 35px;
+  border-radius: 49px 49px 35px 35px;
 
   text-align: center;
 
@@ -92,7 +95,8 @@ box-shadow:
 0 20px 60px rgba(0,0,0,0.45),
 inset 0 2px 3px rgba(255,255,255,0.18),
 inset 0 -8px 12px rgba(0,0,0,0.30);
-  transition: 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  will-change:auto;
 }
 
 /* TOP LIGHT EFFECT */
@@ -114,26 +118,25 @@ border-radius: 35px;
 background:
 linear-gradient(
 145deg,
-rgba(255,255,255,0.22) 0%,
-rgba(255,255,255,0.10) 12%,
-transparent 35%,
-transparent 65%,
-rgba(255,255,255,0.05) 100%
+rgba(170, 5, 247, 0.28) 0%,
+rgba(90, 0, 120, 0.18) 18%,
+transparent 40%,
+transparent 68%,
+rgba(170, 85, 255, 0.28) 100%
 );
-
 pointer-events: none;
 }
 
 /* HOVER */
 
 .hero-card:hover{
-  /* transform:
-  translateY(-8px)
-  scale(1.01); */
-
+/* transition:none !important; */
+transform : none !important;
   box-shadow:
-  0 35px 80px rgba(0,0,0,0.22),
-  0 15px 45px rgba(255,255,255,0.16);
+  0 20px 60px rgba(0,0,0,0.45),
+  0 0 25px rgba(255,255,255,0.10),
+  inset 0 2px 3px rgba(255,255,255,0.18),
+  inset 0 -8px 12px rgba(0,0,0,0.30);
 }
 
 /* HEADING */
