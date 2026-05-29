@@ -18,6 +18,9 @@ import GalleryPage from './pages/GalleryPage'
 import ContactPage from './pages/ContactPage'
 import SchemesPage from './pages/SchemesPage'
 import Partners from './pages/Partners'
+import WelcomePopup from './components/WelcomePopup/WelcomePopup'
+import TopMarquee from './components/TopMarquee/TopMarquee'
+import CertificatesPage from './pages/CertificatesPage'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -46,7 +49,9 @@ useEffect(() => {
         path="/"
         element={
           <>
+          <TopMarquee />
             <Navbar />
+            <WelcomePopup />
             <Header />
             <Hero />
             <About />
@@ -68,6 +73,7 @@ useEffect(() => {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/schemes" element={<SchemesPage />} />
       <Route path="/partners" element={<Partners />} />
+    <Route path="/certificates" element={<CertificatesPage />} />
     </Routes>
     </>
   )

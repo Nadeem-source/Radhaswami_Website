@@ -1,0 +1,473 @@
+.popup-overlay{
+
+position: fixed;
+
+inset: 0;
+
+/* background: rgba(0,0,0,0.65);
+
+backdrop-filter: blur(8px); */
+background: transparent;
+backdrop-filter:none;
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+z-index: 999999;
+
+animation: fadeIn 0.6s ease;
+}
+
+/* POPUP */
+
+.welcome-popup{
+
+position: relative;
+
+width: 95%;
+max-width: 500px;
+
+padding: 38px 28px;
+
+border-radius: 40px;
+
+overflow: hidden;
+
+text-align: center;
+
+background:
+linear-gradient(
+180deg,
+#3d0053,
+#1b0025,
+#000
+);
+
+border: 1px solid rgba(255,255,255,0.15);
+
+box-shadow:
+0 20px 80px rgba(0,0,0,0.55),
+0 0 60px rgba(163,0,255,0.25);
+
+animation:
+popupScale 0.7s ease;
+}
+
+/* CLOSE */
+
+.popup-close{
+
+position: absolute;
+
+top: 20px;
+right: 22px;
+
+width: 42px;
+height: 42px;
+
+border: none;
+
+border-radius: 50%;
+
+background: rgba(255,255,255,0.08);
+
+color: white;
+
+font-size: 20px;
+
+cursor: pointer;
+
+transition: 0.4s ease;
+}
+
+.popup-close:hover{
+
+transform: rotate(90deg);
+
+background: purple;
+}
+
+/* LOGO */
+
+.popup-logo{
+
+width: 110px;
+
+margin-bottom: 22px;
+
+animation: floatLogo 3s ease-in-out infinite;
+}
+
+/* HEADING */
+
+.welcome-popup h2{
+
+font-size: 32px;
+
+line-height: 1.2;
+
+margin-bottom: 14px;
+
+color: white;
+
+font-family: 'Cinzel', serif;
+
+animation: fadeUp 1s ease;
+}
+
+/* TAGLINE */
+
+.welcome-popup h3{
+
+font-size: 19px;
+
+margin-bottom: 28px;
+
+color: #d89cff;
+
+font-family: 'Inter', sans-serif;
+
+animation: fadeUp 1.2s ease;
+}
+
+/* YEARS */
+
+.popup-years{
+
+margin-bottom: 25px;
+}
+
+.popup-years span{
+
+font-size: 54px;
+
+font-weight: 800;
+
+background:
+linear-gradient(
+90deg,
+gold,
+white,
+#d67dff
+);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.popup-years p{
+
+color: white;
+
+font-size: 18px;
+
+margin-top: 5px;
+}
+
+/* TEXT */
+
+.popup-text{
+
+font-size: 17px;
+
+line-height: 1.9;
+
+color: rgba(255,255,255,0.88);
+
+max-width: 500px;
+
+margin: auto auto 35px;
+}
+
+/* BUTTON */
+
+.popup-btn{
+
+padding: 18px 40px;
+
+border: none;
+
+border-radius: 50px;
+
+background:
+linear-gradient(
+90deg,
+purple,
+#d000ff
+);
+
+color: white;
+
+font-size: 15px;
+
+font-weight: 700;
+
+cursor: pointer;
+
+transition: 0.4s ease;
+}
+
+.popup-btn:hover{
+
+transform: translateY(-5px);
+
+box-shadow:
+0 15px 35px rgba(180,0,255,0.4);
+}
+
+/* GLOW */
+
+.popup-glow{
+
+position: absolute;
+
+border-radius: 50%;
+
+filter: blur(90px);
+
+z-index: 0;
+}
+
+.popup-glow1{
+
+width: 220px;
+height: 220px;
+
+background: rgba(180,0,255,0.35);
+
+top: -60px;
+left: -60px;
+}
+
+.popup-glow2{
+
+width: 200px;
+height: 200px;
+
+background: rgba(0,191,255,0.22);
+
+bottom: -50px;
+right: -50px;
+}
+
+/* ANIMATIONS */
+
+@keyframes popupScale{
+
+0%{
+opacity: 0;
+transform: scale(0.7);
+}
+
+100%{
+opacity: 1;
+transform: scale(1);
+}
+}
+
+@keyframes fadeIn{
+
+0%{
+opacity: 0;
+}
+
+100%{
+opacity: 1;
+}
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity: 0;
+transform: translateY(30px);
+}
+
+100%{
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes floatLogo{
+
+0%{
+transform: translateY(0px);
+}
+
+50%{
+transform: translateY(-10px);
+}
+
+100%{
+transform: translateY(0px);
+}
+}
+.popup-slider{
+
+position: relative;
+
+min-height: 300px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+}
+
+.popup-slide{
+
+position: absolute;
+
+width: 100%;
+
+left: 0;
+
+top: 50%;
+
+transform: translateY(-50%);
+
+padding: 0 20px;
+}
+
+/* FADE ANIMATION */
+
+.fade-slide{
+animation:
+popupFade 1s ease,
+floatSoft 4s ease-in-out infinite;
+/* animation: popupFade 1s ease; */
+}
+
+/* @keyframes popupFade{
+
+0%{
+opacity: 0;
+transform:
+translateY(-50%)
+scale(0.92);
+}
+
+100%{
+opacity: 1;
+transform:
+translateY(-50%)
+scale(1);
+}
+} */
+
+/* @keyframes popupFade{
+
+0%{
+opacity: 0;
+transform:
+translateY(-50%)
+rotateX(20deg)
+scale(0.88);
+}
+
+100%{
+opacity: 1;
+transform:
+translateY(-50%)
+rotateX(0deg)
+scale(1);
+}
+} */
+
+/* @keyframes popupFade{
+
+0%{
+opacity: 0;
+transform:
+translateY(-50%)
+scale(0.82);
+filter: blur(12px);
+}
+
+100%{
+opacity: 1;
+transform:
+translateY(-50%)
+scale(1);
+filter: blur(0px);
+}
+} */
+
+/* @keyframes popupFade{
+
+0%{
+opacity: 0;
+transform:
+translateY(-20%);
+}
+
+100%{
+opacity: 1;
+transform:
+translateY(-50%);
+}
+} */
+
+/* @keyframes popupFade{
+
+0%{
+opacity: 0;
+filter: blur(15px);
+transform:
+translateY(-50%)
+scale(1.08);
+}
+
+100%{
+opacity: 1;
+filter: blur(0px);
+transform:
+translateY(-50%)
+scale(1);
+}
+} */
+
+/* @keyframes popupFade{
+
+0%{
+opacity: 0;
+transform:
+translateY(-40%)
+scale(0.95);
+}
+
+50%{
+transform:
+translateY(-55%)
+scale(1.02);
+}
+
+100%{
+opacity: 1;
+transform:
+translateY(-50%)
+scale(1);
+}
+} */
+
+@keyframes floatSoft{
+
+0%{
+transform:
+translateY(-50%);
+}
+
+50%{
+transform:
+translateY(-54%);
+}
+
+100%{
+transform:
+translateY(-50%);
+}
+}

@@ -46,6 +46,10 @@ font-family: 'Cinzel', serif;
     line-height: 2;
 font-family: 'Inter', sans-serif;
     font-size: 18px;
+    text-align: justify;
+    font-weight: 500;
+    /* font-style: italic; */
+    
 }
 
 .contact-right form{

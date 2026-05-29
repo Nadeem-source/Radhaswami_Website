@@ -80,11 +80,11 @@ const Footer = () => {
           <h3>CONTACT</h3>
           <p>
             <FaEnvelope className="footer-contact-icon" />
-            Email: support@spiritualmission.org
+            Email: Aflishservices@gmail.com
           </p>
           <p>
             <FaPhoneAlt className="footer-contact-icon" />
-            Phone: +91 9876543210
+            Phone: +91 9654121110
           </p>
           <p>
             <FaMapMarkerAlt className="footer-location-icon" />

@@ -120,7 +120,7 @@ const Team = () => {
                             <div className="founder-right">
 
                                 <div className="founder-badge">
-                                    Chairman • AFLISH GROUP
+                                    CHAIRMAN • AFLISH GROUP
                                 </div>
 
                                 <h2>
