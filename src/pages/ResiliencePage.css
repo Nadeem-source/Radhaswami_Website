@@ -1,0 +1,161 @@
+.resilience-hero{
+    min-height:100vh;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+}
+
+.resilience-hero-content{
+    max-width:900px;
+}
+
+.resilience-hero span{
+    color:#d18cff;
+    letter-spacing:3px;
+    font-weight:700;
+}
+
+.resilience-hero h1{
+    color:white;
+    font-size:72px;
+    margin:25px 0;
+    line-height:1.1;
+}
+
+.resilience-hero p{
+    color:#e5e5e5;
+    font-size:20px;
+    line-height:1.9;
+}
+
+.resilience-overview{
+    padding:120px 8%;
+    background:#fff;
+}
+
+.resilience-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.resilience-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+}
+
+.resilience-content span{
+    color:purple;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.resilience-content h2{
+    font-size:48px;
+    margin:20px 0;
+}
+
+.resilience-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.resilience-focus{
+    padding:120px 8%;
+    background:#f7f7f7;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:purple;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.section-heading h2{
+    margin-top:15px;
+    font-size:48px;
+}
+
+.focus-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.focus-card{
+    background:white;
+    padding:35px;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    transition:.4s;
+}
+
+.focus-card:hover{
+    transform:translateY(-12px);
+}
+
+.focus-card h3{
+    color:purple;
+    margin-bottom:15px;
+}
+
+.focus-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+.resilience-impact{
+    padding:120px 8%;
+    background:white;
+}
+
+.impact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.impact-card{
+    background:linear-gradient(135deg,purple,#a100ff);
+    color:white;
+    padding:40px;
+    border-radius:25px;
+}
+
+.impact-card h3{
+    margin-bottom:15px;
+}
+
+.impact-card p{
+    line-height:1.8;
+}
+
+@media(max-width:992px){
+
+    .resilience-container,
+    .focus-grid,
+    .impact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .resilience-hero h1{
+        font-size:48px;
+    }
+
+    .section-heading h2,
+    .resilience-content h2{
+        font-size:34px;
+    }
+}

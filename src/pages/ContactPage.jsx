@@ -12,7 +12,7 @@ import {
 const ContactPage = () => {
   return (
     <>
-      <Navbar scrollValue={70} />
+      <Navbar scrollValue={70} alwaysTop={true} />
 
       <section className="contact-page">
 

@@ -6,7 +6,10 @@ import Navbar from '../components/Navbar/Navbar'
 const Partners = () => {
   return (
 <>
-<Navbar scrollValue={60} />
+<Navbar
+scrollValue={60}
+alwaysTop={true}
+/>
     <section className="partners-page">
 
       <div className="partners-overlay"></div>

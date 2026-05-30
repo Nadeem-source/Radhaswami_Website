@@ -14,7 +14,7 @@ import {
 const DonationPage = () => {
   return (
     <>
-      <Navbar scrollValue={60} />
+      <Navbar scrollValue={60} alwaysTop={true} />
 
       <section className="donation-page">
 

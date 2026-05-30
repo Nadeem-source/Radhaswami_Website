@@ -1,0 +1,14 @@
+{
+  "name": "AFLISH Group of Companies",
+  "short_name": "AFLISH",
+  "theme_color": "#6a0092",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/LOGO.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}

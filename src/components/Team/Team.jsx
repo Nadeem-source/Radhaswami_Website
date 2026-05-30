@@ -77,7 +77,10 @@ const teamData = [
 const Team = () => {
     return (
         <>
-            <Navbar scrollValue={60} />
+            <Navbar
+scrollValue={60}
+alwaysTop={true}
+/>
 
             <section className="team-section">
 

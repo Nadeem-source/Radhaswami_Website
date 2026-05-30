@@ -59,7 +59,7 @@ const schemesData = [
 const SchemesPage = () => {
   return (
     <>
-      <Navbar scrollValue={70} />
+      <Navbar scrollValue={70} alwaysTop={true} />
 
       <section className="schemes-page">
 

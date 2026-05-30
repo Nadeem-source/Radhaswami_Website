@@ -1,0 +1,149 @@
+.strategy-hero{
+    position: relative;
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
+    url("/images/ngo-strategy-banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+}
+
+.strategy-content{
+    max-width:900px;
+    padding:0 30px;
+    color:white;
+    z-index:2;
+}
+
+.strategy-tag{
+    display:inline-block;
+
+    background:purple;
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+}
+
+.strategy-content h1{
+    font-size:72px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.strategy-content p{
+    font-size:20px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.hero-buttons{
+    margin-top:40px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.hero-buttons button{
+    padding:16px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:purple;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+.outline-btn{
+    background:transparent !important;
+
+    border:2px solid white !important;
+}
+
+.strategy-section{
+    padding:120px 8%;
+    background:#f8f8f8;
+}
+
+.strategy-container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title span{
+    color:purple;
+    font-weight:700;
+}
+
+.section-title h2{
+    font-size:48px;
+    margin-top:15px;
+}
+
+.strategy-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.strategy-card{
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    transition:.4s ease;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.strategy-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 25px 60px rgba(128,0,128,.18);
+}
+
+.strategy-card h3{
+    color:purple;
+    margin-bottom:18px;
+    font-size:24px;
+}
+
+.strategy-card p{
+    color:#555;
+    line-height:1.8;
+}

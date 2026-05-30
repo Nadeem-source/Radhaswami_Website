@@ -220,3 +220,24 @@ color: white;
 box-shadow:
 0 0 20px rgba(200,0,255,0.35);
 }
+.top-marquee{
+
+ transition:
+      transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.35s ease;
+
+}
+.top-marquee.marquee-hide{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.marquee-hide{
+
+transform: translateY(-100%);
+
+opacity: 0;
+
+pointer-events: none;
+
+}

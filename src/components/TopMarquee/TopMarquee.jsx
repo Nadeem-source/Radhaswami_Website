@@ -1,9 +1,15 @@
 import './TopMarquee.css'
 import { Link } from 'react-router-dom'
-const TopMarquee = () => {
+const TopMarquee = ({ hideMarquee }) => {
 
   return (
-
+<div
+ className={
+   hideMarquee
+   ? "top-marquee marquee-hide"
+   : "top-marquee"
+ }
+>
     <div className="top-marquee">
 
 
@@ -56,7 +62,7 @@ const TopMarquee = () => {
       </div>
 
     </div>
-
+</div>
   )
 }
 

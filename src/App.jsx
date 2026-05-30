@@ -21,60 +21,139 @@ import Partners from './pages/Partners'
 import WelcomePopup from './components/WelcomePopup/WelcomePopup'
 import TopMarquee from './components/TopMarquee/TopMarquee'
 import CertificatesPage from './pages/CertificatesPage'
+import MissionVisionPage from './pages/MissionVisionPage'
+import GoverningCouncilPage from './pages/GoverningCouncilPage'
+import FinancialsPage from './pages/FinancialsPage'
+import OurStrategyPage from "./pages/OurStrategyPage";
+import OurPresencePage from "./pages/OurPresencePage";
+import EducationPage from "./pages/EducationPage";
+import HealthAndNutrition from "./pages/HealthAndNutrition";
+import EconomicWellBeing from "./pages/EconomicWellBeing";
+import ChildProtection from "./pages/ChildProtection";
+import HumanitarianPage from "./pages/HumanitarianPage";
+import ResiliencePage from "./pages/ResiliencePage";
 
 function App() {
   const [loading, setLoading] = useState(false)
 
-const location = useLocation()
-useEffect(() => {
+  const location = useLocation()
 
-  setLoading(true)
+  const [hideMarquee, setHideMarquee] = useState(false)
 
-  const timer = setTimeout(() => {
+  useEffect(() => {
 
-    setLoading(false)
+    const handleScroll = () => {
 
-  }, 1200)
+      if (window.scrollY > 30) {
+        setHideMarquee(true)
+      }
+      else {
+        setHideMarquee(false)
+      }
 
-  return () => clearTimeout(timer)
+    }
 
-}, [location.pathname])
- 
+    window.addEventListener('scroll', handleScroll)
+
+    return () =>
+      window.removeEventListener('scroll', handleScroll)
+
+  }, [])
+  useEffect(() => {
+
+    setLoading(true)
+
+    const timer = setTimeout(() => {
+
+      setLoading(false)
+
+    }, 1200)
+
+    return () => clearTimeout(timer)
+
+  }, [location.pathname])
+
   return (
-   <>{loading && <PageLoader />}
-    <Routes>
+    <>{loading && <PageLoader />}
+      <Routes>
 
-      {/* HOME PAGE */}
-      <Route
-        path="/"
-        element={
-          <>
-          <TopMarquee />
-            <Navbar />
-            <WelcomePopup />
-            <Header />
-            <Hero />
-            <About />
-            <Services />
-            <Gallery />
-            <Stats />
-            <Donation />
-            <Footer />
-          </>
-        }
-      />
+        {/* HOME PAGE */}
+        <Route
+          path="/"
+          element={
+            <>
+              <TopMarquee hideMarquee={hideMarquee} />
+              <Navbar hideMarquee={hideMarquee} />
+              <WelcomePopup />
+              <Header />
+              <Hero />
+              <About />
+              <Services />
+              <Gallery />
+              <Stats />
+              <Donation />
+              <Footer />
+            </>
+          }
+        />
 
-      
-      <Route path="/donation" element={<DonationPage />} />
-      <Route path="/team" element={<Team />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/services" element={<ServicesPage />} />
-      <Route path="/gallery" element={<GalleryPage />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/schemes" element={<SchemesPage />} />
-      <Route path="/partners" element={<Partners />} />
-    <Route path="/certificates" element={<CertificatesPage />} />
-    </Routes>
+
+        <Route path="/donation" element={<DonationPage />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/schemes" element={<SchemesPage />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/certificates" element={<CertificatesPage />} />
+<Route
+ path="/mission-vision"
+ element={<MissionVisionPage />}
+/>
+
+<Route
+ path="/governing-council"
+ element={<GoverningCouncilPage />}
+/>
+
+<Route
+ path="/financials"
+ element={<FinancialsPage />}
+/>
+<Route
+ path="/our-strategy"
+ element={<OurStrategyPage />}
+/>
+<Route
+  path="/our-presence"
+  element={<OurPresencePage />}
+/>
+<Route
+ path="/education"
+ element={<EducationPage />}
+/>
+<Route
+ path="/health-nutrition"
+ element={<HealthAndNutrition />}
+/>
+<Route
+ path="/economic-well-being"
+ element={<EconomicWellBeing />}
+/>
+     <Route
+  path="/child-protection"
+  element={<ChildProtection />}
+/>
+<Route
+ path="/humanitarian"
+ element={<HumanitarianPage />}
+/>
+<Route
+  path="/resilience"
+  element={<ResiliencePage />}
+/>
+      </Routes>
     </>
   )
 }

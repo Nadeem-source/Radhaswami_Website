@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css'
 import { NavLink, useNavigate } from 'react-router-dom'
 
-const Navbar = ({ scrollValue = 650 }) => {
+const Navbar = ({
+  scrollValue = 650,
+  hideMarquee,
+  alwaysTop = false
+}) => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -27,8 +31,14 @@ const Navbar = ({ scrollValue = 650 }) => {
 
   return (
 
-    <nav className={scrolled ? "navbar active-navbar" : "navbar"}>
-
+    <nav
+      className={`
+navbar
+${scrolled ? 'active-navbar' : ''}
+${hideMarquee ? 'navbar-top' : ''}
+${alwaysTop ? 'navbar-top' : ''}
+`}
+    >
       {/* LOGO */}
 
       <div className="logo">
@@ -60,19 +70,53 @@ const Navbar = ({ scrollValue = 650 }) => {
           </NavLink>
         </li>
 
-        <li>
+        <li className="dropdown">
+
           <NavLink
             to="/about"
             className={({ isActive }) =>
               isActive ? "active" : ""
             }
           >
-
             About
           </NavLink>
+          <ul className="dropdown-menu">
+
+            <li>
+              <NavLink to="/about">
+                Overview
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/mission-vision">
+                Mission & Vision
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/governing-council">
+                Governing Council
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/financials">
+                Financials
+              </NavLink>
+            </li>
+            {/* 
+  <li>
+    <NavLink to="/certificates">
+      Certificates
+    </NavLink>
+  </li> */}
+
+          </ul>
+
         </li>
 
-        <li>
+        <li className="dropdown">
           <NavLink
             to="/services"
             className={({ isActive }) =>
@@ -82,6 +126,55 @@ const Navbar = ({ scrollValue = 650 }) => {
 
             Services
           </NavLink>
+
+
+          <ul className="dropdown-menu">
+
+            <li>
+              <NavLink to="/our-strategy">
+                Our Strategy
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/our-presence">
+                Our Presence
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/education">
+                Education
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/health-nutrition">
+                Health And Nutrition
+              </NavLink>
+            </li>
+             <li>
+              <NavLink to="/economic-well-being">
+                Economic well being
+              </NavLink>
+            </li>
+             <li>
+              <NavLink to="/child-protection">
+                Child Protection
+              </NavLink>
+            </li>
+             <li>
+              <NavLink to="/humanitarian">
+                Humanitarian
+              </NavLink>
+            </li>
+             <li>
+              <NavLink to="/resilience">
+                Resilience
+              </NavLink>
+            </li>
+            
+          </ul>
         </li>
         <li>
           <NavLink
@@ -93,7 +186,7 @@ const Navbar = ({ scrollValue = 650 }) => {
 
             Scheme
           </NavLink>
-        </li>
+          </li>
 
         <li>
           <NavLink
@@ -106,17 +199,40 @@ const Navbar = ({ scrollValue = 650 }) => {
             Gallery
           </NavLink>
         </li>
-        <li>
-  <NavLink
-    to="/partners"
-    className={({ isActive }) =>
-      isActive ? "active" : ""
-    }
-  >
+        <li  className="dropdown">
+          <NavLink
+            to="/partners"
+            className={({ isActive }) =>
+              isActive ? "active" : ""
+            }
+          >
 
-    Partners
-  </NavLink>
-</li>
+            Partners
+          </NavLink>
+          
+          <ul className="dropdown-menu">
+
+            <li>
+              <NavLink to="/about">
+                  Corporate Partnership
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/mission-vision">
+                Institutional Partnership
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/governing-council">
+                Engagement with Government
+              </NavLink>
+            </li>
+          </ul>
+        
+        
+        </li>
 
         <li>
           <NavLink
@@ -129,7 +245,7 @@ const Navbar = ({ scrollValue = 650 }) => {
             Team
           </NavLink>
         </li>
-        
+
 
         <li>
           <NavLink

@@ -8,7 +8,10 @@ const CertificatesPage = () => {
 
     <>
     
-      <Navbar scrollValue={60} />
+     <Navbar
+scrollValue={60}
+alwaysTop={true}
+/>
 
       <section className="certificates-page">
 

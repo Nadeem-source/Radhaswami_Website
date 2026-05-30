@@ -1,0 +1,166 @@
+.hn-hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hn-hero-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hn-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    );
+    z-index:1;
+}
+
+.hn-hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+    text-align:center;
+    width:80%;
+    color:white;
+}
+
+.hn-hero-content span{
+    color:#d68cff;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.hn-hero-content h1{
+    font-size:70px;
+    margin:20px 0;
+}
+
+.hn-hero-content p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.hn-about{
+    padding:120px 8%;
+}
+
+.hn-container{
+    display:flex;
+    gap:70px;
+    align-items:center;
+}
+
+.hn-left img{
+    width:100%;
+    border-radius:24px;
+}
+
+.hn-right span{
+    color:purple;
+    font-weight:700;
+}
+
+.hn-right h2{
+    font-size:48px;
+    margin:20px 0;
+}
+
+.hn-right p{
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.hn-programs{
+    padding:100px 8%;
+    background:#fafafa;
+}
+
+.hn-programs h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:50px;
+}
+
+.hn-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.hn-card{
+    background:white;
+    padding:35px;
+    border-radius:22px;
+    transition:.4s;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.hn-card:hover{
+    transform:translateY(-10px);
+}
+
+.hn-card h3{
+    color:purple;
+    margin-bottom:15px;
+}
+
+.hn-stats{
+    padding:100px 8%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.stat-box{
+    text-align:center;
+    padding:40px;
+    background:white;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.stat-box h3{
+    color:purple;
+    font-size:55px;
+}
+
+.hn-cta{
+    padding:120px 8%;
+    text-align:center;
+    background:
+    linear-gradient(
+    135deg,
+    purple,
+    #b300ff
+    );
+    color:white;
+}
+
+.hn-cta h2{
+    font-size:55px;
+}
+
+.hn-cta p{
+    margin:20px auto;
+    max-width:800px;
+}
+
+.hn-cta button{
+    padding:16px 40px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:purple;
+    font-weight:700;
+    cursor:pointer;
+}
