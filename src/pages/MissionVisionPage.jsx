@@ -6,12 +6,11 @@ import './MissionVisionPage.css'
 const MissionVisionPage = () => {
   return (
     <>
-      <Navbar scrollValue={60} alwaysTop={true} />
+      <Navbar scrollValue={0} alwaysTop={true} />
 
       <section className="mission-hero">
 
-        <div className="mission-overlay"></div>
-
+Overviw
         <div className="mission-content">
 
           <span>OUR PURPOSE</span>

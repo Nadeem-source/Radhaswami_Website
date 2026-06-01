@@ -5,7 +5,8 @@ import { NavLink, useNavigate } from 'react-router-dom'
 const Navbar = ({
   scrollValue = 650,
   hideMarquee,
-  alwaysTop = false
+  alwaysTop = false,
+  navbarClass
 }) => {
   const [scrolled, setScrolled] = useState(false)
 
@@ -33,7 +34,7 @@ const Navbar = ({
 
     <nav
       className={`
-navbar
+navbar ${navbarClass || ""}
 ${scrolled ? 'active-navbar' : ''}
 ${hideMarquee ? 'navbar-top' : ''}
 ${alwaysTop ? 'navbar-top' : ''}
@@ -83,7 +84,7 @@ ${alwaysTop ? 'navbar-top' : ''}
           <ul className="dropdown-menu">
 
             <li>
-              <NavLink to="/about">
+              <NavLink to="/overview">
                 Overview
               </NavLink>
             </li>

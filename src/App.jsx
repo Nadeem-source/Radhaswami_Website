@@ -32,6 +32,7 @@ import EconomicWellBeing from "./pages/EconomicWellBeing";
 import ChildProtection from "./pages/ChildProtection";
 import HumanitarianPage from "./pages/HumanitarianPage";
 import ResiliencePage from "./pages/ResiliencePage";
+import Overview from "./pages/Overview";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -152,6 +153,10 @@ function App() {
 <Route
   path="/resilience"
   element={<ResiliencePage />}
+/>
+<Route
+  path="/overview"
+  element={<Overview />}
 />
       </Routes>
     </>
