@@ -53,9 +53,12 @@ const Overview = () => {
       &gt;
     </span>
 
-    <span className="breadcrumb-current">
-      About
-    </span>
+    <Link
+  to="/about"
+  className="breadcrumb-link"
+>
+  About
+</Link>
     <span className="breadcrumb-arrow">
       &gt;
     </span>
