@@ -5,37 +5,37 @@ const WelcomePopup = () => {
 
   const [showPopup, setShowPopup] = useState(false)
 const [activeSlide, setActiveSlide] = useState(0)
-  useEffect(() => {
+  // useEffect(() => {
+
+  //   const timer = setTimeout(() => {
+  //     setShowPopup(true)
+  //   }, 800)
+
+  //   return () => clearTimeout(timer)
+
+  // }, [])
+useEffect(() => {
+
+  const alreadyShown =
+    sessionStorage.getItem('aflishPopupShown')
+
+  if (!alreadyShown) {
 
     const timer = setTimeout(() => {
+
       setShowPopup(true)
+
+      sessionStorage.setItem(
+        'aflishPopupShown',
+        'true'
+      )
+
     }, 800)
 
     return () => clearTimeout(timer)
+  }
 
-  }, [])
-// useEffect(() => {
-
-//   const alreadyShown =
-//     localStorage.getItem('aflishPopupShown')
-
-//   if (!alreadyShown) {
-
-//     const timer = setTimeout(() => {
-
-//       setShowPopup(true)
-
-//       localStorage.setItem(
-//         'aflishPopupShown',
-//         'true'
-//       )
-
-//     }, 800)
-
-//     return () => clearTimeout(timer)
-//   }
-
-// }, [])
+}, [])
 
 
 useEffect(() => {

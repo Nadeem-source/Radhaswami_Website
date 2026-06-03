@@ -20,12 +20,127 @@ text-align:center;
 .council-content h1{
 font-size:70px;
 color:white;
-max-width:900px;
+max-width:800px;
+margin:auto;
 }
 
 .council-content p{
 color:white;
 font-size:20px;
-max-width:700px;
+max-width:1000px;
 margin:auto;
+text-align:center;
+}
+/* ==========================
+   COUNCIL INTRO
+========================== */
+
+.council-intro{
+    padding:80px 10%;
+    background:white;
+}
+
+.council-intro-container{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+}
+
+.council-intro-container h2{
+    color:purple;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.council-intro-container p{
+    color:#555;
+    line-height:2;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+/* ==========================
+   COUNCIL MEMBERS
+========================== */
+
+.council-members-section{
+    padding:20px 8% 100px;
+    background:#fafafa;
+}
+
+.council-members-container{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.council-members-container h2{
+    color:purple;
+    font-size:45px;
+}
+
+.council-members-container p{
+    max-width:900px;
+    margin:auto;
+    color:#555;
+}
+
+.council-member-card{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:50px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    margin-bottom:40px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.member-image img{
+    width:100%;
+    border-radius:18px;
+}
+
+.member-badge{
+    display:inline-block;
+
+    background:purple;
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+}
+
+.member-details h2{
+    color:purple;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.member-details h4{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.member-details p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:15px;
+}
+
+@media(max-width:992px){
+
+    .council-member-card{
+        grid-template-columns:1fr;
+    }
 }
