@@ -40,7 +40,7 @@ imgWidth:"400px",
   imgBottom:"-59px",
 
   bgWidth:"400px",
-  bgHeight:"220px",
+  bgHeight:"210px",
   bgLeft:"-10px",
   bgbackground:"#c7c4c0",
   bgbottom:"-10px",
@@ -62,7 +62,7 @@ imgWidth:"570px",
   imgBottom:"-54px",
 
   bgWidth:"400px",
-  bgHeight:"240px",
+  bgHeight:"230px",
   bgLeft:"-10px",
   bgbackground:"white",
   bgbottom:"-10px",
@@ -105,7 +105,7 @@ imgWidth:"600px",
   imgBottom:"-70px",
 
   bgWidth:"400px",
-  bgHeight:"233px",
+  bgHeight:"223px",
   bgLeft:"-10px",
   bgbackground:"white",
   bgbottom:"-10px",
@@ -126,7 +126,7 @@ imgWidth:"580px",
   imgBottom:"-30px",
 
   bgWidth:"400px",
-  bgHeight:"240px",
+  bgHeight:"220px",
   bgLeft:"-10px",
   bgbackground:"white",
   bgbottom:"-10px",
@@ -190,7 +190,7 @@ imgWidth:"100%",
   imgBottom:"-40px",
 
   bgWidth:"400px",
-  bgHeight:"215px",
+  bgHeight:"200px",
   bgLeft:"-10px",
   bgbackground:"white",
   bgbottom:"-10px",
@@ -206,12 +206,12 @@ id:10,
 name:"MR. UMAIR AHMAD SHAMSI",
 role:"District Coordinator (Rampur)",
 image:"/images/team/Umair2.png",
-imgWidth:"580px",
-  imgHeight:"450px",
-  imgBottom:"-42px",
+imgWidth:"520px",
+  imgHeight:"650px",
+  imgBottom:"-161px",
 
   bgWidth:"400px",
-  bgHeight:"210px",
+  bgHeight:"190px",
   bgLeft:"-10px",
   bgbackground:"white",
   bgbottom:"-10px",
@@ -274,7 +274,7 @@ alwaysTop={true}
                 <div className="team-section-container">
                     <section className="breadcrumb-section">
 
-  <div className="breadcrumb-container">
+  <div className="breadcrumb3-container">
 
     <Link to="/" className="breadcrumb-home">
       🏠

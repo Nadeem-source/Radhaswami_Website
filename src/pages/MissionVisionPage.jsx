@@ -3,13 +3,19 @@ import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import './MissionVisionPage.css'
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faBullseye,
+  faEye,
+  faHandshake
+} from '@fortawesome/free-solid-svg-icons';
 
 const MissionVisionPage = () => {
   return (
     <>
       <Navbar scrollValue={0} 
       alwaysTop={true}
-      navbarClass="navbar-light"
+      
        />
 
       <section className="mission-hero">
@@ -20,7 +26,7 @@ const MissionVisionPage = () => {
 <br/><br/>
           <h1>
             Building A Better Future Through
-            Service, Innovation & Humanity
+            Service, Innovation And Humanity
           </h1>
 <br/>
           <p>
@@ -129,7 +135,7 @@ const MissionVisionPage = () => {
   <div className="guiding-card">
 
     <div className="guiding-icon">
-      <i className="fas fa-bullseye"></i>
+      <FontAwesomeIcon icon={faBullseye}/>
     </div>
 
     <h3>Our Purpose</h3>
@@ -144,7 +150,7 @@ const MissionVisionPage = () => {
   <div className="guiding-card">
 
     <div className="guiding-icon">
-      <i className="fas fa-eye"></i>
+      <FontAwesomeIcon icon={faEye}/>
     </div>
 
     <h3>Our Vision</h3>
@@ -159,7 +165,7 @@ const MissionVisionPage = () => {
   <div className="guiding-card">
 
     <div className="guiding-icon">
-      <i className="fas fa-handshake"></i>
+      <FontAwesomeIcon icon={faHandshake}/>
     </div>
 
     <h3>Our Mission</h3>

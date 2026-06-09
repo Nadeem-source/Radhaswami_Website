@@ -95,11 +95,11 @@ ${alwaysTop ? 'navbar-top' : ''}
               </NavLink>
             </li>
 
-            <li>
+            {/* <li>
               <NavLink to="/governing-council">
                 Governing Council
               </NavLink>
-            </li>
+            </li> */}
 
             <li>
               <NavLink to="/financials">
@@ -131,7 +131,7 @@ ${alwaysTop ? 'navbar-top' : ''}
 
           <ul className="dropdown-menu">
 
-            <li>
+            {/* <li>
               <NavLink to="/our-strategy">
                 Our Strategy
               </NavLink>
@@ -141,7 +141,7 @@ ${alwaysTop ? 'navbar-top' : ''}
               <NavLink to="/our-presence">
                 Our Presence
               </NavLink>
-            </li>
+            </li> */}
 
             <li>
               <NavLink to="/education">

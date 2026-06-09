@@ -9,8 +9,8 @@
 
     background:
     linear-gradient(
-    rgba(248, 246, 246, 0.65),
-    rgba(250, 250, 250, 0.65)
+    rgba(255, 255, 255, 0.9),
+    rgba(0, 0, 0, 0)
     ),
     url('/images/GalleryPageImage3.png');
 
@@ -44,29 +44,34 @@
 .team-section{
     background:#fafafa;
     padding:0;
+    
 }
 
 .team-section-container{
     max-width:1400px;
     margin:auto;
+    
 }
 .breadcrumb-section{
     background:white;
     padding:25px 8%;
+    
 
     box-shadow:
     0 5px 25px rgba(0,0,0,.05);
 }
 
-.breadcrumb-container{
+.breadcrumb3-container{
     display:flex;
     align-items:center;
     gap:15px;
+    margin-left:-20px;
 }
 
 .breadcrumb-home{
     text-decoration:none;
     font-size:22px;
+    
 }
 
 .breadcrumb-arrow{
