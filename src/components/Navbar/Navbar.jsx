@@ -101,11 +101,11 @@ ${alwaysTop ? 'navbar-top' : ''}
               </NavLink>
             </li> */}
 
-            <li>
+            {/* <li>
               <NavLink to="/financials">
                 Financials
               </NavLink>
-            </li>
+            </li> */}
             {/* 
   <li>
     <NavLink to="/certificates">

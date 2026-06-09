@@ -30,7 +30,7 @@ useEffect(() => {
         'true'
       )
 
-    }, 800)
+    }, 3000)
 
     return () => clearTimeout(timer)
   }

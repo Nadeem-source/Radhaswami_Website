@@ -2,12 +2,40 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import "./EducationPage.css";
+import Slider from "react-slick";
+const SliderComponent = Slider.default || Slider;
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const EducationPage = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(1);
 
 const toggleAccordion = (index) => {
   setOpenIndex(openIndex === index ? null : index);
+};
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 };
   return (
     <>
@@ -156,6 +184,15 @@ const toggleAccordion = (index) => {
   className={`pillar-item ${
     openIndex === 1 ? "active" : ""
   }`}
+  onClick={() => toggleAccordion(1)}
+  role="button"
+  tabIndex={0}
+  onKeyDown={(event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleAccordion(1);
+    }
+  }}
 >
 
   <div
@@ -168,12 +205,10 @@ const toggleAccordion = (index) => {
     />
 
     <h3>
-      Early Childhood Care And Development
+      EARLY CHILDHOOD CARE AND DEVELOPMENT
     </h3>
 
-    <span className="pillar-icon" 
-    onClick={() => toggleAccordion(1)}
-    >
+    <span className="pillar-icon">
       {openIndex === 1 ? "-" : "+"}
     </span>
 
@@ -219,6 +254,15 @@ const toggleAccordion = (index) => {
   className={`pillar-item ${
     openIndex === 2 ? "active" : ""
   }`}
+  onClick={() => toggleAccordion(2)}
+  role="button"
+  tabIndex={0}
+  onKeyDown={(event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleAccordion(2);
+    }
+  }}
 >
 
   <div
@@ -232,12 +276,10 @@ const toggleAccordion = (index) => {
     />
 
     <h3>
-      School Education Support
+      SCHOOL EDUCATION SUPPORT
     </h3>
 
-    <span className="pillar-icon" 
-    onClick={() => toggleAccordion(2)}
-    >
+    <span className="pillar-icon">
       {openIndex === 2 ? "-" : "+"}
     </span>
 
@@ -281,6 +323,15 @@ const toggleAccordion = (index) => {
   className={`pillar-item ${
     openIndex === 3 ? "active" : ""
   }`}
+  onClick={() => toggleAccordion(3)}
+  role="button"
+  tabIndex={0}
+  onKeyDown={(event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleAccordion(3);
+    }
+  }}
 >
   <div
     className="pillar-top"
@@ -293,12 +344,10 @@ const toggleAccordion = (index) => {
     />
 
     <h3>
-      Skill Development And Awareness
+      SKILL DEVELOPMENT AND AWARENESS
     </h3>
 
-    <span className="pillar-icon"
-    onClick={() => toggleAccordion(3)}
-    >
+    <span className="pillar-icon">
       {openIndex === 3 ? "-" : "+"}
     </span>
 
@@ -341,6 +390,212 @@ const toggleAccordion = (index) => {
   </div>
 
 </section>
+<section className="education-overview">
+
+  <div className="education-container">
+
+    <div className="overview-header">
+      <span>EDUCATION IN INDIA</span>
+      <h2>Current Educational Landscape</h2>
+    </div>
+
+    <div className="overview-content">
+
+      <p>
+        Education remains one of the most powerful drivers of
+        social and economic development. India has made
+        significant progress in expanding access to education
+        across urban and rural communities over the past decades.
+      </p>
+
+      <p>
+        Today, millions of students are enrolled in schools across
+        the country, supported by a large network of educational
+        institutions and dedicated teachers. Continuous efforts
+        have improved literacy levels, increased school
+        participation and strengthened access to learning
+        opportunities for children from diverse backgrounds.
+      </p>
+
+      <p>
+        Despite these achievements, challenges remain in ensuring
+        consistent attendance, reducing dropout rates and
+        providing equal learning opportunities for every child.
+        Greater focus on digital learning, skill development and
+        quality education is essential for preparing future
+        generations for a rapidly evolving world.
+      </p>
+
+      <div className="overview-highlight">
+        <strong>Our Vision:</strong> Every child should have
+        access to safe, inclusive and quality education that
+        empowers them to reach their full potential and contribute
+        positively to society.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section className="education-help">
+
+  <div className="education-container">
+
+    <div className="section-title">
+
+      <span>HOW WE HELP CHILDREN LEARN BETTER</span><br/>
+
+      <h2>Learning Support That Reaches Beyond The Classroom</h2>
+
+    </div>
+
+    <SliderComponent {...settings}>
+
+      <div className="help-card">
+        <img src="/images/educationpage-studyingImage.png" alt="" />
+        <div className="help-icon">
+  📚
+</div>
+        <h3>School Readiness</h3>
+        <p>
+          Building early confidence, basic learning habits and joyful
+          classroom participation for young children.
+        </p>
+      </div>
+
+      <div className="help-card">
+        <img src="/images/classroomstudyingimage-educationpage.png" alt="" />
+        <div className="help-icon">🏫</div>
+        <h3>Learning Environment</h3>
+        <p>
+          Supporting safe, encouraging spaces where students can ask,
+          explore, read, practice and grow.
+        </p>
+      </div>
+
+      <div className="help-card">
+        <img src="/images/digitallabimage-educationpage.png" alt="" />
+        <div className="help-icon">💻</div>
+        <h3>Digital Learning</h3>
+        <p>
+          Introducing practical digital exposure so children can build
+          confidence with modern learning tools.
+        </p>
+      </div>
+
+      <div className="help-card">
+        <img src="/images/childrenstudyingimage.jpg" alt="" />
+        <div className="help-icon">✏️</div>
+        <h3>Remedial Support</h3>
+        <p>
+          Helping learners strengthen reading, numeracy and revision
+          skills through steady community support.
+        </p>
+      </div>
+
+      <div className="help-card">
+        <img src="/images/overview-education-image.png" alt="" />
+        <div className="help-icon">👧</div>
+        <h3>Girl Child Education</h3>
+        <p>
+          Encouraging families and communities to keep girls learning,
+          participating and planning their futures.
+        </p>
+      </div>
+
+      <div className="help-card">
+        <img src="/images/education-image.jpg" alt="" />
+        <div className="help-icon">👨‍🏫</div>
+        <h3>Teacher And Volunteer Support</h3>
+        <p>
+          Mobilizing mentors and volunteers who make learning more
+          consistent, personal and motivating.
+        </p>
+      </div>
+      </SliderComponent>
+
+   
+
+  </div>
+
+</section>
+
+<section className="education-achievements">
+
+  <div className="education-container">
+
+    <div className="section-title">
+
+      <span>OUR EDUCATION JOURNEY</span>
+
+      <h2>Progress We Are Working Toward</h2>
+
+    </div>
+
+    <div className="achievement-layout">
+
+      <div className="achievement-intro">
+        <h3>Every learning drive becomes stronger when communities,
+        volunteers and supporters work together.</h3>
+        <p>
+          AFLISH Group is focused on consistent education support,
+          practical learning resources and safe spaces that help
+          children continue their studies with dignity.
+          Greater focus on digital learning, skill development and quality education.
+        </p>
+        <a href="/donation" className="education-cta-link">Support Education</a>
+      </div>
+
+      <div className="achievement-list">
+
+        <div className="achievement-item">
+          <span>01</span>
+          <p>Community learning drives for children who need extra academic support.</p>
+        </div>
+
+        <div className="achievement-item">
+          <span>02</span>
+          <p>School supplies, study material and basic resources for regular learning.</p>
+        </div>
+
+        <div className="achievement-item">
+          <span>03</span>
+          <p>Digital awareness sessions that introduce students to useful technology.</p>
+        </div>
+
+        <div className="achievement-item">
+          <span>04</span>
+          <p>Volunteer-led mentoring to encourage confidence, attendance and curiosity.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="education-donate-band">
+
+  <div className="education-container donate-band-inner">
+
+    <div>
+      <span>JOIN THE MISSION</span>
+      <h2>Help Children Continue Learning With Confidence</h2>
+      <p>
+        Your support can help us provide learning material, mentoring
+        and access to opportunities for children who need it most.
+      </p>
+    </div>
+
+    <a href="/donation">Donate Now</a>
+
+  </div>
+
+</section>
+
 <section className="education-impact">
 
   <div className="education-container">
