@@ -37,6 +37,29 @@ const settings = {
     }
   ]
 };
+const [activeYear, setActiveYear] = useState("2025-2026");
+const achievementsData = {
+  "2024-2025": [
+    "Supported 300+ children with educational resources.",
+    "Distributed school bags, notebooks and stationery kits.",
+    "Organized community learning sessions in underserved areas.",
+    "Connected volunteers with children needing academic support."
+  ],
+
+  "2025-2026": [
+    "Expanded digital learning access for students.",
+    "Launched scholarship assistance initiatives.",
+    "Strengthened girl child education awareness programs.",
+    "Conducted career guidance and mentoring workshops."
+  ],
+
+  "2026-2027": [
+    "Established community learning centers.",
+    "Increased volunteer participation across education projects.",
+    "Introduced technology-enabled learning activities.",
+    "Expanded partnerships supporting child education."
+  ]
+};
   return (
     <>
     
@@ -161,6 +184,17 @@ const settings = {
         encouraging school participation, promoting digital
         learning and supporting skill development programs that
         prepare young people for future success.
+      </p>
+      <p>
+        Education not only improves academic outcomes but also helps children develop critical thinking, communication and problem-solving skills. These abilities enable young learners to make informed decisions, adapt to changing environments and contribute meaningfully to their communities. By fostering creativity and innovation, education lays the groundwork for lifelong learning and personal growth.
+      </p>
+
+       <p>
+        AFLISH Group also focuses on creating supportive learning environments where children feel safe, encouraged and motivated to achieve their goals. Through partnerships with schools, communities and volunteers, we work to strengthen educational opportunities and ensure that learners receive the guidance and resources they need to succeed.
+       </p>
+
+      <p>
+        We recognize that lasting change requires collective effort. By engaging parents, educators and local stakeholders, we promote awareness about the importance of education and encourage active participation in every child's learning journey. Together, we aim to build stronger communities where every child has the opportunity to learn, grow and thrive.
       </p>
 
     </div>
@@ -440,13 +474,13 @@ const settings = {
 </section>
 <section className="education-help">
 
-  <div className="education-container">
+  <div className="help-cards-container">
 
-    <div className="section-title">
+    <div className="help-cards-section-title">
 
       <span>HOW WE HELP CHILDREN LEARN BETTER</span><br/>
 
-      <h2>Learning Support That Reaches Beyond The Classroom</h2>
+      <br/><h2>Learning Support That Reaches Beyond The Classroom</h2>
 
     </div>
 
@@ -457,62 +491,140 @@ const settings = {
         <div className="help-icon">
   📚
 </div>
-        <h3>School Readiness</h3>
-        <p>
-          Building early confidence, basic learning habits and joyful
-          classroom participation for young children.
-        </p>
+        <h3>SCHOOL READINESS</h3>
+       <p>
+  Building early confidence, basic learning habits and joyful
+  classroom participation for young children.
+  We help children develop social, emotional and communication skills.
+</p>
       </div>
 
       <div className="help-card">
         <img src="/images/classroomstudyingimage-educationpage.png" alt="" />
         <div className="help-icon">🏫</div>
-        <h3>Learning Environment</h3>
+        <h3>LEARNING ENVIRONMENT</h3>
         <p>
-          Supporting safe, encouraging spaces where students can ask,
-          explore, read, practice and grow.
-        </p>
+  Supporting safe, encouraging spaces where students can ask,
+  explore, read, practice and grow.
+  Creating positive environments that inspire curiosity and learning.
+</p>
       </div>
 
       <div className="help-card">
         <img src="/images/digitallabimage-educationpage.png" alt="" />
         <div className="help-icon">💻</div>
-        <h3>Digital Learning</h3>
+        <h3>DIGITAL LEARNING</h3>
         <p>
-          Introducing practical digital exposure so children can build
-          confidence with modern learning tools.
-        </p>
+  Introducing practical digital exposure so children can build
+  confidence with modern learning tools.
+  Preparing learners for future educational and career opportunities.
+</p>
       </div>
 
       <div className="help-card">
         <img src="/images/childrenstudyingimage.jpg" alt="" />
         <div className="help-icon">✏️</div>
-        <h3>Remedial Support</h3>
+        <h3>REMEDIAL SUPPORT</h3>
         <p>
-          Helping learners strengthen reading, numeracy and revision
-          skills through steady community support.
-        </p>
+  Helping learners strengthen reading, numeracy and revision
+  skills through steady community support.
+  Providing additional guidance to overcome learning difficulties.
+</p>
       </div>
 
       <div className="help-card">
         <img src="/images/overview-education-image.png" alt="" />
         <div className="help-icon">👧</div>
-        <h3>Girl Child Education</h3>
+        <h3>GIRL CHILD EDUCATION</h3>
         <p>
-          Encouraging families and communities to keep girls learning,
-          participating and planning their futures.
-        </p>
+  Encouraging families and communities to keep girls learning,
+  participating and planning their futures.
+  Promoting equal opportunities and long-term educational success.
+</p>
       </div>
 
       <div className="help-card">
         <img src="/images/education-image.jpg" alt="" />
         <div className="help-icon">👨‍🏫</div>
-        <h3>Teacher And Volunteer Support</h3>
-        <p>
-          Mobilizing mentors and volunteers who make learning more
-          consistent, personal and motivating.
-        </p>
+        <h3>TEACHER AND VOLUNTEER SUPPORT</h3>
+       <p>
+  Mobilizing mentors and volunteers who make learning more
+  consistent, personal and motivating.
+  Strengthening student engagement through guidance and encouragement.
+</p>
       </div>
+      <div className="help-card">
+  <img src="/images/ngoeducation.jfif" alt="" />
+  <div className="help-icon">🎓</div>
+
+  <h3>SCHOLARSHIP ASSISTANCE</h3>
+
+  <p>
+    Supporting deserving students with educational aid,
+    scholarship guidance and financial assistance.
+    Helping talented children continue their studies without interruption.
+  </p>
+</div>
+<div className="help-card">
+  <img src="/images/library.jfif" alt="" />
+  <div className="help-icon">📖</div>
+
+  <h3>LIBRARY & READING PROGRAM</h3>
+
+  <p>
+    Encouraging reading habits through community libraries,
+    story sessions and access to age-appropriate books.
+    Helping children improve literacy, imagination and learning.
+  </p>
+</div>
+<div className="help-card">
+  <img src="/images/distributestationary.jfif" alt="" />
+  <div className="help-icon">🎒</div>
+
+  <h3>SCHOOL SUPPLIES DISTRIBUTION</h3>
+
+  <p>
+    Providing notebooks, stationery, school bags and learning
+    materials to children from underserved communities.
+    Ensuring every student has the resources needed to learn effectively.
+  </p>
+</div>
+<div className="help-card">
+  <img src="/images/communitylearning.jfif" alt="" />
+  <div className="help-icon">🏡</div>
+
+  <h3>COMMUNITY LEARNING CENTERS</h3>
+
+  <p>
+    Creating accessible learning spaces where children can study,
+    receive academic support and participate in educational activities.
+    Bringing quality learning opportunities closer.
+  </p>
+</div>
+<div className="help-card">
+  <img src="/images/careerguidance.jfif" alt="" />
+  <div className="help-icon">🚀</div>
+
+  <h3>CAREER GUIDANCE & COUNSELLING</h3>
+
+  <p>
+    Helping students explore career opportunities, educational
+    pathways and future goals through mentoring and guidance.
+    Empowering young minds to make informed decisions.
+  </p>
+</div>
+<div className="help-card">
+  <img src="/images/diversechildren.jfif" alt="" />
+  <div className="help-icon">👨‍👩‍👧‍👦</div>
+
+  <h3>PARENT & COMMUNITY ENGAGEMENT</h3>
+
+  <p>
+    Encouraging parents and community members to actively support
+    children's education and personal development.
+    Building stronger partnerships that create lasting educational impact.
+  </p>
+</div>
       </SliderComponent>
 
    
@@ -523,60 +635,54 @@ const settings = {
 
 <section className="education-achievements">
 
-  <div className="education-container">
+  <div className="achievements-container">
 
-    <div className="section-title">
+    <div className="achievements-section-title">
 
-      <span>OUR EDUCATION JOURNEY</span>
-
-      <h2>Progress We Are Working Toward</h2>
+      <span>OUR ACHIEVEMENTS</span>
 
     </div>
 
-    <div className="achievement-layout">
+    <div className="achievement-years">
 
-      <div className="achievement-intro">
-        <h3>Every learning drive becomes stronger when communities,
-        volunteers and supporters work together.</h3>
-        <p>
-          AFLISH Group is focused on consistent education support,
-          practical learning resources and safe spaces that help
-          children continue their studies with dignity.
-          Greater focus on digital learning, skill development and quality education.
-        </p>
-        <a href="/donation" className="education-cta-link">Support Education</a>
-      </div>
+  <button
+    className={activeYear === "2024-2025" ? "year-btn active" : "year-btn"}
+    onClick={() => setActiveYear("2024-2025")}
+  >
+    2024-2025
+  </button>
 
-      <div className="achievement-list">
+  <button
+    className={activeYear === "2025-2026" ? "year-btn active" : "year-btn"}
+    onClick={() => setActiveYear("2025-2026")}
+  >
+    2025-2026
+  </button>
 
-        <div className="achievement-item">
-          <span>01</span>
-          <p>Community learning drives for children who need extra academic support.</p>
-        </div>
+  <button
+    className={activeYear === "2026-2027" ? "year-btn active" : "year-btn"}
+    onClick={() => setActiveYear("2026-2027")}
+  >
+    2026-2027
+  </button>
 
-        <div className="achievement-item">
-          <span>02</span>
-          <p>School supplies, study material and basic resources for regular learning.</p>
-        </div>
+</div>
 
-        <div className="achievement-item">
-          <span>03</span>
-          <p>Digital awareness sessions that introduce students to useful technology.</p>
-        </div>
+    <div className="achievement-content">
 
-        <div className="achievement-item">
-          <span>04</span>
-          <p>Volunteer-led mentoring to encourage confidence, attendance and curiosity.</p>
-        </div>
+      <ul>
 
-      </div>
+        {achievementsData[activeYear].map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+
+      </ul>
 
     </div>
 
   </div>
 
 </section>
-
 <section className="education-donate-band">
 
   <div className="education-container donate-band-inner">
@@ -659,9 +765,9 @@ const settings = {
 </section>
       
 
-      <section className="education-focus">
+      {/* <section className="education-focus">
 
-        <div className="education-container">
+        <div className="focus-cards-container">
 
           <div className="section-title">
 
@@ -711,7 +817,7 @@ const settings = {
 
         </div>
 
-      </section>
+      </section> */}
 
       <section className="education-stats">
 
