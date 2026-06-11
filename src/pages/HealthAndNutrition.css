@@ -1,7 +1,8 @@
 .hn-hero{
     position:relative;
-    height:100vh;
+    height:150vh;
     overflow:hidden;
+    padding:0;
 }
 
 .hn-hero-img{
@@ -15,15 +16,15 @@
     inset:0;
     background:
     linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
+    rgba(0,0,0,0.995),
+    rgba(0,0,0,0.1)
     );
     z-index:1;
 }
 
 .hn-hero-content{
     position:absolute;
-    top:50%;
+    top:39%;
     left:50%;
     transform:translate(-50%,-50%);
     z-index:2;
@@ -39,47 +40,285 @@
 }
 
 .hn-hero-content h1{
-    font-size:70px;
-    margin:20px 0;
+    font-size:60px;
+    margin:40px 0;
 }
 
 .hn-hero-content p{
     max-width:900px;
     margin:auto;
-    font-size:20px;
-    line-height:1.8;
+    margin-top:-10px;
+    font-size:21px;
+    line-height:1.9;
+}
+.hn-breadcrumb{
+    background:#ffffff;
+    padding:25px 8%;
+    border-bottom:0px solid #e5e5e5;
 }
 
+.hn-breadcrumb-container{
+    max-width:1400px;
+    margin:auto;
+    margin-left:-80px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:16px;
+    font-weight:600;
+}
+
+.hn-breadcrumb-container a{
+    color:purple;
+    text-decoration:none;
+}
+
+.hn-breadcrumb-container span{
+    color:#666;
+}
 .hn-about{
-    padding:120px 8%;
+    padding:40px 8% 100px;
+    background:#ffffff;
 }
 
 .hn-container{
-    display:flex;
-    gap:70px;
-    align-items:center;
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
 }
 
-.hn-left img{
-    width:100%;
-    border-radius:24px;
+.hn-right{
+    max-width:1200px;
+    margin:auto;
 }
 
 .hn-right span{
+    display:block;
     color:purple;
-    font-weight:700;
+    font-size:24px;
+    font-weight:800;
+    text-transform:uppercase;
+    margin-bottom:35px;
+    letter-spacing:1px;
 }
 
 .hn-right h2{
-    font-size:48px;
-    margin:20px 0;
+    font-size:34px;
+    line-height:1.2;
+    font-weight:800;
+    color:purple;
+    margin-bottom:35px;
+   
+    
 }
 
 .hn-right p{
+    text-align: center;
+    font-size:20px;
     line-height:1.9;
-    margin-bottom:20px;
+    color:#222;
+    margin-bottom:28px;
+    font-weight:500;
+   
+}
+.hn-goal-card{
+    max-width:1050px;
+    margin:60px auto 0;
+
+    background:#43b581; 
+    color:white;
+
+    text-align:left;
+
+    padding:35px 45px;
+
+    border-radius:18px;
 }
 
+.hn-goal-card h3{
+    font-size:30px;
+    margin-bottom:15px;
+    font-weight:800;
+}
+
+.hn-goal-card p{
+    color:white;
+    text-align: left;
+    margin:0;
+    max-width:100%;
+    font-size:19px;
+    line-height:1.8;
+}
+.hn-workareas{
+    background:purple;
+    padding:80px 8%;
+    position:relative;
+    overflow:hidden;
+}
+
+.work-title{
+    text-align:center;
+    color:white;
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:70px;
+}
+.work-slider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+}
+
+.work-cards{
+    display:flex;
+    gap:35px;
+}
+.work-card{
+    width:320px;
+    min-height:420px;
+
+    background:#efefef;
+
+    border-radius:6px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    /* animation:cardSlide .8s forwards; */
+}
+/* @keyframes cardSlide{
+
+from{
+    opacity:0;
+    transform:translateX(0);
+}
+
+to{
+    opacity:1;
+    transform:translateX(40px);
+}
+
+} */
+.work-card h3{
+
+    font-size:30px;
+    color:#444;
+
+    margin-bottom:30px;
+
+    opacity:0;
+
+    animation:titleMove .9s ease forwards;
+
+    animation-delay:.25s;
+}
+
+@keyframes titleMove{
+
+from{
+    opacity:0;
+    transform:translateX(-120px);
+}
+
+to{
+    opacity:1;
+    transform:translateX(0);
+}
+
+}
+.work-icon{
+
+    font-size:90px;
+    color:purple;
+
+    margin-bottom:30px;
+
+     opacity:0;
+
+    animation:iconUp 1s ease forwards;
+
+    animation-delay:.6s;
+}
+
+@keyframes iconUp{
+
+from{
+    opacity:0;
+    transform:translateY(120px) scale(.2);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0) scale(1);
+}
+
+}
+.work-card p{
+
+    color:#555;
+    line-height:1.8;
+    font-size:17px;
+     opacity:0;
+
+    animation:textFade .8s ease forwards;
+
+    animation-delay:.9s;
+}
+@keyframes textFade{
+
+from{
+    opacity:0;
+}
+
+to{
+    opacity:1;
+}
+
+}
+.work-arrow{
+
+    background:none;
+    border:none;
+
+    font-size:50px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.work-arrow:hover{
+    transform:scale(1.2);
+}
+.work-dots{
+
+    display:flex;
+    justify-content:center;
+    gap:10px;
+
+    margin-top:50px;
+}
+
+.dot{
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+    background:#ffffff70;
+}
+
+.dot.active{
+
+    background:white;
+}
 .hn-programs{
     padding:100px 8%;
     background:#fafafa;

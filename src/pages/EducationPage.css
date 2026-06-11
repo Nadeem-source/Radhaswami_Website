@@ -692,42 +692,79 @@ text-align:center;
     
 }
 .achievement-years{
-    display:flex;
+    /* display:flex;
     justify-content:center;
        gap:0px;
     margin-bottom:40px;
-border-radius:20px;
+border-radius:20px; */
     /* background:#fff; */
-    width:fit-content;
+    /* width:fit-content;
     margin-left:auto;
     margin-right:auto;
 
     
-    overflow:hidden;
+    overflow:hidden; */
 
     /* box-shadow:0 4px 18px rgba(0,0,0,.08); */
 
-    flex-wrap:wrap;
-}
+    /* flex-wrap:wrap; */
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
 
+    margin-bottom:40px;
+}
+/* Bridge Line */
+.achievement-years::before{
+    content:"";
+    position:absolute;
+
+    width:420px;      /* line ki length */
+    height:6px;       /* line ki thickness */
+
+    background:white;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:20px;
+
+    z-index:1;
+}
 .year-btn{
-    border:none;
+    /* border:none;
     background:white;
 border-radius:20px;
-    padding:18px 40px;
+    padding:12px 25px;
 
-    font-size:22px;
+    font-size:18px; */
      /* margin:10px ; */
 
-    cursor:pointer;
+    /* cursor:pointer;
 
     color:#555;
     transition:.3s;
     font-weight:700;
     cursor:pointer;
 margin-right:20px;
-    transition:.3s;
+    transition:.3s; */
     /* padding-bottom:8px; */
+     position:relative;
+    z-index:2;     /* line ke upar button rahe */
+    cursor: pointer;
+    border:none;
+    background:white;
+    border-radius:17px;
+
+    padding:12px 25px;
+    font-size:18px;
+    font-weight:700;
+
+    margin-right:0;
 }
 .year-btn.active{
      background:purple;
@@ -747,38 +784,78 @@ background:purple;
     border-left:10px solid rgb(245, 144, 11);
 
 }
-.achievement-content ul{
-    margin:0;
-    padding-left:25px;
-}
 
+ .achievement-content ul{
+    margin:0;
+    padding-left:0;
+    list-style:none;
+}
+/*
 .achievement-content li{
     font-size:19px;
     font-weight:600;
-    /* line-height:1.9; */
+    line-height:1.1;
     color:#fcf9f9;
 
+    margin-bottom:18px;
+    margin-top:-8px;
+} */
+ .achievement-content li{
+    list-style:none;
+    position:relative;
+    padding-left:30px;
+
+    font-size:18px;
+    font-weight:600;
+    line-height:1.8;
+    color:#fcf9f9;
+line-height: 1.1;
     margin-bottom:22px;
+    margin-top: 22px;
 }
-.achievement-content li::marker{
+.achievement-content li::before{
+    content:"";
+
+    position:absolute;
+    left:0;
+    top:10px;
+
+    transform:translateY(-50%);
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+    background:white;
+}
+/* .achievement-content li::marker{
     color:rgb(253, 250, 253);
     font-size:28px;
-}
+} */
 .education-donate-band{
     padding:90px 8%;
-    background:#fff;
-}
+     background:
+     linear-gradient(
+        rgba(40, 35, 44, 0.47),
+        rgba(91, 90, 92, 0.47)
+      ),
+      url("/images/INR.png");
 
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+ 
 .donate-band-inner{
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:36px;
-    background:#111;
+    background: rgba(107, 106, 106, 0.267);
     color:#fff;
     border-radius:26px;
     padding:48px;
-    box-shadow:0 18px 48px rgba(0,0,0,.18);
+    box-shadow:0 18px 48px rgba(0,0,0,1.1);
 }
 
 .donate-band-inner span{
@@ -788,6 +865,7 @@ background:purple;
 }
 
 .donate-band-inner h2{
+     font-weight:800;
     font-size:38px;
     line-height:1.2;
     margin:12px 0 14px;
@@ -797,6 +875,7 @@ background:purple;
     color:#e6e6e6;
     line-height:1.75;
     max-width:720px;
+    font-weight: 600;
 }
 
 .donate-band-inner a{
@@ -806,16 +885,19 @@ background:purple;
     text-decoration:none;
     font-weight:900;
     border-radius:999px;
-    padding:18px 34px;
+    padding:33px 23px;
     box-shadow:0 12px 28px rgba(229,57,53,.3);
 }
 
 .education-impact{
-    padding:90px 8%;
-    background:#ffffff;
+    padding:90px 5% 90px;
+    background:#cccbd1;
 }
-
-.education-impact .education-container{
+.education-impact-container{
+ margin-top: -20px;
+    margin-bottom: -40px;
+}
+.education-impact .education-impact-container{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:60px;
@@ -834,9 +916,11 @@ background:purple;
 }
 
 .impact-left p{
-    color:#666;
+    color:purple;
     line-height:1.9;
     margin-bottom:18px;
+    font-weight: 700;
+    font-style:normal;
 }
 
 .impact-right{
@@ -846,7 +930,11 @@ background:purple;
 }
 
 .impact-box{
-    background:white;
+    background:linear-gradient(
+    135deg,
+    purple,
+    #b300ff
+    ) !important;
     padding:30px;
     border:1px solid rgba(0,0,0,.08);
     border-radius:18px;

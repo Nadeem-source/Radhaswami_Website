@@ -43,21 +43,39 @@ const achievementsData = {
     "Supported 300+ children with educational resources.",
     "Distributed school bags, notebooks and stationery kits.",
     "Organized community learning sessions in underserved areas.",
-    "Connected volunteers with children needing academic support."
+    "Connected volunteers with children needing academic support.",
+    "Conducted reading and literacy improvement programs.",
+    "Provided educational support to children from low-income families.",
+    "Organized awareness campaigns promoting the importance of education.",
+    "Facilitated access to learning materials for rural students.",
+    "Encouraged regular school attendance through community engagement.",
+    "Supported teachers with essential educational resources and guidance."
   ],
 
   "2025-2026": [
     "Expanded digital learning access for students.",
     "Launched scholarship assistance initiatives.",
     "Strengthened girl child education awareness programs.",
-    "Conducted career guidance and mentoring workshops."
+    "Conducted career guidance and mentoring workshops.",
+    "Introduced computer literacy sessions for young learners.",
+    "Distributed digital learning resources in underserved communities.",
+    "Organized educational competitions to encourage student participation.",
+    "Promoted life-skills development through interactive workshops.",
+    "Enhanced community involvement in children's educational growth.",
+    "Provided academic mentoring support through dedicated volunteers."
   ],
 
   "2026-2027": [
     "Established community learning centers.",
     "Increased volunteer participation across education projects.",
     "Introduced technology-enabled learning activities.",
-    "Expanded partnerships supporting child education."
+    "Expanded partnerships supporting child education.",
+    "Launched advanced digital literacy and STEM learning programs.",
+    "Strengthened scholarship outreach for deserving students.",
+    "Expanded educational support initiatives to remote communities.",
+    "Organized leadership and personal development workshops for youth.",
+    "Improved access to quality learning resources and study materials.",
+    "Built stronger collaborations with schools and educational institutions."
   ]
 };
   return (
@@ -704,7 +722,7 @@ const achievementsData = {
 
 <section className="education-impact">
 
-  <div className="education-container">
+  <div className="education-impact-container">
 
     <div className="impact-left">
 
@@ -715,17 +733,16 @@ const achievementsData = {
       </h2>
 
       <p>
-        Education creates opportunities, strengthens communities
-        and helps children develop the confidence needed to
-        achieve their dreams.
-      </p>
+  Education creates opportunities, strengthens communities and helps children develop the confidence needed to achieve their dreams.
 
-      <p>
-        By supporting access to quality education, we empower
-        children with knowledge, life skills and values that
-        prepare them for a successful future.
-      </p>
+  By supporting access to quality education, we empower children with knowledge, life skills and values that prepare them for a successful future.
 
+  Every contribution helps provide learning resources, mentorship and educational support that can transform a child's life.
+
+  Our mission is to ensure that children from underserved communities have equal opportunities to learn, grow and build brighter futures.
+
+  Together, we can create lasting impact by nurturing young minds and empowering the next generation through education.
+</p>
     </div>
 
     <div className="impact-right">
@@ -733,7 +750,7 @@ const achievementsData = {
       <div className="impact-box">
         <h3>Access</h3>
         <p>
-          Ensuring every child has the opportunity to learn.
+          Ensuring every child has the opportunity to learn & get education.
         </p>
       </div>
 
@@ -754,7 +771,7 @@ const achievementsData = {
       <div className="impact-box">
         <h3>Growth</h3>
         <p>
-          Building skills that create brighter futures.
+          Building skills that create brighter futures of poor children .
         </p>
       </div>
 
