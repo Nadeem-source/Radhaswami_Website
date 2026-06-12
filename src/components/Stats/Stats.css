@@ -8,7 +8,7 @@ body{
   text-rendering: optimizeLegibility;
 }
 
-.stats-section{
+.homepage-stats-section{
   position: relative;
 
   overflow: hidden;
@@ -30,7 +30,7 @@ body{
 
 /* PREMIUM GLOW */
 
-.stats-section::before{
+.homepage-stats-section::before{
   content: '';
 
   position: absolute;
@@ -51,7 +51,7 @@ body{
 
 /* SECOND GLOW */
 
-.stats-section::after{
+.homepage-stats-section::after{
   content: '';
 
   position: absolute;
@@ -72,20 +72,20 @@ body{
 
 /* CONTAINER */
 
-.stats-container{
+.homepage-stats-container{
   position: relative;
   z-index: 2;
 }
 
 /* HEADING */
 
-.stats-heading{
+.homepage-stats-heading{
   text-align: center;
-
+margin-top: -40px;
   margin-bottom: 70px;
 }
 
-.stats-heading span{
+.homepage-stats-heading span{
   color: white;
 font-family: 'Outfit', sans-serif;
 
@@ -103,7 +103,7 @@ font-family: 'Outfit', sans-serif;
 
 /* MAIN HEADING */
 
-.stats-heading h2{
+.homepage-stats-heading h2{
   color: white;
 
   font-size: 40px;
@@ -125,7 +125,7 @@ font-family: 'Cinzel', serif;
 
 /* PARAGRAPH */
 
-.stats-heading p{
+.homepage-stats-heading p{
   color: white;
 
   max-width: 760px;
@@ -143,7 +143,7 @@ font-family: 'Manrope', sans-serif;
 
 /* GRID */
 
-.stats-grid{
+.homepage-stats-grid{
   display: grid;
 
   grid-template-columns:
@@ -154,7 +154,7 @@ font-family: 'Manrope', sans-serif;
 
 /* CARD */
 
-.stat-card{
+.homepage-stat-card{
   background:
   rgba(255,255,255,0.38);
 
@@ -181,7 +181,7 @@ font-family: 'Manrope', sans-serif;
 
 /* LIGHT EFFECT */
 
-.stat-card::before{
+.homepage-stat-card::before{
   content: '';
 
   position: absolute;
@@ -199,7 +199,7 @@ font-family: 'Manrope', sans-serif;
 }
 /* EXTRA PREMIUM HOVER */
 
-.stat-card:hover{
+.homepage-stat-card:hover{
    transform:
   translateY(-14px)
   scale(1.04);
@@ -217,7 +217,7 @@ font-family: 'Manrope', sans-serif;
 
 /* ICON */
 
-.stat-icon{
+.homepage-stat-icon{
   font-size: 50px;
 
   color: white;
@@ -231,7 +231,7 @@ filter:
 
 /* NUMBER */
 
-.stat-card h3{
+.homepage-stat-card h3{
   font-family: 'Outfit', sans-serif;
 
   font-weight: 800;
@@ -250,7 +250,7 @@ filter:
 
 /* TEXT */
 
-.stat-card p{
+.homepage-stat-card p{
   color: white;
 font-family: 'Inter', sans-serif;
 
@@ -264,21 +264,21 @@ font-family: 'Inter', sans-serif;
 
 @media(max-width:768px){
 
-  .stats-section{
+  .homepage-stats-section{
     padding: 90px 6%;
   }
 
-  .stats-heading h2{
+  .homepage-stats-heading h2{
     font-size: 34px;
 
     line-height: 1.25;
    
   }
-  .stat-card h3{
+  .homepage-stat-card h3{
     font-size: 40px;
   }
 
-  .stats-heading p{
+  .homepage-stats-heading p{
     font-size: 16px;
   }
 

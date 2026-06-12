@@ -31,11 +31,11 @@ const Stats = () => {
   ];
 
   return (
-    <section className="stats-section">
-      <div className="stats-overlay"></div>
+    <section className="homepage-stats-section">
+      <div className="homepage-stats-overlay"></div>
 
-      <div className="stats-container">
-        <div className="stats-heading">
+      <div className="homepage-stats-container">
+        <div className="homepage-stats-heading">
           <span>GLOBAL IMPACT</span>
           <h2>SERVING HUMANITY WITH DEVOTION</h2>
           <p>
@@ -44,10 +44,10 @@ const Stats = () => {
           </p>
         </div>
 
-        <div className="stats-grid">
+        <div className="homepage-stats-grid">
           {statsData.map((item, index) => (
-            <div className="stat-card" key={index}>
-              <div className="stat-icon">{item.icon}</div>
+            <div className="homepage-stat-card" key={index}>
+              <div className="homepage-stat-icon">{item.icon}</div>
               <h3>{item.number}</h3>
               <p>{item.title}</p>
             </div>

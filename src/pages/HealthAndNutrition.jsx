@@ -15,7 +15,7 @@ import {
 
 const HealthAndNutrition = () => {
   const [currentSlide,setCurrentSlide] = useState(0);
- 
+const [slideDirection, setSlideDirection] = useState(""); 
   const workData = [
 
 {
@@ -27,7 +27,7 @@ desc:"Providing nutrition support and awareness to children and families."
 {
 title:"Healthcare Camps",
 icon:<FaUserMd />,
-desc:"Free medical camps, checkups and consultation programs."
+desc:"Free medical camps, checkups, treatments  and consultation programs."
 },
 
 {
@@ -45,40 +45,39 @@ desc:"Connecting vulnerable communities with basic healthcare services."
 {
 title:"Disease Prevention",
 icon:<FaClinicMedical />,
-desc:"Awareness initiatives to prevent common diseases."
+desc:"Awareness initiatives to prevent common diseases ,illness and curation. "
 },
 
 {
 title:"Community Wellness",
 icon:<FaHospital />,
-desc:"Building healthier communities through education and care."
+desc:"Building healthier communities through education and taking cares."
 }
 
 ];
-const nextSlide = () => {
+const nextSlide = ()=>{
 
-setCurrentSlide(prev =>
-(prev + 1) % workData.length
-);
-
-};
-
-const prevSlide = () => {
-
-setCurrentSlide(prev =>
-(prev - 1 + workData.length) % workData.length
-);
+if(currentSlide < workData.length-3){
+   setCurrentSlide(currentSlide+3);
+}
 
 };
-const visibleCards = [
+const prevSlide = ()=>{
 
-workData[currentSlide],
+if(currentSlide > 0){
+   setCurrentSlide(currentSlide-3);
+}
 
-workData[(currentSlide + 1) % workData.length],
+};
+// const visibleCards = [
 
-workData[(currentSlide + 2) % workData.length]
+// workData[currentSlide],
 
-];
+// workData[(currentSlide + 1) % workData.length],
+
+// workData[(currentSlide + 2) % workData.length]
+
+// ];
 
   return (
     <>
@@ -89,7 +88,7 @@ workData[(currentSlide + 2) % workData.length]
         <div className="hn-overlay"></div>
 
         <img
-          src="/images/health-hero.jpg"
+          src="/images/GalleryPageImage8.png"
           alt=""
           className="hn-hero-img"
         />
@@ -197,17 +196,17 @@ Nutrition For Every Child And Family
     >
       ❮
     </button>
+<div className="work-cards-wrapper">
+    <div className="work-cards"
+     style={{
+   transform:`translateX(-${currentSlide * 355}px)`
+ }}>
 
-    <div className="work-cards">
+      {workData.map((card)=>(
+<div className="work-card" key={card.title}>
+          <h3 key={`title-${currentSlide}-${card.title}`}>{card.title}</h3>
 
-      {visibleCards.map((card,index)=>(
-<div
- className="work-card"
- key={`${currentSlide}-${card.title}`}
->
-          <h3>{card.title}</h3>
-
-          <div className="work-icon">
+          <div className="work-icon"  key={`icon-${currentSlide}-${card.title}`}>
             {card.icon}
           </div>
 
@@ -216,6 +215,7 @@ Nutrition For Every Child And Family
         </div>
       ))}
 
+    </div>
     </div>
 
     <button
@@ -243,50 +243,205 @@ onClick={() => setCurrentSlide(i)}      ></span>
   </div>
 
 </section>
+<section className="hn-approach-section">
 
-      {/* PROGRAMS */}
+<div className="approach-image">
+<img src="/images/GalleryPageImage7.png" alt="" />
+</div>
 
-      <section className="hn-programs">
+<div className="approach-content">
 
-        <h2>Our Key Initiatives</h2>
+<span>OUR APPROACH</span>
 
-        <div className="hn-grid">
+<h2>
+Our Approach Towards Building
+Healthier Communities
+</h2>
 
-          <div className="hn-card">
-            <h3>Healthcare Camps</h3>
-            <p>
-              Free medical checkups, consultation,
-              diagnosis and awareness programs.
-            </p>
-          </div>
+<p>
+At AFLISH Group, we believe that access to
+healthcare, nutrition, hygiene and preventive
+health services is essential for every child,
+woman and family.
 
-          <div className="hn-card">
-            <h3>Child Nutrition</h3>
-            <p>
-              Supporting children through nutrition
-              awareness and healthy food initiatives.
-            </p>
-          </div>
+Our mission is to create healthier communities
+through awareness, healthcare camps, nutrition
+support, medical assistance and community
+engagement programs.
 
-          <div className="hn-card">
-            <h3>Women Health</h3>
-            <p>
-              Maternal care, hygiene awareness and
-              health education programs.
-            </p>
-          </div>
+We work alongside healthcare professionals,
+volunteers, educational institutions and local
+communities to ensure that quality health
+services reach underserved populations.
+We also focus on empowering families with knowledge and resources that promote healthier lifestyles, better nutrition practices and early disease prevention.
 
-          <div className="hn-card">
-            <h3>Disease Prevention</h3>
-            <p>
-              Awareness campaigns for preventive
-              healthcare and healthy lifestyles.
-            </p>
-          </div>
+{/* Through sustainable initiatives and community-driven programs, AFLISH Group strives to create long-term health improvements that positively impact future generations. */}
+</p>
 
-        </div>
+</div>
 
-      </section>
+</section>
+<section className="hn-impact-section">
+
+<div className="impact-content">
+
+<span>HOW WE CREATE IMPACT</span>
+
+<h2>
+Creating Sustainable
+Health Outcomes
+</h2>
+
+<ul>
+  <li>
+    Promoting nutrition awareness and healthy dietary practices
+    among children, women and families.
+  </li>
+
+  <li>
+    Organizing healthcare camps, medical checkups and
+    preventive health initiatives in underserved communities.
+  </li>
+
+  <li>
+    Encouraging hygiene awareness, sanitation practices
+    and disease prevention measures.
+  </li>
+
+  <li>
+    Strengthening community participation through
+    volunteers, healthcare professionals and local partners.
+  </li>
+
+  <li>
+    Integrating health, education and social development
+    programs for long-term well-being.
+  </li>
+
+  <li>
+    Empowering individuals with knowledge and resources
+    to make healthier lifestyle choices.
+  </li>
+</ul>
+<p>
+AFLISH Group addresses the root causes of poor
+health by promoting nutrition awareness,
+preventive healthcare, disease prevention,
+hygiene education and access to medical support.
+
+Our integrated approach combines health,
+education, community participation and social
+development to improve long-term well-being.
+
+Through awareness campaigns, medical outreach,
+nutrition initiatives and wellness programs,
+we empower individuals to make healthier
+choices for themselves and their families.
+</p>
+</div>
+
+
+</section>
+<section className="hn-action-section">
+
+<div className="action-content">
+
+<span>OUR ACTIONS</span>
+
+<h2>
+How AFLISH Group
+Transforms Vision Into Action
+</h2>
+
+<ul>
+
+<li>Child nutrition awareness and support programs.</li>
+
+<li>Maternal healthcare and wellness initiatives.</li>
+
+<li>Free healthcare camps and medical consultations.</li>
+
+<li>Preventive healthcare and disease awareness campaigns.</li>
+
+<li>Community hygiene and sanitation education.</li>
+
+<li>Medical assistance for vulnerable families.</li>
+
+<li>Partnerships with healthcare professionals and volunteers.</li>
+
+<li>Community outreach programs focused on long-term wellness.</li>
+
+</ul>
+
+</div>
+
+<div className="action-image">
+<img src="/images/GalleryPageImage9.png" alt="" />
+</div>
+
+</section>
+<section className="hn-achievement-section">
+
+<span>OUR IMPACT</span>
+
+<h2>
+Key Health & Nutrition
+Achievements
+</h2>
+
+<p>
+
+AFLISH Group has positively impacted thousands
+of lives through healthcare awareness,
+nutrition initiatives, medical camps and
+community wellness programs.
+
+We continue to expand healthcare access,
+promote healthy lifestyles and strengthen
+community health systems through partnerships,
+volunteer engagement and sustainable outreach
+programs.
+
+Our focus remains on ensuring that every child,
+woman and family has the opportunity to live a
+healthier and safer life.
+
+</p>
+
+</section>
+<section className="hn-government-section">
+
+<div className="gov-image">
+<img src="/images/GalleryPageImage10.png" alt="" />
+</div>
+
+<div className="gov-content">
+
+<span>PARTNERSHIPS</span>
+
+<h2>
+Collaborating For
+Greater Community Impact
+</h2>
+
+<p>
+
+AFLISH Group actively collaborates with
+healthcare professionals, educational
+institutions, community leaders, volunteers,
+social organizations and development partners
+to strengthen health and nutrition outcomes.
+
+Through collective efforts, we expand our reach,
+improve service delivery and ensure sustainable
+community development that benefits future
+generations.
+
+</p>
+
+</div>
+
+</section>
 
       {/* STATS */}
 
