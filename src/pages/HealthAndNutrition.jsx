@@ -81,7 +81,7 @@ if(currentSlide > 0){
 
   return (
     <>
-      <Navbar hideMarquee={true} scrollValue={60} />
+      <Navbar hideMarquee={true} scrollValue={60}/>
 
       <section className="hn-hero">
 
@@ -281,6 +281,7 @@ We also focus on empowering families with knowledge and resources that promote h
 </div>
 
 </section>
+<div className="hn-impact-wrapper">
 <section className="hn-impact-section">
 
 <div className="impact-content">
@@ -294,34 +295,28 @@ Health Outcomes
 
 <ul>
   <li>
-    Promoting nutrition awareness and healthy dietary practices
-    among children, women and families.
-  </li>
+Promoting <b> nutrition awareness </b> and <b>healthy dietary </b> practices.
+</li>
 
-  <li>
-    Organizing healthcare camps, medical checkups and
-    preventive health initiatives in underserved communities.
-  </li>
+<li>
+Organizing <b>healthcare camps</b> and <b>preventive health initiatives.</b>
+</li>
 
-  <li>
-    Encouraging hygiene awareness, sanitation practices
-    and disease prevention measures.
-  </li>
+<li>
+Encouraging<b> hygiene awareness </b>and <b>disease prevention measures.</b>
+</li>
 
-  <li>
-    Strengthening community participation through
-    volunteers, healthcare professionals and local partners.
-  </li>
+<li>
+Strengthening <b>community participation</b> through local partnerships.
+</li>
 
-  <li>
-    Integrating health, education and social development
-    programs for long-term well-being.
-  </li>
+<li>
+Integrating <b>health</b>, <b>education</b> and <b>social development</b> programs.
+</li>
 
-  <li>
-    Empowering individuals with knowledge and resources
-    to make healthier lifestyle choices.
-  </li>
+<li>
+Empowering individuals toward <b>healthier lifestyle </b>choices.
+</li>
 </ul>
 <p>
 AFLISH Group addresses the root causes of poor
@@ -342,6 +337,8 @@ choices for themselves and their families.
 
 
 </section>
+</div>
+<div className="action-content-box">
 <section className="hn-action-section">
 
 <div className="action-content">
@@ -355,22 +352,21 @@ Transforms Vision Into Action
 
 <ul>
 
-<li>Child nutrition awareness and support programs.</li>
+<li>Child nutrition awareness and support programs for underserved communities.</li>
 
-<li>Maternal healthcare and wellness initiatives.</li>
+<li>Maternal healthcare and wellness initiatives for women and mothers.</li>
 
-<li>Free healthcare camps and medical consultations.</li>
+<li>Free healthcare camps and medical consultations in rural areas.</li>
 
-<li>Preventive healthcare and disease awareness campaigns.</li>
+<li>Preventive healthcare and disease awareness campaigns across communities.</li>
 
-<li>Community hygiene and sanitation education.</li>
+<li>Community hygiene and sanitation education for healthier lifestyles.</li>
 
-<li>Medical assistance for vulnerable families.</li>
+<li>Medical assistance for vulnerable families and disadvantaged groups.</li>
 
-<li>Partnerships with healthcare professionals and volunteers.</li>
+<li>Partnerships with healthcare professionals and dedicated community volunteers.</li>
 
-<li>Community outreach programs focused on long-term wellness.</li>
-
+<li>Community outreach programs focused on long-term wellness and development.</li>
 </ul>
 
 </div>
@@ -380,69 +376,116 @@ Transforms Vision Into Action
 </div>
 
 </section>
-<section className="hn-achievement-section">
-
-<span>OUR IMPACT</span>
+</div>
+<section className="hn-salient-section">
 
 <h2>
-Key Health & Nutrition
-Achievements
+Salient Aspects of Our Work in Child Health & Nutrition
 </h2>
 
-<p>
+<ul>
 
-AFLISH Group has positively impacted thousands
-of lives through healthcare awareness,
-nutrition initiatives, medical camps and
-community wellness programs.
+<li>
+AFLISH Group has conducted community-based health awareness programs promoting nutrition, hygiene and preventive healthcare among children and families.
+These initiatives help communities adopt healthier practices and improve overall well-being.
+</li>
 
-We continue to expand healthcare access,
-promote healthy lifestyles and strengthen
-community health systems through partnerships,
-volunteer engagement and sustainable outreach
-programs.
+<li>
+Our healthcare outreach initiatives have supported underserved communities through free medical consultations, health screenings and wellness guidance.
+The programs aim to improve access to essential healthcare services at the grassroots level.
+</li>
 
-Our focus remains on ensuring that every child,
-woman and family has the opportunity to live a
-healthier and safer life.
+<li>
+We have organized nutrition awareness campaigns encouraging healthy dietary habits and improved child growth monitoring practices.
+These efforts contribute to better nutrition outcomes and long-term child development.
+</li>
 
-</p>
+<li>
+AFLISH Group works with healthcare professionals, volunteers and community leaders to strengthen local health support systems.
+This collaborative approach ensures sustainable and community-driven health solutions.
+</li>
+
+<li>
+Through preventive healthcare initiatives, we promote disease awareness, early detection and timely medical intervention.
+These activities help reduce health risks and encourage proactive healthcare behavior.
+</li>
+
+<li>
+Our maternal and child health programs focus on improving healthcare access, nutrition education and family well-being.
+Special attention is given to supporting mothers and young children during critical stages.
+</li>
+
+<li>
+We support hygiene and sanitation education programs that encourage healthier living environments and disease prevention.
+The programs promote safe practices that contribute to healthier communities.
+</li>
+
+<li>
+Healthcare camps organized by AFLISH Group provide basic medical assistance and health counselling to vulnerable populations.
+These camps help bridge healthcare gaps in underserved and remote areas.
+</li>
+
+<li>
+We collaborate with educational institutions and local organizations to increase community participation in health initiatives.
+Such partnerships enhance awareness and strengthen local health networks.
+</li>
+
+<li>
+Our wellness programs encourage healthy lifestyle choices through awareness sessions, workshops and community engagement activities.
+Participants gain practical knowledge to improve their daily health practices.
+</li>
+
+<li>
+AFLISH Group continues to expand healthcare access through sustainable outreach programs and partnerships across communities.
+Our efforts focus on creating long-lasting and measurable health improvements.
+</li>
+
+<li>
+Our long-term vision is to build healthier communities where every child, woman and family has access to essential healthcare services.
+We remain committed to fostering inclusive, accessible and equitable healthcare opportunities.
+</li>
+</ul>
 
 </section>
-<section className="hn-government-section">
 
-<div className="gov-image">
+{/* <section className=".hn-gov-section">
+
+<div className=".gov-image">
 <img src="/images/GalleryPageImage10.png" alt="" />
 </div>
 
-<div className="gov-content">
+<div className=".gov-content">
 
-<span>PARTNERSHIPS</span>
+<span>OUR APPROACH</span>
 
 <h2>
-Collaborating For
-Greater Community Impact
+Our Approach Towards Building
+Healthier Communities
 </h2>
 
 <p>
+At AFLISH Group, we believe that access to
+healthcare, nutrition, hygiene and preventive
+health services is essential for every child,
+woman and family.
 
-AFLISH Group actively collaborates with
-healthcare professionals, educational
-institutions, community leaders, volunteers,
-social organizations and development partners
-to strengthen health and nutrition outcomes.
+Our mission is to create healthier communities
+through awareness, healthcare camps, nutrition
+support, medical assistance and community
+engagement programs.
 
-Through collective efforts, we expand our reach,
-improve service delivery and ensure sustainable
-community development that benefits future
-generations.
+We work alongside healthcare professionals,
+volunteers, educational institutions and local
+communities to ensure that quality health
+services reach underserved populations.
+We also focus on empowering families with knowledge and resources that promote healthier lifestyles, better nutrition practices and early disease prevention. */}
 
-</p>
+{/* Through sustainable initiatives and community-driven programs, AFLISH Group strives to create long-term health improvements that positively impact future generations. */}
+{/* </p>
 
 </div>
 
-</section>
-
+</section> */}
       {/* STATS */}
 
       <section className="hn-stats">
@@ -469,7 +512,7 @@ generations.
 
       </section>
 
-      {/* CTA */}
+      {/* CTA
 
       <section className="hn-cta">
 
@@ -486,7 +529,7 @@ generations.
 
         <button>Support The Cause</button>
 
-      </section>
+      </section> */}
 
       <Footer />
     </>
