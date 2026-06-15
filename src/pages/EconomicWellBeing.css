@@ -119,7 +119,7 @@
 .ewb-focus-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 26px;
+  gap: 36px;
 }
 
 .ewb-focus-card{
@@ -127,7 +127,8 @@
   border-radius: 18px;
   padding: 40px 28px;
   text-align: center;
-  box-shadow: 0 12px 35px rgba(0,0,0,.08);
+  box-shadow: 10px 12px 35px rgba(0, 0, 0, 0.397);
+ 
   border-bottom: 4px solid purple;
   transition: .3s;
 }
