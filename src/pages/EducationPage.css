@@ -3,11 +3,11 @@
     min-height:200vh;
 
     background:
-    linear-gradient(
+    /* linear-gradient(
     rgba(190, 189, 189, 0.89),
     rgba(247, 245, 245, 0.15),
     rgba(31, 16, 16, 0.034)
-    ),
+    ), */
     url("/images/GalleryPageImage1.png");
 
     background-size:cover;
@@ -47,6 +47,7 @@
     font-size:72px;
     line-height:1.1;
     margin-bottom:25px;
+color:purple;
 }
 
 .education-content p{
@@ -399,26 +400,33 @@ margin-top:0;
 
     opacity:0;
 
-    padding:0px 25px;
+    padding:0px 58px;
+/* transform: translateY(-10px); */
+    /* border-top:0px solid transparent; */
+        will-change:max-height,opacity,transform;
 
-    border-top:0px solid transparent;
-text-align:center;
+/* text-align:center; */
+
     transition:
-      max-height .48s ease,
-      opacity .28s ease,
-      padding .42s ease,
-      border .42s ease;
+      max-height .45s ease,
+      opacity .3s ease;
+
+      /* transform .3s ease; */
+
+      /* padding .42s ease,
+      border .42s ease; */
 }
 
 .pillar-content.show{
     max-height:760px;
     opacity:1;
 
-    padding:28px 58px 44px;
-    border-top:0;
+    padding:38px 58px 42px;
+    /* border-top:0; */
+    /* transform:translateY(0); */
 }
 .pillar-content p{
-    margin-top:18px;
+    margin-top:18px 0;
     color:#111;
     font-size:16px;
     line-height:1.72;

@@ -81,7 +81,7 @@ const achievementsData = {
   return (
     <>
     
-      <Navbar hideMarquee={true} scrollValue={60} />
+      <Navbar hideMarquee={true} scrollValue={60} navbarClass="navbar-light"/>
 
       <section className="education-hero">
 
@@ -123,10 +123,9 @@ const achievementsData = {
 
     <div className="education-breadcrumb">
       <a href="/">🏠</a>
-                    <span className="breadcrumb-arrow">&gt;</span>
-<a href="/services">Services</a>
-                          <span className="breadcrumb-arrow">&gt;</span>
-
+      <span className="breadcrumb-arrow">&gt;</span>
+      <a href="/services">Services</a>
+      <span className="breadcrumb-arrow">&gt;</span>
       <span>Education</span>
     </div>
 <section className="education-about">

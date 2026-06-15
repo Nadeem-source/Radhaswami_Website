@@ -9,7 +9,7 @@ const Overview = () => {
 <Navbar
   hideMarquee={true}
   scrollValue={60}
-  
+  navbarClass="navbar-light"
 />
       {/* HERO SECTION */}
 
@@ -17,7 +17,7 @@ const Overview = () => {
         className="overview-hero"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(214, 212, 212, 0.9), rgba(0,0,0,.05)), url('/images/overview-hero.jpg')"
+            " url('/images/overview-hero.jpg')"
         }}
       >
         <div className="overview-hero-content">

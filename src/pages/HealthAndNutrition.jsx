@@ -81,7 +81,7 @@ if(currentSlide > 0){
 
   return (
     <>
-      <Navbar hideMarquee={true} scrollValue={60}/>
+      <Navbar hideMarquee={true} scrollValue={60} navbarClass="navbar-light"/>
 
       <section className="hn-hero">
 
@@ -372,7 +372,7 @@ Transforms Vision Into Action
 </div>
 
 <div className="action-image">
-<img src="/images/GalleryPageImage9.png" alt="" />
+<img src="/images/GalleryPageImage15.png" alt="" />
 </div>
 
 </section>
@@ -448,44 +448,59 @@ We remain committed to fostering inclusive, accessible and equitable healthcare 
 
 </section>
 
-{/* <section className=".hn-gov-section">
+ <section className="hn-gov-section">
 
-<div className=".gov-image">
-<img src="/images/GalleryPageImage10.png" alt="" />
+<div className="gov-image">
+<img src="/images/GalleryPageImage17.png" alt="" />
 </div>
 
-<div className=".gov-content">
+<div className="gov-content">
 
-<span>OUR APPROACH</span>
+<span>GOVERNMENT PARTNERSHIPS</span>
 
 <h2>
-Our Approach Towards Building
-Healthier Communities
+AFLISH Group's Engagement with
+Government & Public Institutions
 </h2>
 
-<p>
-At AFLISH Group, we believe that access to
-healthcare, nutrition, hygiene and preventive
-health services is essential for every child,
-woman and family.
+<ul>
 
-Our mission is to create healthier communities
-through awareness, healthcare camps, nutrition
-support, medical assistance and community
-engagement programs.
+<li>
+AFLISH Group collaborates with government departments and public health authorities to strengthen healthcare access, nutrition awareness and community wellness initiatives.
+</li>
 
-We work alongside healthcare professionals,
-volunteers, educational institutions and local
-communities to ensure that quality health
-services reach underserved populations.
-We also focus on empowering families with knowledge and resources that promote healthier lifestyles, better nutrition practices and early disease prevention. */}
+<li>
+We support health awareness campaigns, preventive healthcare programs and nutrition initiatives aligned with national and state development goals.
+</li>
 
-{/* Through sustainable initiatives and community-driven programs, AFLISH Group strives to create long-term health improvements that positively impact future generations. */}
-{/* </p>
+<li>
+AFLISH Group works alongside local administrations and healthcare institutions to improve health outreach for children, women and underserved communities.
+</li>
 
+<li>
+We partner with government bodies to organize healthcare camps, medical screening programs and community wellness interventions.
+</li>
+
+<li>
+Our organization contributes to capacity-building initiatives through training and awareness programs for healthcare workers and volunteers.
+</li>
+
+<li>
+We collaborate with educational institutions and public agencies to promote nutrition education, hygiene awareness and healthy lifestyle practices.
+</li>
+
+<li>
+AFLISH Group supports integrated community development programs combining health, education and social welfare services.
+</li>
+
+<li>
+Through strategic partnerships with government institutions and development agencies, we continue building healthier and more resilient communities.
+</li>
+
+</ul>
 </div>
 
-</section> */}
+</section> 
       {/* STATS */}
 
       <section className="hn-stats">
