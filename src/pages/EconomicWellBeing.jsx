@@ -2,8 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import "./EconomicWellBeing.css";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 
 import {
   FaChalkboardTeacher,
@@ -15,6 +14,25 @@ import {
 } from "react-icons/fa";
 
 const EconomicWellBeing = () => {
+  useEffect(() => {
+
+  const interval = setInterval(() => {
+
+    setCurrentSlide((prev) => {
+
+      if (prev >= solutionsData.length - 3) {
+        return 0;
+      }
+
+      return prev + 3;
+
+    });
+
+  }, 8000); // 4 second
+
+  return () => clearInterval(interval);
+
+}, []);
     const [currentSlide,setCurrentSlide] = useState(0);
   const [slideDirection, setSlideDirection] = useState(""); 
   const solutionsData = [
