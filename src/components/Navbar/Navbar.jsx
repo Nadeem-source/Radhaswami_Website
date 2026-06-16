@@ -9,6 +9,10 @@ const Navbar = ({
   navbarClass
 }) => {
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen,setMenuOpen] = useState(false);
+const [aboutOpen,setAboutOpen] = useState(false);
+const [serviceOpen,setServiceOpen] = useState(false);
+const [partnerOpen,setPartnerOpen] = useState(false);
 
   useEffect(() => {
 
@@ -57,7 +61,7 @@ ${alwaysTop ? 'navbar-top' : ''}
 
       {/* NAV LINKS */}
 
-      <ul className="nav-links">
+      <ul className="nav-links desktop-links">
 
         <li>
           <NavLink
@@ -275,7 +279,215 @@ ${alwaysTop ? 'navbar-top' : ''}
         </button>
 
       </div>
+<div 
+className="mobile-menu"
+ onClick={() => setMenuOpen(!menuOpen)}
+ >
+  ☰
+</div>
+  <ul className={`mobile-nav-links ${menuOpen ? "show-menu" : ""}`}>
+  <li>
+ <NavLink
+  to="/"
+  onClick={() =>{
+     setMenuOpen(false);
+    setHomeOpen(false);
+  }}
+ >
+  Home
+ </NavLink>
+</li>
+  <li>
 
+<button
+onClick={() => setAboutOpen(!aboutOpen)}
+>
+About
+</button>
+
+{aboutOpen && (
+<ul className="dropdown-menu-mobile">
+
+<li>
+<NavLink to="/overview"
+ onClick={() => {
+  setMenuOpen(false);
+setOverviewOpen(false);
+}}
+>
+Overview
+</NavLink>
+</li>
+
+<li>
+<NavLink to="/mission-vision"
+ onClick={() =>{
+   setMenuOpen(false);
+  setMissionAndVisionOpen(false);
+  }}
+  >
+Mission & Vision
+</NavLink>
+</li>
+
+</ul>
+)}
+
+</li>
+  
+  <li className="dropdown">
+
+<button
+onClick={() => setServiceOpen(!serviceOpen)}
+>
+Services
+</button>
+
+{serviceOpen && (
+<ul className="dropdown-menu-mobile">
+<li>
+<NavLink to="/education"
+ onClick={() =>{
+   setMenuOpen(false);
+  setEducationOpen(false);
+  }}
+  >
+Education
+</NavLink>
+</li>
+
+<li>
+<NavLink to="/health-nutrition"
+ onClick={() =>{ 
+  setMenuOpen(false);
+setHealthAndNutritionOpen(false);
+}}
+>
+Health And Nutrition
+</NavLink>
+</li>
+<li>
+<NavLink to="/economic-well-being"
+ onClick={() =>{
+   setMenuOpen(false);
+  setEconomicWellBeingOpen(false);
+  }}
+  >
+Economic Well Being
+</NavLink>
+</li>
+
+<li>
+<NavLink to="/child-protection"
+ onClick={() => {
+  setMenuOpen(false);
+setChildProtectionOpen(false);
+}}
+>
+Child Protection
+</NavLink>
+</li>
+</ul>
+)}
+
+</li>
+<li>
+ <NavLink
+  to="/gallery"
+  onClick={() =>{
+     setMenuOpen(false);
+    setGalleryOpen(false);
+  }}
+ >
+  Gallery
+ </NavLink>
+</li>
+<li>
+
+<button
+onClick={() => setPartnerOpen(!partnerOpen)}
+>
+Partners
+</button>
+
+{partnerOpen && (
+
+<ul className="dropdown-menu-mobile">
+
+<li>
+<NavLink
+to="/about"
+onClick={() =>{
+   setMenuOpen(false);
+  setPartnerOpen(false);
+  }}
+>
+Corporate Partnership
+</NavLink>
+</li>
+
+<li>
+<NavLink
+to="/partner"
+onClick={() =>{
+   setMenuOpen(false);
+  setPartnerOpen(false);
+  }}
+>
+Institutional Partnership
+</NavLink>
+</li>
+
+</ul>
+
+)}
+
+</li>
+<li>
+ <NavLink
+  to="/scheme"
+  onClick={() =>{
+ setMenuOpen(false);
+setSchemeOpen(false);
+}}
+ >
+  Scheme
+ </NavLink>
+</li>
+<li>
+ <NavLink
+  to="/team"
+  onClick={() => {
+    setMenuOpen(false);
+  setTeamOpen(false);
+}}
+ >
+  Team
+ </NavLink>
+</li>
+<li>
+ <NavLink
+  to="/contact"
+  onClick={() => {
+    setMenuOpen(false);
+  setContactOpen(false);
+  }}
+ >
+  Contact
+ </NavLink>
+</li>
+<li>
+<NavLink
+to="/donation"
+onClick={() => {
+  setMenuOpen(false);
+  setDonationOpen(false);
+  }}
+>
+Donate Now
+</NavLink>
+</li>
+  </ul>
     </nav>
   )
 }
