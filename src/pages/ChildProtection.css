@@ -1125,7 +1125,7 @@ letter-spacing: .7px;
 
 .cp-success-section {
     background: #faf7ff; /* Matching your page's subtle purple tint */
-    padding: 0px 6% 40px;
+    padding: 0px 6% 50px;
     text-align: center;
     margin-top: -10px;
 }
@@ -1136,13 +1136,15 @@ letter-spacing: .7px;
 }
 
 .cp-success-section h2 {
-    color: #49a1b4; /* Aap chahein toh ise 'purple' ya original cyan-blue tone me rakh sakte hain */
-    font-size: 36px;
-    font-family: 'Oswald', Arial, sans-serif;
+    color: purple; /* Aap chahein toh ise 'purple' ya original cyan-blue tone me rakh sakte hain */
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     line-height: 1.3;
     text-transform: uppercase;
     margin-bottom: 40px;
+    margin-top: -40px;
+    
     letter-spacing: 0.5px;
 }
 
@@ -1168,7 +1170,7 @@ letter-spacing: .7px;
 
 .cp-partners-section {
     background: #ffffff;
-    padding: 60px 4% 40px 4%;
+    padding: 60px 4% 40px;
     text-align: center;
     overflow: hidden;
 }
@@ -1179,77 +1181,85 @@ letter-spacing: .7px;
 }
 
 .cp-partners-section h2 {
-    color: #e51f16; /* Original orange/red alert accent line matching screenshot */
-    font-size: 24px;
-    font-family: 'Oswald', Arial, sans-serif;
+    color: purple; /* Original orange/red alert accent line matching screenshot */
+    font-size: 24.5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     line-height: 1.4;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
     letter-spacing: 0.5px;
 }
 
 /* Slider Track Settings */
-.cp-slider-wrapper {
-    width: 100%;
-    overflow: hidden;
-    padding: 20px 0;
-    position: relative;
+.cp-slider-wrapper{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
 }
 
-/* Continuous infinite marquee left-scroll shift */
-.cp-logo-track {
-    display: flex;
-    width: calc(250px * 12);
-    animation: aflishScroll 25s linear infinite;
-}
+.cp-logo-item{
 
-.cp-logo-track:hover {
-    animation-play-state: paused; /* Slider par hover karne se stop hoga */
-}
+    height:180px;
+margin:0 10px;
+    display:flex;
 
-/* Individual rectangular card logo design blocks */
-.cp-logo-item {
-    width: 220px;
-    height: 110px;
-    background: #fdfdfd;
-    margin: 0 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #eaeaea;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-    border-radius: 4px;
-}
+    align-items:center;
 
-.cp-logo-item span {
-    font-family: 'Oswald', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #555555;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    justify-content:center;
+
+    background:#faf9fc;
+
+    /* border-radius:20px; */
+
+    padding:5px;
+}
+.white-card{
+    background:#fff !important;
+}
+.cp-logo-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
 }
 
 /* Navigation Indicator Dots precisely aligned styling */
-.cp-slider-dots {
+/* .cp-slider-dots {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 40px;
+    margin-top: 60px;
+} */
+.slick-dots{
+    position: static !important;
+    margin-top: -20px !important;
 }
 
-.cp-dot {
+.cp-partners-section .slick-dots li button:before{
+    font-size: 10px !important;
+    color: #d0d0d0 !important;   /* inactive dots */
+    opacity: 1 !important;
+}
+
+.cp-partners-section .slick-dots li.slick-active button:before{
+    color: purple !important;   /* active dot */
+    opacity: 1 !important;
+}
+/* .cp-dot {
     width: 10px;
     height: 10px;
     background-color: #e0e0e0;
     border-radius: 50%;
     display: inline-block;
-}
+} */
 
-.cp-dot.active {
-    background-color: #49a1b4; /* Active highlighted cyan dot */
-}
+/* .cp-dot.active { */
+    /* background-color: #49a1b4; */
+     /* Active highlighted cyan dot */
+/* } */
 
 /* Keyframes loop script for dynamic slide left transition */
 @keyframes aflishScroll {
@@ -1278,7 +1288,11 @@ letter-spacing: .7px;
 /* ==========================================
    AFLISH DO YOUR PART (CTA BLOCK) SECTION
    ========================================== */
-
+.cp-action-block-section-container{
+    background:white;
+    padding:80px;
+    padding-bottom:30px;
+}
 .cp-action-block-section {
     background: #f7f5f2; /* Light off-white/gray background matching original screenshot */
     padding: 80px 4%;
@@ -1295,8 +1309,8 @@ letter-spacing: .7px;
 
 .cp-action-block-section h2 {
     color: #000000;
-    font-size: 28px;
-    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     line-height: 1.4;
     text-transform: uppercase;
@@ -1314,9 +1328,9 @@ letter-spacing: .7px;
 }
 
 .cp-action-subtext {
-    font-size: 18px;
+    font-size: 20px;
     color: #444444;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 30px;
     font-weight: 500;
 }
@@ -1325,10 +1339,10 @@ letter-spacing: .7px;
 .cp-action-btn {
     background-color: #f2b200; /* Matching your yellow brand theme */
     color: #000000;
-    font-size: 20px;
-    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
-    padding: 16px 45px;
+    padding: 16px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;

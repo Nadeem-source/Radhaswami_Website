@@ -2,20 +2,42 @@ import React, {useState} from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import "./ChildProtection.css";
+import Slider from "react-slick";
+const SliderComponent = Slider.default || Slider;
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
+
 
 const ChildProtection = () => {
   // 2. Active Index track karne ke liye state (Total 6 original partners hain)
   const [activeIndex, setActiveIndex] = useState(0);
 
   // Partners data array taaki code clean rahe aur dynamic shift ho sake
-  const partners = [
-    "UNICEF India",
-    "NITI Aayog",
-    "CRY Foundation",
-    "GiveIndia",
-    "Pratham",
-    "TATA Trusts"
-  ];
+  const partnerLogos = [
+  "/images/GalleryPageImage38.png",
+  "/images/GalleryPageImage39.png",
+  "/images/GalleryPageImage40.png",
+  "/images/GalleryPageImage41.png",
+  "/images/GalleryPageImage42.png",
+  "/images/GalleryPageImage43.png",
+];
+const settings = {
+  dots: true,
+  infinite: true,
+
+  speed: 800,
+
+  slidesToShow: 5,
+  slidesToScroll: 1,
+
+  autoplay: true,
+  autoplaySpeed: 1500,
+
+  pauseOnHover: true,
+
+  arrows: false
+};
   return (
     <>
       <Navbar
@@ -710,7 +732,7 @@ children receive appropriate support services and
 </div>
 
 <div className="aflish-youth-card card6">
-  <img src="/images/GalleryPageImage36.png" alt="" />
+  <img src="/images/GalleryPageImage43.png" alt="" />
 
   <h3>Sana Khan</h3>
 
@@ -856,6 +878,7 @@ children receive appropriate support services and
     </ul>
   </div>
 </section>
+
 {/* AFLISH PARTNERS LOGO SLIDER SECTION */}
 <section className="cp-partners-section">
   <div className="cp-partners-container">
@@ -864,37 +887,48 @@ children receive appropriate support services and
     </h2>
     
     <div className="cp-slider-wrapper">
-      <div className="cp-logo-track">
-        {/* Original Set */}
-        <div className="cp-logo-item"><span>UNICEF India</span></div>
-        <div className="cp-logo-item"><span>NITI Aayog</span></div>
-        <div className="cp-logo-item"><span>CRY Foundation</span></div>
-        <div className="cp-logo-item"><span>GiveIndia</span></div>
-        <div className="cp-logo-item"><span>Pratham</span></div>
-        <div className="cp-logo-item"><span>TATA Trusts</span></div>
-        
-        {/* Duplicate Set for Infinite Continuous Scrolling Loop */}
-        <div className="cp-logo-item"><span>UNICEF India</span></div>
-        <div className="cp-logo-item"><span>NITI Aayog</span></div>
-        <div className="cp-logo-item"><span>CRY Foundation</span></div>
-        <div className="cp-logo-item"><span>GiveIndia</span></div>
-        <div className="cp-logo-item"><span>Pratham</span></div>
-        <div className="cp-logo-item"><span>TATA Trusts</span></div>
-      </div>
-    </div>
 
-    {/* Navigation Indicator Dots matching original look */}
-    <div className="cp-slider-dots">
-      <span className="cp-dot"></span>
+  <SliderComponent {...settings}>
+
+    <div className="cp-logo-item">
+    <img src="/images/GalleryPageImage38.png" alt="" />
+  </div>
+
+  <div className="cp-logo-item">
+    <img src="/images/GalleryPageImage39.png" alt="" />
+  </div>
+
+  <div className="cp-logo-item white-card">
+    <img src="/images/GalleryPageImage40.png" alt="" />
+  </div>
+  <div className="cp-logo-item">
+    <img src="/images/GalleryPageImage41.png" alt="" />
+  </div>
+
+  <div className="cp-logo-item">
+    <img src="/images/GalleryPageImage42.png" alt="" />
+  </div>
+
+  <div className="cp-logo-item">
+    <img src="/images/GalleryPageImage39.png" alt="" />
+  </div>
+  </SliderComponent>
+
+</div>
+
+    {/* Navigation Indicator Dots */}
+    {/* <div className="cp-slider-dots"> */}
+      {/* <span className="cp-dot"></span>
       <span className="cp-dot"></span>
       <span className="cp-dot"></span>
       <span className="cp-dot active"></span>
       <span className="cp-dot"></span>
-      <span className="cp-dot"></span>
-    </div>
+      <span className="cp-dot"></span> */}
+    {/* </div> */}
   </div>
 </section>
 {/* AFLISH DO YOUR PART / CTA SECTION */}
+<div className="cp-action-block-section-container">
 <section className="cp-action-block-section">
   <div className="cp-action-block-container">
     <h2>
@@ -911,11 +945,14 @@ children receive appropriate support services and
     </p>
     
     {/* Action Button */}
-    <button className="cp-action-btn">
-      JOIN US NOW
-    </button>
+    <Link to="/donation">
+  <button className="cp-action-btn">
+    JOIN US NOW
+  </button>
+</Link>
   </div>
 </section>
+</div>
       {/* IMPACT */}
 
       {/* <section className="cp-impact">

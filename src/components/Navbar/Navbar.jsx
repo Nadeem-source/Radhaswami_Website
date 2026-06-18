@@ -13,6 +13,18 @@ const Navbar = ({
 const [aboutOpen,setAboutOpen] = useState(false);
 const [serviceOpen,setServiceOpen] = useState(false);
 const [partnerOpen,setPartnerOpen] = useState(false);
+const [homeOpen,setHomeOpen] = useState(false);
+const [overviewOpen,setOverviewOpen] = useState(false);
+const [missionAndVisionOpen,setMissionAndVisionOpen] = useState(false);
+const [educationOpen,setEducationOpen] = useState(false);
+const [healthAndNutritionOpen,setHealthAndNutritionOpen] = useState(false);
+const [economicWellBeingOpen,setEconomicWellBeingOpen] = useState(false);
+const [childProtectionOpen,setChildProtectionOpen] = useState(false);
+const [galleryOpen,setGalleryOpen] = useState(false);
+const [schemeOpen,setSchemeOpen] = useState(false);
+const [teamOpen,setTeamOpen] = useState(false);
+const [contactOpen,setContactOpen] = useState(false);
+const [donationOpen,setDonationOpen] = useState(false);
 
   useEffect(() => {
 
@@ -428,7 +440,7 @@ Corporate Partnership
 
 <li>
 <NavLink
-to="/partner"
+to="/partners"
 onClick={() =>{
    setMenuOpen(false);
   setPartnerOpen(false);
@@ -445,13 +457,13 @@ Institutional Partnership
 </li>
 <li>
  <NavLink
-  to="/scheme"
+  to="/schemes"
   onClick={() =>{
  setMenuOpen(false);
 setSchemeOpen(false);
 }}
  >
-  Scheme
+  Schemes
  </NavLink>
 </li>
 <li>
