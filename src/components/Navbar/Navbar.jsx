@@ -311,11 +311,23 @@ className="mobile-menu"
 </li>
   <li>
 
-<button
-onClick={() => setAboutOpen(!aboutOpen)}
+<div className="mobile-menu-row">
+
+<NavLink
+to="/about"
+onClick={() => setMenuOpen(false)}
 >
 About
-</button>
+</NavLink>
+
+<span
+onClick={() => setAboutOpen(!aboutOpen)}
+>
+▼
+</span>
+
+</div>
+
 
 {aboutOpen && (
 <ul className="dropdown-menu-mobile">
@@ -349,11 +361,22 @@ Mission & Vision
   
   <li className="dropdown">
 
-<button
-onClick={() => setServiceOpen(!serviceOpen)}
+<div className="mobile-menu-row">
+
+<NavLink
+to="/services"
+onClick={() => setMenuOpen(false)}
 >
 Services
-</button>
+</NavLink>
+
+<span
+onClick={() => setServiceOpen(!serviceOpen)}
+>
+▼
+</span>
+
+</div>
 
 {serviceOpen && (
 <ul className="dropdown-menu-mobile">
@@ -416,11 +439,22 @@ Child Protection
 </li>
 <li>
 
-<button
-onClick={() => setPartnerOpen(!partnerOpen)}
+<div className="mobile-menu-row">
+
+<NavLink
+to="/partners"
+onClick={() => setMenuOpen(false)}
 >
 Partners
-</button>
+</NavLink>
+
+<span
+onClick={() => setPartnerOpen(!partnerOpen)}
+>
+▼
+</span>
+
+</div>
 
 {partnerOpen && (
 

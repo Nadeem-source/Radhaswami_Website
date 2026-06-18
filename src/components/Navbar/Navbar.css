@@ -416,6 +416,17 @@ margin-left:30px;
    position:relative;
     transition: 0.3s ease;
 }
+.mobile-menu-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.mobile-menu-row span{
+color:white;
+cursor:pointer;
+padding:10px;
+}
 
 .mobile-menu:hover{
 
