@@ -909,6 +909,500 @@ font-family: Arial, Helvetica, sans-serif;
 .card3{
     background:#b59ac9;
 }
+.card4{
+    background:#7b1fa2;
+}
+
+.card5{
+    background:#ff7043;
+}
+
+.card6{
+    background:#00897b;
+}
+/* ==========================
+   OUR APPROACH & IMPACT
+========================== */
+
+.aflish-impact-section{
+
+    background:#faf7ff;
+
+    padding:70px 6% 90px;
+
+    text-align:center;
+}
+
+.aflish-impact-section h2{
+
+    font-size:40px;
+
+    color:purple;
+
+    margin-bottom:35px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    font-family:'Oswald', sans-serif;
+}
+
+.aflish-impact-section p{
+
+    max-width:1200px;
+
+    margin:0 auto 25px;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#333;
+
+    font-family:Cambria, Georgia, serif;
+}
+
+.aflish-impact-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:50px;
+}
+
+.aflish-stat-card{
+
+    background:white;
+
+    padding:35px 20px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+}
+
+.aflish-stat-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.aflish-stat-card h3{
+
+    color:purple;
+
+    font-size:42px;
+
+    margin-bottom:12px;
+
+    font-weight:700;
+}
+
+.aflish-stat-card span{
+
+    font-size:16px;
+
+    color:#444;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+    display:block;
+}
+
+@media(max-width:992px){
+
+    .aflish-impact-stats{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+
+    .aflish-impact-section h2{
+
+        font-size:30px;
+    }
+
+    .aflish-impact-section p{
+
+        font-size:15px;
+    }
+
+    .aflish-impact-stats{
+
+        grid-template-columns:1fr;
+    }
+
+    .aflish-stat-card h3{
+
+        font-size:34px;
+    }
+}
+/* ==========================
+   AFLISH CHILD LEADERSHIP
+========================== */
+
+.aflish-child-leadership{
+
+    padding: 30px 6% 80px;
+
+    background:#faf7ff;
+}
+
+.aflish-leadership-card{
+
+    width:100%;
+
+    padding:45px 50px;
+
+    border-radius:28px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.aflish-leadership-card h2{
+
+    font-size:23px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    text-transform:uppercase;
+letter-spacing: .7px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.aflish-leadership-card p{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#333;
+
+    margin-bottom:20px;
+
+    font-family:Cambria, Georgia, serif;
+}
+
+/* First Card */
+
+.partnership-card{
+
+    background:#f5efff;
+}
+
+.partnership-card h2{
+
+    color:#6a1b9a;
+}
+
+/* Second Card */
+
+.dream-card{
+
+    background:#fff4df;
+}
+
+.dream-card h2{
+
+    color:#d97706;
+}
+/* ==========================================
+   AFLISH SUCCESS SECTION (MATCHING ORIGINAL)
+   ========================================== */
+
+.cp-success-section {
+    background: #faf7ff; /* Matching your page's subtle purple tint */
+    padding: 0px 6% 40px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.cp-success-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cp-success-section h2 {
+    color: #49a1b4; /* Aap chahein toh ise 'purple' ya original cyan-blue tone me rakh sakte hain */
+    font-size: 36px;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.cp-success-list {
+    display: inline-block;
+    text-align: left; /* List items ke text ko left rakhne ke liye taaki bullets sahi dikhein */
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.cp-success-list li {
+    color: #333333;
+    font-size: 19px;
+    font-family: Cambria, Georgia, serif;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+/* ==========================================
+   AFLISH PARTNERS CAROUSEL SLIDER SECTION
+   ========================================== */
+
+.cp-partners-section {
+    background: #ffffff;
+    padding: 60px 4% 40px 4%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cp-partners-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cp-partners-section h2 {
+    color: #e51f16; /* Original orange/red alert accent line matching screenshot */
+    font-size: 24px;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+}
+
+/* Slider Track Settings */
+.cp-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Continuous infinite marquee left-scroll shift */
+.cp-logo-track {
+    display: flex;
+    width: calc(250px * 12);
+    animation: aflishScroll 25s linear infinite;
+}
+
+.cp-logo-track:hover {
+    animation-play-state: paused; /* Slider par hover karne se stop hoga */
+}
+
+/* Individual rectangular card logo design blocks */
+.cp-logo-item {
+    width: 220px;
+    height: 110px;
+    background: #fdfdfd;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+
+.cp-logo-item span {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation Indicator Dots precisely aligned styling */
+.cp-slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.cp-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.cp-dot.active {
+    background-color: #49a1b4; /* Active highlighted cyan dot */
+}
+
+/* Keyframes loop script for dynamic slide left transition */
+@keyframes aflishScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 6));
+    }
+}
+
+/* Responsive adjustment for Mobile screens */
+@media(max-width: 768px) {
+    .cp-partners-section h2 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .cp-logo-item {
+        width: 170px;
+        height: 85px;
+    }
+    .cp-logo-item span {
+        font-size: 14px;
+    }
+}
+/* ==========================================
+   AFLISH DO YOUR PART (CTA BLOCK) SECTION
+   ========================================== */
+
+.cp-action-block-section {
+    background: #f7f5f2; /* Light off-white/gray background matching original screenshot */
+    padding: 80px 4%;
+    text-align: center;
+}
+
+.cp-action-block-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cp-action-block-section h2 {
+    color: #000000;
+    font-size: 28px;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+    max-width: 800px;
+}
+
+/* Hands shaking emoji / custom vector representation box */
+.cp-action-icon {
+    font-size: 65px;
+    margin-bottom: 20px;
+    color: #555;
+    opacity: 0.8;
+}
+
+.cp-action-subtext {
+    font-size: 18px;
+    color: #444444;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Golden/Orange Action Button exactly matching original viewport */
+.cp-action-btn {
+    background-color: #f2b200; /* Matching your yellow brand theme */
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 700;
+    padding: 16px 45px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cp-action-btn:hover {
+    background-color: #db9f00;
+    transform: translateY(-2px);
+}
+
+.cp-action-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustment for Mobile screens */
+@media(max-width: 768px) {
+    .cp-action-block-section {
+        padding: 50px 6%;
+    }
+    .cp-action-block-section h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .cp-action-icon {
+        font-size: 50px;
+    }
+    .cp-action-subtext {
+        font-size: 15px;
+    }
+    .cp-action-btn {
+        font-size: 16px;
+        padding: 12px 35px;
+    }
+}
+
+/* Responsive adjustment for Mobile screens */
+@media(max-width: 768px) {
+    .cp-success-section {
+        padding: 50px 4%;
+    }
+    
+    .cp-success-section h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .cp-success-list li {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width:768px){
+
+    .aflish-leadership-card{
+
+        padding:30px 25px;
+    }
+
+    .aflish-leadership-card h2{
+
+        font-size:26px;
+    }
+
+    .aflish-leadership-card p{
+
+        font-size:15px;
+        line-height:1.8;
+    }
+}
 @media(max-width:992px){
 
     .aflish-youth-grid{

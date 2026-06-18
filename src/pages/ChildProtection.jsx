@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import "./ChildProtection.css";
 
 const ChildProtection = () => {
+  // 2. Active Index track karne ke liye state (Total 6 original partners hain)
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Partners data array taaki code clean rahe aur dynamic shift ho sake
+  const partners = [
+    "UNICEF India",
+    "NITI Aayog",
+    "CRY Foundation",
+    "GiveIndia",
+    "Pratham",
+    "TATA Trusts"
+  ];
   return (
     <>
       <Navbar
@@ -671,11 +683,239 @@ children receive appropriate support services and
         <li>Inspires youth leadership</li>
       </ul>
     </div>
+<div className="aflish-youth-card card4">
+  <img src="/images/GalleryPageImage36.png" alt="" />
+
+  <h3>Ananya Singh</h3>
+
+  <ul>
+    <li>Girls Education Champion</li>
+    <li>Encourages school attendance</li>
+    <li>Supports gender equality campaigns</li>
+    <li>Promotes leadership among girls</li>
+  </ul>
+</div>
+
+<div className="aflish-youth-card card5">
+  <img src="/images/GalleryPageImage37.png" alt="" />
+
+  <h3>Vikram Patel</h3>
+
+  <ul>
+    <li>Community Awareness Volunteer</li>
+    <li>Conducts child safety workshops</li>
+    <li>Supports family engagement programmes</li>
+    <li>Advocates child protection rights</li>
+  </ul>
+</div>
+
+<div className="aflish-youth-card card6">
+  <img src="/images/GalleryPageImage36.png" alt="" />
+
+  <h3>Sana Khan</h3>
+
+  <ul>
+    <li>Youth Development Leader</li>
+    <li>Promotes life-skills education</li>
+    <li>Supports child participation initiatives</li>
+    <li>Inspires positive social change</li>
+  </ul>
+</div>
+  </div>
+
+</section>
+<section className="aflish-impact-section">
+
+    <h2>OUR APPROACH & IMPACT</h2>
+
+    <p>
+        AFLISH Group believes that children and young people
+        are not only beneficiaries of development but also
+        powerful agents of positive change. Through our
+        child participation programmes, leadership
+        initiatives and community engagement activities,
+        we empower children to understand their rights,
+        build confidence and actively contribute to the
+        development of their communities.
+    </p>
+
+    <p>
+        We provide children with opportunities to express
+        their views on education, health, safety, child
+        protection, environmental sustainability, digital
+        safety and social inclusion. Through awareness
+        campaigns, workshops, mentoring programmes and
+        community platforms, AFLISH Group helps young
+        leaders strengthen their voices and become
+        responsible changemakers.
+    </p>
+
+    <p>
+        Our child champions and youth leaders actively
+        participate in community outreach activities,
+        awareness drives and social initiatives that
+        benefit children and families. Their leadership
+        inspires peers, promotes positive behaviour and
+        strengthens local efforts towards child rights
+        and community development.
+    </p>
+
+    <div className="aflish-impact-stats">
+
+        <div className="aflish-stat-card">
+            <h3>1500+</h3>
+            <span>Child Champions Mentored</span>
+        </div>
+
+        <div className="aflish-stat-card">
+            <h3>2000+</h3>
+            <span>Community Engagement Activities</span>
+        </div>
+
+        <div className="aflish-stat-card">
+            <h3>12000+</h3>
+            <span>Children & Families Reached</span>
+        </div>
+
+        <div className="aflish-stat-card">
+            <h3>100+</h3>
+            <span>Awareness Campaigns Conducted</span>
+        </div>
+
+    </div>
+
+</section>
+<section className="aflish-child-leadership">
+
+  <div className="aflish-leadership-card partnership-card">
+
+    <h2>PARTNERING WITH CHILDREN</h2>
+
+    <p>
+      AFLISH Group believes that children are not merely beneficiaries
+      of development programmes but active participants and leaders
+      of positive social change. Through child participation platforms,
+      youth forums, awareness campaigns and community engagement
+      initiatives, we encourage children to voice their opinions,
+      share their experiences and contribute to decisions affecting
+      their lives and communities.
+    </p>
+
+    {/* <p>
+      We work closely with child groups, schools and community networks
+      to strengthen leadership skills, confidence and civic engagement
+      among young people. By creating safe and inclusive spaces,
+      AFLISH Group empowers children to become advocates for education,
+      child protection, gender equality, health, environmental
+      sustainability and social justice.
+    </p> */}
+
+  </div>
+
+
+  <div className="aflish-leadership-card dream-card">
+
+    <h2>THE YOUNG LEADERS ACCELERATOR PROGRAMME</h2>
+
+    <p>
+      AFLISH Group’s Young Leaders Accelerator Programme focuses on
+      nurturing promising young changemakers and supporting them in
+      transforming ideas into meaningful community action. Selected
+      children and youth receive mentorship, leadership development
+      training, communication skills support and opportunities to
+      design child-led initiatives addressing local challenges.
+    </p>
+
+    {/* <p>
+      Through innovative projects, awareness drives and community
+      outreach activities, young leaders learn to identify social
+      issues, develop solutions and inspire positive change.
+      The programme strengthens confidence, responsibility and
+      leadership capabilities while encouraging children to become
+      active contributors to safer, healthier and more inclusive
+      communities.
+    </p> */}
 
   </div>
 
 </section>
 
+{/* AFLISH SUCCESS / ACHIEVEMENTS SECTION */}
+<section className="cp-success-section">
+  <div className="cp-success-container">
+    <h2>
+      WE HAVE ACHIEVED CONSIDERABLE SUCCESS EVER SINCE WE EMBARKED ON THE CHILD CHAMPION JOURNEY
+    </h2>
+
+    <ul className="cp-success-list">
+      <li>Aflish Group was honored for pioneering child protection initiatives across multiple states.</li>
+      <li>Our child safety campaigns served as a benchmark for community-led development.</li>
+      <li>Aflish Youth Ambassadors represented child rights at national and regional leadership forums.</li>
+      <li>Successfully formed active Child Protection Committees in over 50+ vulnerable blocks.</li>
+      <li>Empowered thousands of young minds to stand against social exploitation and child labor.</li>
+    </ul>
+  </div>
+</section>
+{/* AFLISH PARTNERS LOGO SLIDER SECTION */}
+<section className="cp-partners-section">
+  <div className="cp-partners-container">
+    <h2>
+      SUPPORT AND COLLABORATION OF OUR PARTNERS HAVE BROUGHT CHILD CHAMPIONS CAMPAIGN ITS DUE SUCCESS.
+    </h2>
+    
+    <div className="cp-slider-wrapper">
+      <div className="cp-logo-track">
+        {/* Original Set */}
+        <div className="cp-logo-item"><span>UNICEF India</span></div>
+        <div className="cp-logo-item"><span>NITI Aayog</span></div>
+        <div className="cp-logo-item"><span>CRY Foundation</span></div>
+        <div className="cp-logo-item"><span>GiveIndia</span></div>
+        <div className="cp-logo-item"><span>Pratham</span></div>
+        <div className="cp-logo-item"><span>TATA Trusts</span></div>
+        
+        {/* Duplicate Set for Infinite Continuous Scrolling Loop */}
+        <div className="cp-logo-item"><span>UNICEF India</span></div>
+        <div className="cp-logo-item"><span>NITI Aayog</span></div>
+        <div className="cp-logo-item"><span>CRY Foundation</span></div>
+        <div className="cp-logo-item"><span>GiveIndia</span></div>
+        <div className="cp-logo-item"><span>Pratham</span></div>
+        <div className="cp-logo-item"><span>TATA Trusts</span></div>
+      </div>
+    </div>
+
+    {/* Navigation Indicator Dots matching original look */}
+    <div className="cp-slider-dots">
+      <span className="cp-dot"></span>
+      <span className="cp-dot"></span>
+      <span className="cp-dot"></span>
+      <span className="cp-dot active"></span>
+      <span className="cp-dot"></span>
+      <span className="cp-dot"></span>
+    </div>
+  </div>
+</section>
+{/* AFLISH DO YOUR PART / CTA SECTION */}
+<section className="cp-action-block-section">
+  <div className="cp-action-block-container">
+    <h2>
+      DO YOUR PART, TAKE A STAND AND SHOW YOUR SUPPORT TO THE CHILD CHAMPIONS.
+    </h2>
+    
+    {/* Center Icon matching original look */}
+    <div className="cp-action-icon">
+      🤝
+    </div>
+    
+    <p className="cp-action-subtext">
+      Encourage change by supporting this campaign.
+    </p>
+    
+    {/* Action Button */}
+    <button className="cp-action-btn">
+      JOIN US NOW
+    </button>
+  </div>
+</section>
       {/* IMPACT */}
 
       {/* <section className="cp-impact">
