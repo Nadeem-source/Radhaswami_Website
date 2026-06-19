@@ -420,8 +420,24 @@ margin-left:30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+width:100%;
+min-height:44px;
 }
-
+.mobile-nav-links li{
+     min-height:50px;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   width:100%;
+   padding:8px 0;
+   border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.mobile-nav-links a,
+.mobile-nav-links button{
+   display:block;
+   width:100%;
+   padding:12px 0;
+}
 .mobile-menu-row span{
 color:white;
 cursor:pointer;
@@ -436,6 +452,13 @@ padding:10px;
 }
 .mobile-nav-links{
   display:none;
+   overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  gap:0;
+}
+.mobile-nav-links > li{
+   display:flex;
+   flex-direction:column;
 }
 /* =========================
    RESPONSIVE
@@ -568,11 +591,13 @@ padding:10px;
  
 
 .dropdown-menu-mobile{
-   padding-left:20px;
-}
+   margin-top:8px;
+   padding-left: 20px;
+}m
 
 .dropdown-menu-mobile li{
-   margin:10px 0;
+   margin:8px 0;
+   border: none;
 }
 
 .mobile-nav-links a{

@@ -14,7 +14,7 @@
 }
 
 .humanitarian-hero span{
-    color:#d48fff;
+    color:purple;
     letter-spacing:3px;
     font-weight:700;
 }
@@ -27,10 +27,1212 @@
 }
 
 .humanitarian-hero p{
-    color:#ddd;
+    color:#d48fff;
     font-size:20px;
     line-height:1.9;
 }
+/* BREADCRUMB */
+
+.humanitarian-breadcrumb{
+    background:#fff;
+    padding:40px 5%;
+    border-bottom:0px solid #eee;
+    
+}
+
+.breadcrumb-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:15px;
+    color:#666;
+}
+
+.breadcrumb-container span:last-child{
+    color:purple;
+    font-weight:700;
+}
+
+.aflish-humanitarian-section {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.aflish-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aflish-main-heading {
+  font-size: 1.3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: purple; 
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+
+.aflish-sub-heading {
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #1a1a1a;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-top:30px;
+  letter-spacing: 0.5px;
+}
+
+.aflish-lead-text {
+  font-size: 1.11rem;
+  font-weight: 400;
+  color: black;
+  /* font-style: italic; */
+  margin-bottom: 20px;
+  /* padding: 0 10px; */
+   margin-top:30px;
+font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.aflish-content-body {
+  text-align: left;
+  font-size: 1.12rem;
+  
+  color: black;
+  margin-bottom: 40px;
+}
+
+.aflish-content-body p {
+  font-weight:500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  margin-bottom: 25px;
+  color:black;
+  text-align: center;
+ width:1200px;
+ margin-left: -30px;
+ margin-right: -30px;
+}
+
+.aflish-stats-text {
+  /* border-left: 4px solid purple; */
+  padding-left: 10px;
+  
+ 
+ 
+  /* font-weight: 500; */
+}
+
+
+.aflish-cta-heading {
+  font-size: 1.6rem;
+  color: purple;
+  font-weight: 800;
+  margin-top: -5px;
+  /* border-top: 1px solid #eeeeee; */
+  /* padding-top: -20px; */
+
+}
+.aflish-bottom-text{
+   max-width:1300px;
+   margin:25px auto 0;
+   text-align:center;
+   font-size:1.29rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   line-height:1.9;
+   color:#333;
+   margin-left: -20px;
+   margin-right: -20px;
+}
+/* --- ONGOING INITIATIVES SECTION STYLES --- */
+
+.aflish-ongoing-section {
+    background: white;
+  max-width: 1360px;
+  margin: 0px auto 0;
+  /* margin-left: 0;
+  margin-right: 0; */
+  padding: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.aflish-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+ 
+}
+
+.aflish-section-header h2 {
+  font-size: 1.54rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #1a1a1a;
+  font-weight: 900;
+  margin-bottom: 15px;
+  margin-left: -762px;
+  letter-spacing: 0.1px;
+}
+
+.aflish-section-header p {
+  font-size: 1.22rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #555;
+  max-width: 1300px;
+  margin: 20px 24px;
+  line-height: 1.7;
+}
+
+/* Card Layout Wrapper */
+.aflish-initiatives-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom:50px;
+}
+
+.aflish-initiative-card {
+  background: #ebe5f7; /* Subtle tint matching your purple theme preference */
+  border: 1px solid #efeaff;
+  border-radius: 16px;
+  padding: 50px 37px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  text-align: left;
+  margin:-10px 130px;
+}
+.second-card{
+   background:#ebc0dc; /* light lavender */
+}
+/* Top Card Heading */
+.aflish-card-heading-top h3 {
+  font-size: 1.4rem;
+  color: purple;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 1.4;
+  /* border-left: 4px solid purple; */
+  padding-left: 12px;
+}
+
+/* Flex Container for Image and Content */
+.aflish-card-body-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top:40px;
+}
+
+/* Left Image Box */
+.aflish-card-left-img {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+
+.aflish-card-left-img img {
+  width: 96%;
+  height: 320px;
+  object-fit: cover;
+  /* border-radius: 12px; */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Right Text Content */
+.aflish-card-right-content {
+  flex: 1;
+}
+
+.aflish-card-right-content p {
+  font-size: 1.05rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.aflish-card-right-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Media Query */
+@media (max-width: 992px) {
+  .aflish-card-body-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aflish-card-left-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .aflish-card-left-img img {
+    height: 250px;
+  }
+  
+  .aflish-section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aflish-main-heading {
+    font-size: 1.75rem;
+  }
+  
+  .aflish-sub-heading {
+    font-size: 1.35rem;
+  }
+  
+  .aflish-lead-text {
+    font-size: 1.1rem;
+  }
+  
+  .aflish-cta-heading {
+    font-size: 1.25rem;
+  }
+}
+
+/* --- AFLISH HUMANITARIAN RESPONSES STYLES --- */
+.aflish-responses-section-container{
+  background:rgb(213, 233, 245);
+  margin-top:-80px;
+}
+.aflish-responses-section {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+background:rgb(213, 233, 245);
+}
+
+.aflish-responses-header {
+  text-align: left; /* स्क्रीनशॉट के अनुसार लेफ्ट एलाइंड */
+  margin-bottom: 50px;
+}
+
+.aflish-responses-header h2 {
+  font-size: 1.6rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #1a1a1a;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.aflish-responses-header p {
+  font-size: 1.05rem;
+  color: #444444;
+  line-height: 1.8;
+  max-width: 1100px;
+}
+
+/* 3-Column Grid Grid Layout */
+.aflish-responses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Card General Design */
+.aflish-res-card {
+  background: #ffffff;
+  border: 1px solid #eef0f4;
+  border-radius: 20px;
+  padding: 40px 25px 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aflish-res-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon Container top-center style */
+.aflish-card-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -75px auto 20px; /* फ्लोटिंग इफ़ेक्ट के लिए */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.aflish-card-icon-wrapper i {
+  font-size: 2rem;
+  font-style: normal;
+}
+
+/* Typography Inside Cards */
+.aflish-res-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.aflish-res-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.aflish-res-card ul li {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 15px;
+}
+
+/* कस्टम डॉट बुलेट पॉइंट */
+.aflish-res-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #888888;
+  font-weight: bold;
+}
+
+/* --- Theme Color Configurations (As per Screenshot) --- */
+
+/* 1. Floods (Teal) */
+.border-floods { border-top: 6px solid #00a8b5; }
+.bg-floods { background-color: #00a8b5; color: white; }
+.border-floods h3 { color: #00a8b5; }
+
+/* 2. Cyclone (Purple) */
+.border-cyclone { border-top: 6px solid #a370f7; }
+.bg-cyclone { background-color: #a370f7; color: white; }
+.border-cyclone h3 { color: #a370f7; }
+
+/* 3. Landslides (Yellow/Orange) */
+.border-landslides { border-top: 6px solid #ff9f1c; }
+.bg-landslides { background-color: #ff9f1c; color: white; }
+.border-landslides h3 { color: #ff9f1c; }
+
+/* 4. Earthquakes (Green) */
+.border-earthquakes { border-top: 6px solid #2ec4b6; }
+.bg-earthquakes { background-color: #2ec4b6; color: white; }
+.border-earthquakes h3 { color: #2ec4b6; }
+
+/* 5. COVID-19 (Dark Red/Crimson) */
+.border-covid { border-top: 6px solid #e71d36; }
+.bg-covid { background-color: #e71d36; color: white; }
+.border-covid h3 { color: #e71d36; }
+
+/* 6. Others (Deep Orange) */
+.border-others { border-top: 6px solid #ff5a5f; }
+.bg-others { background-color: #ff5a5f; color: white; }
+.border-others h3 { color: #ff5a5f; }
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .aflish-responses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 25px;
+  }
+  .aflish-res-card {
+    margin-top: 40px; /* स्पैसिंग को मैनेज करने के लिए */
+  }
+}
+
+@media (max-width: 768px) {
+  .aflish-responses-grid {
+    grid-template-columns: 1fr;
+    gap: 50px 0;
+  }
+  .aflish-responses-header h2 {
+    font-size: 1.7rem;
+  }
+}
+/* ==========================================
+   SECTION 1: FIRST TO REACH... STYLES
+   ========================================== */
+.aflish-core-commitment-zone {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.aflish-commitment-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aflish-commitment-title {
+  font-size: 2.5rem;
+  font-family: Georgia, serif;
+  color: #1a1a1a;
+  font-weight: 900;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.aflish-commitment-lead {
+  font-size: 1.15rem;
+  color: #444444;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.aflish-commitment-body {
+  font-size: 1.1rem;
+  color: #222222;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  background-color: #faf7ff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  border-left: 5px solid purple;
+  text-align: left;
+}
+
+.aflish-commitment-sub {
+  font-size: 1.05rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   SECTION 2: ACCORDION CARDS STYLES
+   ========================================== */
+.aflish-necessity-accordion-wrapper {
+  background-color: #fcfbfe;
+  padding: 90px 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.aflish-necessity-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.aflish-necessity-main-title {
+  font-size: 2.1rem;
+  font-family: Georgia, serif;
+  color: #1a1a1a;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.aflish-necessity-subtitle {
+  font-size: 1.1rem;
+  color: #666666;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Vertical Stack for Cards */
+.aflish-accordion-vertical-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual Card Item */
+.aflish-collapsible-card-item {
+  background: #ffffff;
+  border: 1px solid #e8e3f5;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+}
+
+/* Card Header/Trigger Area */
+.aflish-collapsible-card-trigger {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.aflish-collapsible-card-trigger:hover {
+  background-color: #f7f4fd;
+}
+
+.aflish-trigger-left-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.aflish-card-index-num {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: purple;
+  opacity: 0.7;
+}
+
+.aflish-trigger-left-block h3 {
+  font-size: 1.25rem;
+  color: #2c2c2c;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Arrow Decoration */
+.aflish-accordion-arrow-icon {
+  font-size: 0.85rem;
+  color: #888888;
+  transition: transform 0.3s ease;
+}
+
+/* Body Content Area (Hidden by Default) */
+.aflish-collapsible-card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+  padding: 0 30px;
+  background-color: #ffffff;
+}
+
+.aflish-collapsible-card-content p {
+  font-size: 1.05rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  padding-bottom: 25px;
+  margin: 0;
+  border-top: 1px dashed #efeaff;
+  padding-top: 15px;
+}
+
+/* --- Expanded/Active State Modifier Classes --- */
+.aflish-collapsible-card-item.is-expanded {
+  border-color: purple;
+  box-shadow: 0 10px 25px rgba(128, 0, 128, 0.06);
+}
+
+.aflish-collapsible-card-item.is-expanded .aflish-collapsible-card-content {
+  max-height: 1000px; /* काफी है कंटेंट को फिट करने के लिए */
+  transition: max-height 0.4s ease-in-out;
+}
+
+.aflish-collapsible-card-item.is-expanded .aflish-accordion-arrow-icon {
+  transform: rotate(180deg);
+  color: purple;
+}
+
+.aflish-collapsible-card-item.is-expanded .aflish-trigger-left-block h3 {
+  color: purple;
+}
+
+/* Responsive Handling */
+@media (max-width: 768px) {
+  .aflish-commitment-title {
+    font-size: 1.9rem;
+  }
+  .aflish-necessity-main-title {
+    font-size: 1.6rem;
+  }
+  .aflish-trigger-left-block h3 {
+    font-size: 1.1rem;
+  }
+  .aflish-collapsible-card-trigger {
+    padding: 20px;
+  }
+}
+
+
+
+.education-help{
+    padding:110px 8% 65px;
+    background:purple;
+    cursor:grab;
+}
+.help-cards-container{
+    max-width:1400px;
+    margin-top:-60px;
+    padding: 0 60px;
+  
+}
+.help-cards-section-title{
+    text-align:center;
+    margin-bottom:70px;
+    
+}
+
+.help-cards-section-title span{
+    color:white;
+    font-weight:700;
+}
+
+.help-cards-section-title h2{
+    font-size:50px;
+    color:white;
+    margin-top:12px;
+}
+
+.help-card{
+    background:#fff;
+    border:1px solid rgba(0,0,0,.08);
+    border-radius:22px;
+    /* margin:15px; */
+    padding:25px;
+    box-shadow:8px 12px 28px rgba(250, 246, 246, 0.09);
+    transition:
+      transform .3s ease,
+      box-shadow .3s ease;
+      height:470px;
+}
+.slick-slide{
+    padding:0 12px;
+    box-sizing:border-box;
+}
+.education-help .slick-slider{
+  position: relative;
+}
+
+.education-help .slick-prev,
+.education-help .slick-next{
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+}
+
+.education-help .slick-prev{
+  left: -145px;
+}
+
+.education-help .slick-next{
+  right: -145px;
+}
+
+.education-help .slick-prev:before,
+.education-help .slick-next:before{
+  color: white !important;
+  font-size: 30px !important;
+  opacity: 1 !important;
+}
+/* .help-card:hover{
+    
+    transform:translateY(-7px);
+    box-shadow:10px 18px 36px rgba(105, 104, 104, 0.14);
+} */
+
+.help-card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:16px;
+    margin-bottom:22px;
+}
+.help-icon{
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    background:purple;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+
+    margin:-35px auto 20px;
+    position:relative;
+    z-index:5;
+}
+.slick-prev,
+.slick-next{
+    z-index:100;
+}
+
+/* .slick-prev:before,
+.slick-next:before{
+    color:purple;
+    font-size:35px;
+} */
+.slick-dots{
+    bottom: -45px;
+}
+
+.slick-dots li{
+    width: 30px;
+    height: 30px;
+    margin: 0 2px !important;
+}
+
+.slick-dots li button:before{
+    margin-top:30px;
+    font-size: 10px !important;
+    color: rgb(250, 245, 250) !important;
+    opacity: 1 !important;
+}
+
+
+.slick-dots li.slick-active button:before{
+    color:rgb(29, 25, 29) !important;
+}
+
+.help-card h3{
+    color:#271a1a;
+    font-size:15px;
+    margin-bottom:12px;
+    text-align:center;
+    letter-spacing:0cap;
+}
+
+.help-card p{
+    color:#555;
+    line-height:1.75;
+    text-align:center;
+}
+
+
+
+
+.education-achievements{
+    padding:100px 8%;
+    background:#b4a2af; /* light purple */
+    min-height:700px;
+}
+
+.achievements-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.achievements-section-title{
+    text-align:center;
+    margin-bottom:60px;
+    margin-top:-30px;
+}
+
+.achievements-section-title span{
+    font-size:42px;
+    font-weight:600;
+    color:purple;
+    letter-spacing:1px;
+    
+}
+.achievement-years{
+    /* display:flex;
+    justify-content:center;
+       gap:0px;
+    margin-bottom:40px;
+border-radius:20px; */
+    /* background:#fff; */
+    /* width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+
+    
+    overflow:hidden; */
+
+    /* box-shadow:0 4px 18px rgba(0,0,0,.08); */
+
+    /* flex-wrap:wrap; */
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+    margin-bottom:40px;
+}
+/* Bridge Line */
+.achievement-years::before{
+    content:"";
+    position:absolute;
+
+    width:420px;      /* line ki length */
+    height:6px;       /* line ki thickness */
+
+    background:white;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:20px;
+
+    z-index:1;
+}
+.year-btn{
+    /* border:none;
+    background:white;
+border-radius:20px;
+    padding:12px 25px;
+
+    font-size:18px; */
+     /* margin:10px ; */
+
+    /* cursor:pointer;
+
+    color:#555;
+    transition:.3s;
+    font-weight:700;
+    cursor:pointer;
+margin-right:20px;
+    transition:.3s; */
+    /* padding-bottom:8px; */
+     position:relative;
+    z-index:2;     /* line ke upar button rahe */
+    cursor: pointer;
+    border:none;
+    background:white;
+    border-radius:17px;
+
+    padding:12px 25px;
+    font-size:18px;
+    font-weight:700;
+
+    margin-right:0;
+}
+.year-btn.active{
+     background:purple;
+    color:white;
+}
+.achievement-content{
+    width:75%;
+    margin:auto;
+
+    /* background:#faf7fc; */
+background:purple;
+    border-radius:8px;
+
+    padding:50px 8% 50px;
+
+    box-shadow:none;
+    border-left:10px solid rgb(245, 144, 11);
+
+}
+
+ .achievement-content ul{
+    margin:0;
+    padding-left:0;
+    list-style:none;
+}
+/*
+.achievement-content li{
+    font-size:19px;
+    font-weight:600;
+    line-height:1.1;
+    color:#fcf9f9;
+
+    margin-bottom:18px;
+    margin-top:-8px;
+} */
+ .achievement-content li{
+    list-style:none;
+    position:relative;
+    padding-left:30px;
+
+    font-size:18px;
+    font-weight:600;
+    line-height:1.8;
+    color:#fcf9f9;
+line-height: 1.1;
+    margin-bottom:22px;
+    margin-top: 22px;
+}
+.achievement-content li::before{
+    content:"";
+
+    position:absolute;
+    left:0;
+    top:10px;
+
+    transform:translateY(-50%);
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+    background:white;
+}
+/* .achievement-content li::marker{
+    color:rgb(253, 250, 253);
+    font-size:28px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   SECTION 1: IMPACT STATS STYLES
+   ========================================== */
+.aflish-stats-dashboard-tier {
+  background-color: #ffffff;
+  padding: 60px 30px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #f2eff9;
+}
+
+.aflish-stats-main-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Side Metrics Cards */
+.aflish-stat-metric-card {
+  background: #ffffff;
+  border: 1px solid #eae6f3;
+  padding: 35px 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+}
+
+.aflish-metric-num-wrapper .aflish-metric-prefix {
+  display: block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #666666;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.aflish-metric-num-wrapper h2 {
+  font-size: 2.8rem;
+  color: purple;
+  font-family: Georgia, serif;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.aflish-metric-num-wrapper .aflish-metric-suffix {
+  display: block;
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.aflish-metric-desc {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Center Pitch Box */
+.aflish-stat-cta-join-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.aflish-cta-middle-text {
+  font-size: 1.05rem;
+  color: #333333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.aflish-cta-sub-pitch {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 25px;
+}
+
+.aflish-action-portal-btn {
+  background-color: #ff9f1c; /* Prominent Orange Button */
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(255, 159, 28, 0.3);
+  transition: all 0.3s ease;
+}
+
+.aflish-action-portal-btn:hover {
+  background-color: #e08610;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(255, 159, 28, 0.4);
+}
+
+
+/* ==========================================
+   SECTION 2: KEY INNOVATIONS STYLES
+   ========================================== */
+.aflish-innovation-showcase-belt {
+  background-color: #f8f7fc;
+  padding: 80px 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.aflish-innovation-max-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aflish-innovation-section-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.aflish-tech-badge {
+  font-size: 0.85rem;
+  background-color: #efeaff;
+  color: purple;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.aflish-innovation-section-intro h2 {
+  font-size: 2.1rem;
+  font-family: Georgia, serif;
+  color: #c92c1d; /* Elegant Crimson Red Heading */
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+/* Triple Grid Columns */
+.aflish-innovation-triple-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Innovation Image Cards */
+.aflish-tech-display-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.aflish-tech-display-card:hover {
+  transform: translateY(-6px);
+}
+
+.aflish-tech-card-img-holder {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.aflish-tech-card-img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aflish-tech-card-details {
+  padding: 25px;
+}
+
+.aflish-tech-card-details p {
+  font-size: 1rem;
+  color: #444444;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Bottom Partnership Block */
+.aflish-alliance-footer-node {
+  background-color: #ffffff;
+  border: 1px solid #e9e5f5;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-top: 40px;
+}
+
+.aflish-alliance-footer-node h4 {
+  font-size: 1.05rem;
+  color: #111111;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.aflish-alliance-footer-node p {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================== */
+@media (max-width: 992px) {
+  .aflish-stats-main-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .aflish-innovation-triple-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .aflish-stat-cta-join-box {
+    order: 3; /* मोबाइल पर बटन नीचे चला जायेगा */
+  }
+  
+  .aflish-innovation-section-intro h2 {
+    font-size: 1.7rem;
+  }
+}
+
+
+
+
+
+
 
 .humanitarian-overview{
     padding:120px 8%;
