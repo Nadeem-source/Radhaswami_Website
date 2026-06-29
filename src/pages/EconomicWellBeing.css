@@ -1,6 +1,6 @@
 .ewb-hero{
     position:relative;
-    height:-100vh;
+    height:100vh;
     overflow:hidden;
     padding:0;
 }
@@ -23,32 +23,41 @@
 
 .ewb-content{
     position:absolute;
-    top:45%;
+    top:54%;
     left:50%;
     transform:translate(-50%,-50%);
     text-align:center;
-    color:rgb(247, 242, 247);
+    color:purple;
     width:85%;
 }
 
 .ewb-content span{
-    color:rgb(253, 248, 253);
+    /* color:rgb(253, 248, 253); */
     font-weight:700;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing:2px;
+    color:black;
 }
 
 .ewb-content h1{
-    font-size:72px;
+    color:black;
+    font-size:42px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin:25px 0;
+    margin-top: 45px;
     line-height:1.15;
+    font-weight: 400;
 }
 
 .ewb-content p{
     max-width:900px;
+    font-weight: 550;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin:auto;
-    font-size:20px;
+    font-size:25px;
     line-height:1.8;
-    color:rgb(250, 244, 250);
+    color:black;
 }
 .ewb-intro{
   padding: 50px 8% 90px;

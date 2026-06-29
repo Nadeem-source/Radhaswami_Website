@@ -26,30 +26,41 @@
 
 .cp-content {
     position: absolute;
-    top: 50%;
+    top: 46%;
+    bottom:19%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
-    width: 85%;
+    color: purple;
+    width: 75%;
+    
 }
 
 .cp-content span {
-    color: white;
+    /* color: white; */
     font-weight: 700;
     letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .cp-content h1 {
-    font-size: 72px;
-    margin: 25px 0;
+    font-size: 38px;
+    margin: 47px;
+    margin-top:29px;
+    margin-bottom: 30px;
     line-height: 1.15;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .cp-content p {
     max-width: 900px;
     margin: auto;
-    font-size: 20px;
+    color:white;
+    font-size: 27px;
+    font-weight: 700;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
     line-height: 1.8;
 }
 

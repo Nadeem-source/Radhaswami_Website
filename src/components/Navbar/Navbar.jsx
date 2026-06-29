@@ -227,7 +227,7 @@ ${alwaysTop ? 'navbar-top' : ''}
             Partners
           </NavLink>
           
-          <ul className="dropdown-menu">
+          {/* <ul className="dropdown-menu">
 
             <li>
               <NavLink to="/about">
@@ -246,7 +246,7 @@ ${alwaysTop ? 'navbar-top' : ''}
                 Engagement with Government
               </NavLink>
             </li>
-          </ul>
+          </ul> */}
         
         
         </li>

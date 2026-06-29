@@ -81,7 +81,10 @@ const achievementsData = {
   return (
     <>
     
-      <Navbar hideMarquee={true} scrollValue={60} navbarClass="navbar-light"/>
+      <Navbar
+       hideMarquee={true}
+        scrollValue={60}
+         />
 
       <section className="education-hero">
 
@@ -92,7 +95,7 @@ const achievementsData = {
           <span>EDUCATION FOR EVERY CHILD</span>
 
           <h1>
-            Empowering Future Generations
+            Empowering Future Generations<br/>
             Through Quality Education
           </h1>
 

@@ -1,6 +1,6 @@
 .education-hero{
     position:relative;
-    min-height:200vh;
+    min-height:100vh;
 
     background:
     /* linear-gradient(
@@ -8,7 +8,7 @@
     rgba(247, 245, 245, 0.15),
     rgba(31, 16, 16, 0.034)
     ), */
-    url("/images/GalleryPageImage1.png");
+    url("/images/GalleryPageImage68.png");
 
     background-size:cover;
     background-position:center;
@@ -23,9 +23,10 @@
 .education-content{
     max-width:950px;
     color:white;
-    padding:0 30px;
+    /* padding:280px 30px; */
     position:relative;
-    top:-220px;
+    top:60px;
+    left:40px;
 }
 
 .education-content span{
@@ -38,21 +39,24 @@
     border-radius:50px;
 
     font-weight:700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
 
-    margin-bottom:25px;
+    margin-bottom:50px;
     margin-top:-50px;
 }
 
 .education-content h1{
-    font-size:72px;
+    font-size:37px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height:1.1;
-    margin-bottom:25px;
-color:purple;
+    margin-bottom:43px;
+color:white;
 }
 
 .education-content p{
-    font-size:20px;
-    color:purple;
+    font-size:24px;
+    color:white;
     line-height:1.8;
     font-weight:800;
     

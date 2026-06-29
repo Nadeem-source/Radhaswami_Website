@@ -264,7 +264,7 @@ alwaysTop={true}
         <p>
             Dedicated professionals driving innovation,
             social impact and community development
-            across India.
+            across India, working together with integrity, compassion and expertise to create lasting positive change in the lives of vulnerable communities.
         </p>
 
     </div>

@@ -9,7 +9,7 @@ const Overview = () => {
 <Navbar
   hideMarquee={true}
   scrollValue={60}
-  navbarClass="navbar-light"
+  
 />
       {/* HERO SECTION */}
 
@@ -17,7 +17,7 @@ const Overview = () => {
         className="overview-hero"
         style={{
           backgroundImage:
-            " url('/images/overview-hero.jpg')"
+            " url('/images/GalleryPageImage71.png')"
         }}
       >
         <div className="overview-hero-content">

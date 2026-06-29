@@ -83,7 +83,7 @@ const SchemesPage = () => {
 
           <p>
             Support education, healthcare, food distribution,
-            women empowerment and child welfare programs.
+            women empowerment and child welfare programs, while empowering disaster-affected communities through sustainable rehabilitation, livelihood restoration and long-term resilience initiatives.
           </p>
 
         </div>

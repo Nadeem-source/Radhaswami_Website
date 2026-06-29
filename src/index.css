@@ -18,7 +18,9 @@
   scroll-behavior:smooth;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 /* ===================================================
    BODY
    MAIN WEBSITE FONT

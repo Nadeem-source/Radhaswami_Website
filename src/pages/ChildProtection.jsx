@@ -53,7 +53,7 @@ const settings = {
         <div className="cp-overlay"></div>
 
         <img
-          src="/images/GalleryPageImage22.png"
+          src="/images/GalleryPageImage65.png"
           alt=""
           className="cp-hero-img"
         />
@@ -64,7 +64,7 @@ const settings = {
 
           <h1>
             Ensuring Every Child
-            Grows Up Safe, Protected
+            Grows Up Safe,<br/> Protected
             & Full Of Hope
           </h1>
 

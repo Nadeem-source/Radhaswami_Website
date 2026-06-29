@@ -81,14 +81,18 @@ if(currentSlide > 0){
 
   return (
     <>
-      <Navbar hideMarquee={true} scrollValue={60} navbarClass="navbar-light"/>
+      <Navbar
+       hideMarquee={true}
+        scrollValue={60} 
+       
+        />
 
       <section className="hn-hero">
 
         <div className="hn-overlay"></div>
 
         <img
-          src="/images/GalleryPageImage8.png"
+          src="/images/GalleryPageImage67.png"
           alt=""
           className="hn-hero-img"
         />
@@ -99,7 +103,7 @@ if(currentSlide > 0){
 
           <h1>
             Building Healthy Communities
-            Through Care, Nutrition &
+            Through <br/> Care, Nutrition &
             Preventive Healthcare
           </h1>
 

@@ -108,7 +108,7 @@ const EconomicWellBeing = () => {
         <div className="ewb-overlay"></div>
 
         <img
-          src="/images/GalleryPageImage19.png"
+          src="/images/GalleryPageImage66.png"
           alt=""
           className="ewb-hero-img"
         />
@@ -117,18 +117,18 @@ const EconomicWellBeing = () => {
 
           {/* <span>ECONOMIC WELL BEING</span> */}
 
-          <h1>
+          {/* <h1>
             Empowering Individuals Through
-            Financial Independence &
+            Financial<br/> Independence &
             Sustainable Livelihoods
-          </h1>
+          </h1> */}
 
-          <p>
+          {/* <p>
             AFLISH Group supports communities through
             entrepreneurship, skill development,
             employment opportunities and financial
             empowerment initiatives.
-          </p>
+          </p> */}
 
         </div>
 

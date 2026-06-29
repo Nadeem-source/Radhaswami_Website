@@ -15,18 +15,18 @@ const MissionVisionPage = () => {
     <>
       <Navbar scrollValue={0} 
       alwaysTop={true}
-      navbarClass="navbar-light"
+      
        />
 
       <section className="mission-hero">
         <div className="mission-content">
 
          <br/><br/>
-          {/* <span>OUR PURPOSE</span> */}
+          <span>OUR PURPOSE</span>
 <br/><br/><br/>
           <h1>
             Building A Better Future Through
-            Service, Innovation And Humanity
+            <br/>Service, Innovation And Humanity
           </h1>
 <br/>
           <p>

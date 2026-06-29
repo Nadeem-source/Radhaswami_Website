@@ -8,11 +8,11 @@
     position:relative;
 
     background:
-    linear-gradient(
+    /* linear-gradient(
     rgba(255, 255, 255, 0.9),
     rgba(0, 0, 0, 0)
-    ),
-    url('/images/GalleryPageImage3.png');
+    ), */
+    url('/images/GalleryPageImage73.png');
 
     background-size:cover;
     background-position:center;
@@ -25,20 +25,25 @@
 }
 
 .team-hero-content{
-    max-width:950px;
+    max-width:900px;
     padding:0 20px;
 }
 
 .team-hero-content h1{
     color:purple;
-    font-size:78px;
+    font-size:47px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight:800;
-    margin-bottom:25px;
+    margin-top: 130px;
+    margin-bottom:60px;
+    letter-spacing:1px;
 }
 
 .team-hero-content p{
-    color:purple;
-    font-size:22px;
+    color:white;
+    
+    font-size:27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height:1.8;
 }
 .team-section{
