@@ -11,6 +11,7 @@ const Hero = () => {
           Helping Humanity Through Spiritual Wisdom, Service & Community Empowerment.
         </p>
       </div>
+      
     </section>
   )
 }

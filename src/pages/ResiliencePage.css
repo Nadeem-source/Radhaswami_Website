@@ -475,6 +475,7 @@
     width: 100%;
     height: 220px;
     overflow: hidden;
+     padding: 30px 30px;
 }
 
 .innovation-image img {
@@ -484,12 +485,13 @@
 }
 
 .innovation-content {
-    padding: 25px 20px;
+    padding: 5px 30px 25px;
     flex-grow: 1;
 }
 
 .innovation-content p {
     font-size: 14.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333333;
     line-height: 1.6;
     margin: 0;

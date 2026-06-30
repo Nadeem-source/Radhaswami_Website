@@ -19,7 +19,10 @@ import ContactPage from './pages/ContactPage'
 import SchemesPage from './pages/SchemesPage'
 import Partners from './pages/Partners'
 import WelcomePopup from './components/WelcomePopup/WelcomePopup'
+import AnnualReport2025 from './components/AnnualReport2025/AnnualReport2025'
+import FieldsOfWork from "./components/FieldsOfWork/FieldsOfWork";
 import TopMarquee from './components/TopMarquee/TopMarquee'
+import AboutPreview from "./components/AboutPreview/AboutPreview";
 import CertificatesPage from './pages/CertificatesPage'
 import MissionVisionPage from './pages/MissionVisionPage'
 import GoverningCouncilPage from './pages/GoverningCouncilPage'
@@ -87,6 +90,9 @@ function App() {
               <Navbar hideMarquee={hideMarquee} />
               <WelcomePopup />
               <Header />
+              <AnnualReport2025 />
+              <AboutPreview />
+              <FieldsOfWork />
               <Hero />
               <About />
               <Services />

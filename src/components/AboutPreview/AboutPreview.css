@@ -1,0 +1,74 @@
+.about-preview{
+    background:wheat;
+    padding:70px 5%;
+}
+
+.about-preview-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.about-preview h2{
+
+    color:purple;
+
+    font-size:22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-weight:700;
+
+    margin-bottom:35px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+}
+
+.about-preview p{
+
+    font-size:17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    line-height:2;
+
+    color:#444;
+
+    margin-bottom:28px;
+
+    text-align:justify;
+}
+
+.about-preview-btn{
+
+    margin-top:20px;
+
+    background:purple;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 40px;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.about-preview-btn:hover{
+
+    background:#4b0f7d;
+
+    transform:translateY(-3px);
+}
+.about-preview-btn:focus,
+.about-preview-btn:active{
+    outline: none;
+    box-shadow: none;
+}

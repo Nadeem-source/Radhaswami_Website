@@ -1,0 +1,89 @@
+/*==========================
+   Annual Report Strip
+==========================*/
+
+.annual-report-strip{
+
+    width:100%;
+
+    height:80px;
+
+    background:#e98484;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:40px 7%;
+
+    border-top:1px solid #ddd;
+
+    border-bottom:1px solid #ddd;
+
+}
+.annual-report-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+.annual-title{
+
+    color:purple;
+
+    font-size:28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+    margin-left: 82px;
+letter-spacing: 1px;
+}
+.annual-subtitle{
+
+    color:purple;
+
+    font-size:19px;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.annual-readmore{
+
+    width:390px;
+
+    height:80px;
+
+    background:#d8d8d8;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:#444;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    transition:.4s;
+    margin-right:-100px;
+
+}
+.annual-readmore:hover{
+
+    background:purple;
+
+    color:white;
+
+}
