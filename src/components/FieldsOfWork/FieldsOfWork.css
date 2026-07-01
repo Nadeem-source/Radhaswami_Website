@@ -10,7 +10,7 @@ text-align:center;
 
 .fields-section h2{
 
-font-size:35px;
+font-size:32px;
 font-family: Georgia, 'Times New Roman', Times, serif;
 letter-spacing: 1px;
 font-weight:700;
@@ -36,13 +36,29 @@ align-items:center;
 }
 
 .field-card{
-
+position:relative;
 transition:.35s;
 
 cursor:pointer;
 
 }
+.active-field::after{
+    content: "";
+    position: absolute;
 
+    left: 50%;
+    transform: translateX(-50%);
+
+    bottom: -70px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    /* border-bottom: 55px solid #dff8fb; */
+border-bottom:55px solid var(--triangle-color);
+}
 /* .field-card:hover{
 
 transform:translateY(-8px);
@@ -53,7 +69,7 @@ transform:translateY(-8px);
 
 font-size:85px;
 
-margin-bottom:15px;
+margin-bottom:-15px;
 
 }
 
@@ -71,11 +87,15 @@ text-transform:uppercase;
 /* ===========================
 HOME EDUCATION SECTION
 =========================== */
-
+.fields-highlight{
+    background:white;
+}
 .home-education-highlight{
 
-    width:92%;
-    margin:70px auto;
+    width:110%;
+    margin-top:-100px;
+    margin-left:-60px;
+    margin-right:-60px;
 
     display:grid;
     grid-template-columns:1.1fr 1fr;
@@ -118,9 +138,11 @@ HOME EDUCATION SECTION
 
 .education-right h2{
 
-    font-size:48px;
+    font-size:22px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
 
     color:#06a6bf;
+    letter-spacing:1px;
 
     font-weight:800;
 
@@ -133,7 +155,8 @@ HOME EDUCATION SECTION
 
 .education-right p{
 
-    font-size:18px;
+    font-size:15px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
 
     line-height:1.9;
 
@@ -145,10 +168,10 @@ HOME EDUCATION SECTION
 .education-btn{
 
     width:max-content;
-
+font-family:Georgia, 'Times New Roman', Times, serif ;
     margin-top:20px;
 
-    padding:16px 36px;
+    padding:16px 27px;
 
     background:#00a9c7;
 
@@ -159,7 +182,7 @@ HOME EDUCATION SECTION
     text-decoration:none;
 
     font-weight:700;
-
+letter-spacing:1px;
     transition:.35s;
 }
 
@@ -168,4 +191,11 @@ HOME EDUCATION SECTION
     background:#0086a3;
 
     transform:translateY(-3px);
+}
+.education-left img{
+    transition:.5s;
+}
+
+.education-right{
+    transition:.5s;
 }

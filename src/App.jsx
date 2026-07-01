@@ -23,6 +23,7 @@ import AnnualReport2025 from './components/AnnualReport2025/AnnualReport2025'
 import FieldsOfWork from "./components/FieldsOfWork/FieldsOfWork";
 import TopMarquee from './components/TopMarquee/TopMarquee'
 import AboutPreview from "./components/AboutPreview/AboutPreview";
+import ImpactSection from "./components/ImpactSection/ImpactSection";
 import CertificatesPage from './pages/CertificatesPage'
 import MissionVisionPage from './pages/MissionVisionPage'
 import GoverningCouncilPage from './pages/GoverningCouncilPage'
@@ -93,6 +94,7 @@ function App() {
               <AnnualReport2025 />
               <AboutPreview />
               <FieldsOfWork />
+              <ImpactSection/>
               <Hero />
               <About />
               <Services />
