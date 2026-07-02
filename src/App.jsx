@@ -37,6 +37,7 @@ import ChildProtection from "./pages/ChildProtection";
 import HumanitarianPage from "./pages/HumanitarianPage";
 import ResiliencePage from "./pages/ResiliencePage";
 import Overview from "./pages/Overview";
+import MapSection from './components/MapSection/MapSection'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -95,6 +96,7 @@ function App() {
               <AboutPreview />
               <FieldsOfWork />
               <ImpactSection/>
+              <MapSection/>
               <Hero />
               <About />
               <Services />

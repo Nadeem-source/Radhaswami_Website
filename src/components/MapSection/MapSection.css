@@ -1,0 +1,155 @@
+/* ==========================
+AFLISH INDIA MAP
+========================== */
+
+.map-section{
+
+    width:100%;
+
+    padding:80px 7%;
+
+    display:grid;
+
+    grid-template-columns:42% 58%;
+
+    align-items:center;
+
+    gap:40px;
+
+    background:#fff;
+
+}
+
+.map-left h2{
+
+    font-size:30px;
+
+    line-height:1.08;
+
+    color:purple;
+
+    text-transform:uppercase;
+    letter-spacing: 1px;
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+    margin-bottom:35px;
+
+}
+
+.map-left p{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:#222;
+
+    margin-bottom:28px;
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.map-right{
+position:relative;
+    display:flex;
+margin-top:-30px;
+    justify-content:flex-end;
+     align-items:center;
+
+}
+.tooltip{
+
+position:fixed;
+
+background:#333;
+
+color:white;
+
+padding:14px 18px;
+
+border-radius:8px;
+
+pointer-events:none;
+
+z-index:999;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+transition:.15s;
+
+}
+.india-map path{
+
+fill:#9a9a9a;
+
+stroke:white;
+
+stroke-width:1.3;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+.india-map path:hover{
+
+fill:#d52b1e;
+
+}
+
+.map-right img{
+
+    width: 100%;
+/* height:800px; */
+    max-width:none;
+ transform:scale(1.10);
+
+    transform-origin:center right;
+
+    display:block;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.map-section{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.map-right{
+
+justify-content:center;
+
+}
+
+.map-left h2{
+
+font-size:38px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.map-left h2{
+
+font-size:30px;
+
+}
+
+.map-left p{
+
+font-size:16px;
+
+}
+
+}

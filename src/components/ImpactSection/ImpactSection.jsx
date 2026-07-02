@@ -13,9 +13,9 @@ export default function ImpactSection(){
 
 return(
 
-<section className="impact-section">
+<section className="impactsection-section">
 
-<div className="impact-left">
+<div className="impactsection-left">
 
 {/* <h2>Lives Impacted</h2> */}
 
@@ -37,11 +37,11 @@ alt=""
 </div>
 
 
-<div className="impact-right">
+<div className="impactsection-right">
 
-<div className="impact-card protection">
+<div className="impactsection-card protection"  style={{ "--icon-color": "#df7638" }}>
 
-<FaShieldAlt className="impact-icon"/>
+<FaShieldAlt className="impactsection-icon"/>
 
 <h3>39,631</h3>
 
@@ -52,9 +52,9 @@ People protected through child protection and safeguarding programmes.
 </div>
 
 
-<div className="impact-card humanitarian">
+<div className="impactsection-card humanitarian">
 
-<FaHandsHelping className="impact-icon"/>
+<FaHandsHelping className="impactsection-icon" style={{ "--icon-color": "#b18dd3" }}/>
 
 <h3>18,927</h3>
 
@@ -65,9 +65,9 @@ Families supported through humanitarian relief and emergency response.
 </div>
 
 
-<div className="impact-card livelihood">
+<div className="impactsection-card livelihood">
 
-<FaLeaf className="impact-icon"/>
+<FaLeaf className="impactsection-icon" style={{ "--icon-color": "#57c78c" }}/>
 
 <h3>1,63,073</h3>
 
@@ -78,9 +78,9 @@ People benefited through livelihood and sustainable development initiatives.
 </div>
 
 
-<div className="impact-card resilience">
+<div className="impactsection-card resilience">
 
-<FaBolt className="impact-icon"/>
+<FaBolt className="impactsection-icon" style={{ "--icon-color": "#b44528" }}/>
 
 <h3>1,16,276</h3>
 
@@ -91,9 +91,9 @@ Communities strengthened through disaster resilience programmes.
 </div>
 
 
-<div className="impact-card education">
+<div className="impactsection-card education">
 
-<FaGraduationCap className="impact-icon"/>
+<FaGraduationCap className="impactsection-icon" style={{ "--icon-color": "#12a9b8" }}/>
 
 <h3>86,737</h3>
 
@@ -104,9 +104,9 @@ Children reached through education and digital learning programmes.
 </div>
 
 
-<div className="impact-card health">
+<div className="impactsection-card health">
 
-<FaHeartbeat className="impact-icon"/>
+<FaHeartbeat className="impactsection-icon" style={{ "--icon-color": "#6a51c4" }}/>
 
 <h3>58,904</h3>
 
@@ -114,6 +114,9 @@ Children reached through education and digital learning programmes.
 Individuals benefited through healthcare and nutrition initiatives.
 </p>
 
+</div>
+<div className="impactsection-date">
+    *April 2025 to March 2026
 </div>
 
 </div>
